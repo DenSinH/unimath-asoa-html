@@ -122,6 +122,7 @@ lift edge of diagram to morphism between coconeIns
 
 <div class="doc">
 define a chain of middle objects from a cocone, i.e.
+<pre>
   X0 --&gt; X1 --&gt; X2 --&gt; X3 ...
     \    |f1  f2|     /
    f0 \  |      |   / f3
@@ -131,9 +132,7 @@ define a chain of middle objects from a cocone, i.e.
     \    |Rf1   |     /
   Rf0 \  |   Rf2|   / Rf3
             Y
-
-<div class="paragraph"> </div>
-
+</pre>
 
 </div>
 <div class="code">
@@ -180,11 +179,13 @@ define the factorization of a cocone
 
 <div class="doc">
 define coconeIn to colimArrow morphism for cocone, i.e.
+<pre>
     Xv ----&gt; X∞
     |        |
     |        |
     v        v
     Y ====== Y
+</pre>
 
 </div>
 <div class="code">
@@ -527,12 +528,6 @@ The ColimCocone we get from the R map of F being omega small,
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">isHRCC'</span> := <span class="id" title="var">HR</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">ccpointwise</span>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-correct codomain with equality of diagrams 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">eqdiag</span> := <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSSmallnessReduction.html#fact_cocone_chain_eq_chain_pointwise_tensored"><span class="id" title="lemma">fact_cocone_chain_eq_chain_pointwise_tensored</span></a> <span class="id" title="var">F</span> <span class="id" title="var">d</span> <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">isHRCC</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.EqDiag.html#eq_diag_iscolimcocone"><span class="id" title="lemma">eq_diag_iscolimcocone</span></a> <span class="id" title="var">_</span> <span class="id" title="var">eqdiag</span> <span class="id" title="var">isHRCC'</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#make_ColimCocone"><span class="id" title="definition">make_ColimCocone</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">isHRCC</span>).<br/>
@@ -666,7 +661,9 @@ Show that the base_iso we just defined in fact gives a
 
 <div class="doc">
 define the natural transformation we want from
+<pre>
    (F ⊗_{Ff_mon} (colim CL)) (colim FfCC)
+</pre>
    using the z_iso we got from the smallness. 
 </div>
 <div class="code">
@@ -993,12 +990,7 @@ we do this by reducing it to the pointwise case.
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSSmallnessReduction.html#Ff_lt_preserves_colim_impl_LNWFS_lt_preserves_colim_mor_disp"><span class="id" title="lemma">Ff_lt_preserves_colim_impl_LNWFS_lt_preserves_colim_mor_disp</span></a> <span class="id" title="var">HF</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-showing isomorphism is easy, since we know that the base morphism is an isomorphism 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSHelpers.html#LNWFS_inv_in_precat_if_Ff_inv_in_precat"><span class="id" title="lemma">LNWFS_inv_in_precat_if_Ff_inv_in_precat</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSSmallnessReduction.html#Ff_lt_preserves_colim_impl_LNWFS_lt_preserves_colim_inv_in_precat"><span class="id" title="lemma">Ff_lt_preserves_colim_impl_LNWFS_lt_preserves_colim_inv_in_precat</span></a> <span class="id" title="var">HF</span>)<br/>

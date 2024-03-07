@@ -167,61 +167,28 @@ Garner 2008, section 5.2 (functor K)
 <span class="id" title="keyword">Definition</span> <a id="morcls_coprod_functor_data" class="idref" href="#morcls_coprod_functor_data"><span class="id" title="definition">morcls_coprod_functor_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_data"><span class="id" title="definition">functor_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.C"><span class="id" title="variable">C</span></a>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.C"><span class="id" title="variable">C</span></a>).<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#make_functor_data"><span class="id" title="definition">make_functor_data</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-sending f to ∑_{x ∈ S_f} g_x
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod"><span class="id" title="definition">morcls_lp_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-map γ: f --&gt; f' gives map of lifting problems 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">γ</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductOfArrowsInclusion"><span class="id" title="definition">CoproductOfArrowsInclusion</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ </div>
-
-<div class="doc">
-inclusion of lifting problems S_f into S_f' with γ 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">lpJf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">lpJf</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">g</span> <span class="id" title="var">S</span>].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">S</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">γ</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ </div>
-
-<div class="doc">
-map from lifting problem of S_f's left hand domain into that of S_f'
-           The lifting problems have the same domain on the left, as f is the
-           same. 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>. <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductOfArrowsInclusion"><span class="id" title="definition">CoproductOfArrowsInclusion</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ </div>
-
-<div class="doc">
-the same map here 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">lpJf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">lpJf</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">g</span> <span class="id" title="var">S</span>].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">S</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">intro</span>. <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-commutativity of coproduct arrow inclusion with
-         ∑_{x∈S_f} g_x and ∑_{x∈S_f'} g_x 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
@@ -230,12 +197,7 @@ commutativity of coproduct arrow inclusion with
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductOfArrowsInclusion_comp"><span class="id" title="definition">CoproductOfArrowsInclusion_comp</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-equality of coproduct of arrows 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.UnivalenceAxiom.html#funextsec"><span class="id" title="definition">funextsec</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>;<br/>
@@ -353,6 +315,8 @@ K in Garner
 
 <br/>
 <span class="id" title="keyword">Arguments</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductObject"><span class="id" title="definition">CoproductObject</span></a> {<span class="id" title="var">_</span>} {<span class="id" title="var">_</span>} {<span class="id" title="var">_</span>}.<br/>
+
+<br/>
 <span class="id" title="keyword">Lemma</span> <a id="commuting_cube_construction" class="idref" href="#commuting_cube_construction"><span class="id" title="lemma">commuting_cube_construction</span></a> {<a id="f:33" class="idref" href="#f:33"><span class="id" title="binder">f</span></a> <a id="f':34" class="idref" href="#f':34"><span class="id" title="binder">f'</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.C"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="aa:35" class="idref" href="#aa:35"><span class="id" title="binder">aa</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductObject"><span class="id" title="definition">CoproductObject</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_dom_coprod"><span class="id" title="definition">morcls_lp_dom_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">_</span>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductObject"><span class="id" title="definition">CoproductObject</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_dom_coprod"><span class="id" title="definition">morcls_lp_dom_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">_</span>)}<br/>
@@ -364,24 +328,6 @@ K in Garner
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#aa:35"><span class="id" title="variable">aa</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram"><span class="id" title="definition">morcls_lp_coprod_diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f':34"><span class="id" title="variable">f'</span></a>)) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#E1"><span class="id" title="definition">E1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f:33"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#E1"><span class="id" title="definition">E1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f':34"><span class="id" title="variable">f'</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-</div>
-
-<div class="doc">
-The map induced by pushouts on the front and back face
-     (only the front face is drawn)
-          ∑h
-      ∑A ------&gt; C
-       |\ aa       \  cc
-  ∑f=Kg|  \     ∑h'  \
-       |    ∑A' -----&gt; C
-       v    |
-      ∑B    |Kg'       |
-        \   |=     PO    λ1f'
-      bb  \ v∑f'       v
-           ∑B' - - - &gt; E1f'
-  
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">CE1f'</span> := <span class="id" title="var">cc</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#28e41a6243eac2fe25054da6ab5612da"><span class="id" title="definition">λ1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f'</span><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">BE1f'</span> := <span class="id" title="var">bb</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutIn1"><span class="id" title="definition">PushoutIn1</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram_pushout"><span class="id" title="definition">morcls_lp_coprod_diagram_pushout</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f'</span>)<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a>).<br/>
 
@@ -392,30 +338,16 @@ The map induced by pushouts on the front and back face
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-Left to show commutativity of (outer) pushout diagram  Kg · (arrow_mor11 Kγ) · (PushoutIn1 f') = (PushoutIn f) · γ00 · λ1f 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>|];<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-first rewrite commutativity of left face 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>; <span class="id" title="tactic">exact</span> <span class="id" title="var">leftface</span>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>|];<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-rewrite commutativity in top face 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>; <span class="id" title="tactic">exact</span> <span class="id" title="var">topface</span>|];<br/>
@@ -424,12 +356,7 @@ rewrite commutativity in top face
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_precomposition"><span class="id" title="lemma">cancel_precomposition</span></a>;<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-all that's left is commutativity in the pushout square of f' 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutSqrCommutes"><span class="id" title="definition">PushoutSqrCommutes</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram_pushout"><span class="id" title="definition">morcls_lp_coprod_diagram_pushout</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f'</span>))<br/>
 &nbsp;&nbsp;).<br/>
@@ -513,24 +440,6 @@ one step comonad functor L1 sends f to λ1f
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#28e41a6243eac2fe25054da6ab5612da"><span class="id" title="definition">λ1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">γ</span>.<br/>
-</div>
-
-<div class="doc">
-The map on morphisms becomes the right face from the cube induced by
-          ∑h
-      ∑A ------&gt; C
-       |\          \  γ00
-  ∑f=Kg|  \     ∑h'  \
-       |    ∑A' -----&gt; C
-       v Kγ |
-      ∑B    |Kg'       |
-        \   |=     PO    λ1f'
-          \ v∑f'       v
-           ∑B' - - - &gt; E1f'
-     the morphism E1f --&gt; E1f' we will need arises from the pushout
-         property with the following maps. 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Kγ</span> := (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#06fc8e26a36d85b523bb900bd57199b0"><span class="id" title="notation">#</span></a><a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#morcls_coprod_functor"><span class="id" title="definition">morcls_coprod_functor</span></a>)%<span class="id" title="var">cat</span> <span class="id" title="var">γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (φ<span class="id" title="var">γ</span> := <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#morcls_coprod_nat_trans"><span class="id" title="definition">morcls_coprod_nat_trans</span></a> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (φ<span class="id" title="var">γ00</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00_eq"><span class="id" title="definition">arrow_mor00_eq</span></a> φ<span class="id" title="var">γ</span>).<br/>
@@ -544,12 +453,9 @@ The map on morphisms becomes the right face from the cube induced by
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">abstract</span> (<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_comm"><span class="id" title="definition">arrow_mor_comm</span></a> <span class="id" title="var">Kγ</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">abstract</span> (<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a> φ<span class="id" title="var">γ00</span>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-commutativity of right face  γ00 · λ1f' = λ1f · ccc  This follows simply from the properties of a pushout 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#commuting_cube_right_face"><span class="id" title="lemma">commuting_cube_right_face</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
@@ -561,19 +467,9 @@ commutativity of right face  γ00 · λ1f' = λ1f · ccc  This follows simply fr
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_eq"><span class="id" title="lemma">arrow_mor_eq</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-top map is identity simply because it comes from a functor 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-bottom map is identity because the pushout arrow is unique 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>, <a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutArrowUnique"><span class="id" title="lemma">PushoutArrowUnique</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
@@ -588,13 +484,6 @@ bottom map is identity because the pushout arrow is unique
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_eq"><span class="id" title="lemma">arrow_mor_eq</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">reflexivity</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>, <a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutArrowUnique"><span class="id" title="lemma">PushoutArrowUnique</span></a>.<br/>
-</div>
-
-<div class="doc">
-Gotta keep in mind that ( one_step_comonad_functor_data) S
-         is a PushoutArrow and we can then use pushout properties. 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>.<br/>
@@ -683,19 +572,9 @@ Gotta keep in mind that ( one_step_comonad_functor_data) S
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11"><span class="id" title="definition">arrow_mor11</span></a> <span class="id" title="var">L1γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>; [<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-commutativity of λ1 and arrow_mor11 (L1 γ) 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_comm"><span class="id" title="definition">arrow_mor_comm</span></a> <span class="id" title="var">L1γ</span>)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </div>
-
-<div class="doc">
-commutativity of ρ1 and arrow_mor11 (L1 γ) = arrow_mor00 (R1 γ) 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#d7be64f0e22901368877e459c5093fbd"><span class="id" title="lemma">one_step_comonad_</span></a><a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#d7be64f0e22901368877e459c5093fbd"><span class="id" title="lemma">ρ1</span></a><a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#d7be64f0e22901368877e459c5093fbd"><span class="id" title="lemma">_compat</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
@@ -704,36 +583,15 @@ commutativity of ρ1 and arrow_mor11 (L1 γ) = arrow_mor00 (R1 γ)
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="one_step_factorization_axioms" class="idref" href="#one_step_factorization_axioms"><span class="id" title="definition">one_step_factorization_axioms</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Constructions.html#section_disp_axioms"><span class="id" title="definition">section_disp_axioms</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_factorization_data"><span class="id" title="definition">one_step_factorization_data</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-</div>
-
-<div class="doc">
-these identities follow from the functorality of f -&gt; λ1f (one_step_comonad_functor)
-  
-</div>
-<div class="code">
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>; [<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>|].<br/>
-</div>
-
-<div class="doc">
-behavior of commuting cube construction on identity follows from
-       identity axiom of the one_step_comonad_functor 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">one_step_comonad_id</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_id"><span class="id" title="definition">functor_id</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_comonad_functor"><span class="id" title="definition">one_step_comonad_functor</span></a>) <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">bottom</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11_eq"><span class="id" title="definition">arrow_mor11_eq</span></a> <span class="id" title="var">one_step_comonad_id</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">bottom</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">g1</span> <span class="id" title="var">g2</span> <span class="id" title="var">g3</span> <span class="id" title="var">γ12</span> <span class="id" title="var">γ23</span>.<br/>
-</div>
-
-<div class="doc">
-behavior of commuting cube construction on composition follows from
-      identity axiom of the one_step_comonad_functor 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>; [<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>|].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">one_step_comonad_comp</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_comp"><span class="id" title="definition">functor_comp</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_comonad_functor"><span class="id" title="definition">one_step_comonad_functor</span></a>) <span class="id" title="var">γ12</span> <span class="id" title="var">γ23</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">bottom</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11_eq"><span class="id" title="definition">arrow_mor11_eq</span></a> <span class="id" title="var">one_step_comonad_comp</span>).<br/>
@@ -769,12 +627,7 @@ behavior of commuting cube construction on composition follows from
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_eq"><span class="id" title="lemma">arrow_mor_eq</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-bottom map is identity because the pushout arrow is unique 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>, <a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutArrowUnique"><span class="id" title="lemma">PushoutArrowUnique</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
@@ -785,12 +638,7 @@ bottom map is identity because the pushout arrow is unique
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-bottom map is identity simply because it comes from a functor 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">g</span> <span class="id" title="var">f</span> <span class="id" title="var">h</span> <span class="id" title="var">S</span> <span class="id" title="var">T</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>; [<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>|].<br/>
@@ -806,21 +654,23 @@ bottom map is identity simply because it comes from a functor
 &nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad_functor_is_functor"><span class="id" title="definition">one_step_monad_functor_is_functor</span></a>).<br/>
 
 <br/>
-<span class="id" title="keyword">Definition</span> <a id="one_step_comonad_counit_data" class="idref" href="#one_step_comonad_counit_data"><span class="id" title="definition">one_step_comonad_counit_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_comonad_functor"><span class="id" title="definition">one_step_comonad_functor</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
 </div>
 
 <div class="doc">
 Send λ1 f --&gt; f along
+<pre>
       C ====== C
       |        |
   λ1f |   L1   | f
       v        v
     E1f ----&gt; D
           ρ1f
+</pre>
   
 </div>
 <div class="code">
+<span class="id" title="keyword">Definition</span> <a id="one_step_comonad_counit_data" class="idref" href="#one_step_comonad_counit_data"><span class="id" title="definition">one_step_comonad_counit_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_comonad_functor"><span class="id" title="definition">one_step_comonad_functor</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>).<br/>
+<span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
@@ -837,12 +687,7 @@ Send λ1 f --&gt; f along
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;- <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-We are trying to prove an equality of maps E1f --&gt; arrow_cod f' 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#MorphismsOutofPushoutEqual"><span class="id" title="lemma">MorphismsOutofPushoutEqual</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#isPushout_Pushout"><span class="id" title="definition">isPushout_Pushout</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram_pushout"><span class="id" title="definition">morcls_lp_coprod_diagram_pushout</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <br/>
@@ -858,19 +703,6 @@ We are trying to prove an equality of maps E1f --&gt; arrow_cod f'
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutArrow_PushoutIn1"><span class="id" title="lemma">PushoutArrow_PushoutIn1</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-simplify left hand side 
-</div>
-<div class="code">
-</div>
-
-<div class="doc">
-k_x · γ11 = arrow_mor11 (Kγ) · k_x'  this is just the commutativity of the bottom square of the
-         commutative cube of φ 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (φ<span class="id" title="var">ax</span> := <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_ax"><span class="id" title="definition">nat_trans_ax</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#morcls_coprod_nat_trans"><span class="id" title="definition">morcls_coprod_nat_trans</span></a> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">bottom_square</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11_eq"><span class="id" title="definition">arrow_mor11_eq</span></a> φ<span class="id" title="var">ax</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
@@ -897,21 +729,23 @@ k_x · γ11 = arrow_mor11 (Kγ) · k_x'  this is just the commutativity of the b
 &nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_comonad_counit_is_nat_trans"><span class="id" title="definition">one_step_comonad_counit_is_nat_trans</span></a>).<br/>
 
 <br/>
-<span class="id" title="keyword">Definition</span> <a id="one_step_monad_unit_data" class="idref" href="#one_step_monad_unit_data"><span class="id" title="definition">one_step_monad_unit_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad_functor"><span class="id" title="definition">one_step_monad_functor</span></a>).<br/>
-<span class="id" title="keyword">Proof</span>.<br/>
 </div>
 
 <div class="doc">
 Send f --&gt; ρ1 f along
-         λ1f
-      C ----&gt; E1f
-      |        |
-  f   |   R1   | ρ1f
-      v        v
-      D ====== D
-  
+<pre>
+        λ1f
+    C ----&gt; E1f
+    |        |
+f   |   R1   | ρ1f
+    v        v
+    D ====== D
+</pre>
+
 </div>
 <div class="code">
+<span class="id" title="keyword">Definition</span> <a id="one_step_monad_unit_data" class="idref" href="#one_step_monad_unit_data"><span class="id" title="definition">one_step_monad_unit_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad_functor"><span class="id" title="definition">one_step_monad_functor</span></a>).<br/>
+<span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#28e41a6243eac2fe25054da6ab5612da"><span class="id" title="definition">λ1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>).<br/>
@@ -939,35 +773,25 @@ Send f --&gt; ρ1 f along
 </div>
 
 <div class="doc">
-ψf in Garner 
+ψf in Garner  The inclusion of lifting problems is induced by
+  S_f → S{L1f} : x ↦ (g_x -- in_x -&gt; Kf = ∑f -- ϵf -&gt; L1f)
+  where ϵf is morcls_lp_coprod_diagram_red:
+<pre>
+            ∑h
+  A ---&gt; ∑A ---&gt; X
+  |      |       |
+g |    ∑g|       | λ1f
+  v      v       v
+  B ---&gt; ∑B ---&gt; E1f
+</pre>
+  
 </div>
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="morcls_lp_coprod_L1_inclusion" class="idref" href="#morcls_lp_coprod_L1_inclusion"><span class="id" title="definition">morcls_lp_coprod_L1_inclusion</span></a> (<a id="f:69" class="idref" href="#f:69"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.C"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp"><span class="id" title="definition">morcls_lp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f:69"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp"><span class="id" title="definition">morcls_lp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#28e41a6243eac2fe25054da6ab5612da"><span class="id" title="definition">λ1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f:69"><span class="id" title="variable">f</span></a>).<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-</div>
-
-<div class="doc">
-The inclusion of lifting problems is induced by
-    S_f → S{L1f} : x ↦ (g_x -- in_x -&gt; Kf = ∑f -- ϵf -&gt; L1f)
-    where ϵf is morcls_lp_coprod_diagram_red:
-              ∑h
-    A ---&gt; ∑A ---&gt; X
-    |      |       |
-  g |    ∑g|       | λ1f
-    v      v       v
-    B ---&gt; ∑B ---&gt; E1f
-    
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">S</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> <span class="id" title="var">S</span>).<br/>
-</div>
-
-<div class="doc">
-right hand square 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">transparent</span> <span class="id" title="tactic">assert</span> (<span class="id" title="var">rhs_mor</span> : (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod"><span class="id" title="definition">morcls_lp_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#28e41a6243eac2fe25054da6ab5612da"><span class="id" title="definition">λ1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>)).<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
@@ -981,12 +805,6 @@ right hand square
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#postcompose"><span class="id" title="definition">postcompose</span></a> <span class="id" title="var">rhs_mor</span>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-left hand square 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_dom_coprod"><span class="id" title="definition">morcls_lp_dom_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>) <span class="id" title="var">S</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_cod_coprod"><span class="id" title="definition">morcls_lp_cod_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>) <span class="id" title="var">S</span>).<br/>
@@ -1003,24 +821,12 @@ left hand square
 <span class="id" title="keyword">Definition</span> <a id="morcls_lp_coprod_L1_map" class="idref" href="#morcls_lp_coprod_L1_map"><span class="id" title="definition">morcls_lp_coprod_L1_map</span></a> (<a id="f:70" class="idref" href="#f:70"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.C"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod"><span class="id" title="definition">morcls_lp_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f:70"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod"><span class="id" title="definition">morcls_lp_coprod</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#28e41a6243eac2fe25054da6ab5612da"><span class="id" title="definition">λ1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#f:70"><span class="id" title="variable">f</span></a>)<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">)</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-</div>
-
-<div class="doc">
-the inclusion of the objects are just identity on themselves 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">try</span> <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductOfArrowsInclusion"><span class="id" title="definition">CoproductOfArrowsInclusion</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#morcls_lp_coprod_L1_inclusion"><span class="id" title="definition">morcls_lp_coprod_L1_inclusion</span></a> <span class="id" title="var">f</span>) <span class="id" title="var">_</span> <span class="id" title="var">_</span><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">)</span></a>)).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-commutativity 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#precompWithCoproductArrowInclusion"><span class="id" title="lemma">precompWithCoproductArrowInclusion</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<br/>
@@ -1041,66 +847,43 @@ commutativity
 <span class="id" title="keyword">Defined</span>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+The map on morphisms becomes the right face from the cube induced by
+<pre>
+        ∑h
+    ∑A ------&gt; C
+      |\          =
+∑f=Kg|  \     ∑h'  =
+      |    ∑A' -----&gt; C
+      v δf |
+    ∑B    |Kλf       |
+      \   |=     PO    λ1f
+        \ v∑λf f     v
+          ∑B  - - - &gt; E1f
+</pre>
+  
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="one_step_comonad_mul_data" class="idref" href="#one_step_comonad_mul_data"><span class="id" title="definition">one_step_comonad_mul_data</span></a> :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_factorization"><span class="id" title="definition">one_step_factorization</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_composite"><span class="id" title="definition">functor_composite</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_factorization"><span class="id" title="definition">one_step_factorization</span></a>) (<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_factorization"><span class="id" title="definition">one_step_factorization</span></a>)).<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">f</span>.<br/>
-</div>
-
-<div class="doc">
-The map on morphisms becomes the right face from the cube induced by
-          ∑h
-      ∑A ------&gt; C
-       |\          =
-  ∑f=Kg|  \     ∑h'  =
-       |    ∑A' -----&gt; C
-       v δf |
-      ∑B    |Kλf       |
-        \   |=     PO    λ1f
-          \ v∑λf f     v
-           ∑B  - - - &gt; E1f
-    
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">δf</span> := <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#morcls_lp_coprod_L1_map"><span class="id" title="definition">morcls_lp_coprod_L1_map</span></a> <span class="id" title="var">f</span>).<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="var">use</span> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#commuting_cube_construction"><span class="id" title="lemma">commuting_cube_construction</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-aa </div>
-<div class="code">
- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">δf</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-bb </div>
-<div class="code">
- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11"><span class="id" title="definition">arrow_mor11</span></a> <span class="id" title="var">δf</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-cc </div>
-<div class="code">
- <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-left face 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;*  <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">δf</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*  <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11"><span class="id" title="definition">arrow_mor11</span></a> <span class="id" title="var">δf</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*  <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_comm"><span class="id" title="definition">arrow_mor_comm</span></a> <span class="id" title="var">δf</span>)).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-top face 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>;<br/>
@@ -1112,12 +895,7 @@ top face
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductInCommutes"><span class="id" title="lemma">CoproductInCommutes</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-commutativity in right face 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#commuting_cube_right_face"><span class="id" title="lemma">commuting_cube_right_face</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
@@ -1132,12 +910,7 @@ commutativity in right face
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-equality of arrows E1 f --&gt; E1 (λ1f) 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#MorphismsOutofPushoutEqual"><span class="id" title="lemma">MorphismsOutofPushoutEqual</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#isPushout_Pushout"><span class="id" title="definition">isPushout_Pushout</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram_pushout"><span class="id" title="definition">morcls_lp_coprod_diagram_pushout</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#one_step_monad.J"><span class="id" title="variable">J</span></a> <span class="id" title="var">f</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*<br/>
