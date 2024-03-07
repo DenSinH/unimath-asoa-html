@@ -42,6 +42,11 @@ body { padding: 0px 0px;
 #main .keyword { color : #cf1d1d }
 #main { color: black }
 
+
+div.proof {
+	display: none;
+}
+
 .section { background-color: rgb(60%,60%,100%);
            padding-top: 13px; 
            padding-bottom: 13px; 
