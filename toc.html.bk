@@ -3213,9 +3213,6 @@
 <li><a href="UniMath.ModelCategories.NWFS.html#lab830">L-Map AND R-Map FOR AN NWFS n</a>
 
 </li>
-<li><a href="UniMath.ModelCategories.NWFS.html#lab831">CATEGORY OF NWFS's ON A CATEGORY C</a>
-
-</li>
 </ul>
 <h2><a href="UniMath.ModelCategories.NWFSisWFS.html">Library UniMath.ModelCategories.NWFSisWFS</a></h2>
 <h2><a href="UniMath.ModelCategories.Retract.html">Library UniMath.ModelCategories.Retract</a></h2>
@@ -3225,7 +3222,7 @@
 <h2><a href="UniMath.MoreFoundations.AlternativeProofs.html">Library UniMath.MoreFoundations.AlternativeProofs</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.AlternativeProofs.html#lab832">An alternative proof of <span class="inlinecode"><span class="id" title="var">total2_paths_equiv</span></span></a>
+<li><a href="UniMath.MoreFoundations.AlternativeProofs.html#lab831">An alternative proof of <span class="inlinecode"><span class="id" title="var">total2_paths_equiv</span></span></a>
 
 </li>
 </ul>
@@ -3234,24 +3231,24 @@
 </ul>
 <h2><a href="UniMath.MoreFoundations.AxiomOfChoice.html">Library UniMath.MoreFoundations.AxiomOfChoice</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab833">Axiom of choice</a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab832">Axiom of choice</a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab834">Preliminaries</a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab833">Preliminaries</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab835">Characterize equivalence relations on <span class="inlinecode"><span class="id" title="var">bool</span></span></a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab834">Characterize equivalence relations on <span class="inlinecode"><span class="id" title="var">bool</span></span></a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab836">Statements of Axiom of Choice</a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab835">Statements of Axiom of Choice</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab837">Implications between forms of the Axiom of Choice</a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab836">Implications between forms of the Axiom of Choice</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab838">The Axiom of Choice implies a type receives a surjective map from a set</a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab837">The Axiom of Choice implies a type receives a surjective map from a set</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab839">The Axiom of Choice implies the Law of the Excluded Middle</a>
+<li><a href="UniMath.MoreFoundations.AxiomOfChoice.html#lab838">The Axiom of Choice implies the Law of the Excluded Middle</a>
 
 </li>
 </ul>
@@ -3260,14 +3257,14 @@
 </ul>
 <h2><a href="UniMath.MoreFoundations.Bool.html">Library UniMath.MoreFoundations.Bool</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Bool.html#lab840">Booleans</a>
+<li><a href="UniMath.MoreFoundations.Bool.html#lab839">Booleans</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.DecidablePropositions.html">Library UniMath.MoreFoundations.DecidablePropositions</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.DecidablePropositions.html#lab841">Decidability via complementary pairs</a>
+<li><a href="UniMath.MoreFoundations.DecidablePropositions.html#lab840">Decidability via complementary pairs</a>
 
 </li>
 </ul>
@@ -3277,15 +3274,15 @@
 <h2><a href="UniMath.MoreFoundations.DoubleNegation.html">Library UniMath.MoreFoundations.DoubleNegation</a></h2>
 <h2><a href="UniMath.MoreFoundations.Equivalences.html">Library UniMath.MoreFoundations.Equivalences</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Equivalences.html#lab842">Equivalences</a>
+<li><a href="UniMath.MoreFoundations.Equivalences.html#lab841">Equivalences</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.Interval.html">Library UniMath.MoreFoundations.Interval</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Interval.html#lab843">A construction of the interval using propositional truncation</a>
+<li><a href="UniMath.MoreFoundations.Interval.html#lab842">A construction of the interval using propositional truncation</a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Interval.html#lab844">An easy proof of functional extensionality for sections using the interval, which is derived</a>
+<li><a href="UniMath.MoreFoundations.Interval.html#lab843">An easy proof of functional extensionality for sections using the interval, which is derived</a>
 
 </li>
 </ul>
@@ -3294,13 +3291,13 @@
 </ul>
 <h2><a href="UniMath.MoreFoundations.MoreEquivalences.html">Library UniMath.MoreFoundations.MoreEquivalences</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.MoreEquivalences.html#lab845">Equivalences</a>
+<li><a href="UniMath.MoreFoundations.MoreEquivalences.html#lab844">Equivalences</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.Nat.html">Library UniMath.MoreFoundations.Nat</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Nat.html#lab846">Natural numbers</a>
+<li><a href="UniMath.MoreFoundations.Nat.html#lab845">Natural numbers</a>
 
 </li>
 </ul>
@@ -3308,7 +3305,7 @@
 <ul class="doclist">
 <li><ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.NegativePropositions.html#lab847">Propositions equivalent to negations of propositions</a>
+<li><a href="UniMath.MoreFoundations.NegativePropositions.html#lab846">Propositions equivalent to negations of propositions</a>
 
 </li>
 </ul>
@@ -3320,24 +3317,24 @@
 </ul>
 <h2><a href="UniMath.MoreFoundations.NoInjectivePairing.html">Library UniMath.MoreFoundations.NoInjectivePairing</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.NoInjectivePairing.html#lab848">Preliminaries</a>
+<li><a href="UniMath.MoreFoundations.NoInjectivePairing.html#lab847">Preliminaries</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.NoInjectivePairing.html#lab849">Refutation of Injective Pairing</a>
+<li><a href="UniMath.MoreFoundations.NoInjectivePairing.html#lab848">Refutation of Injective Pairing</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.NoInjectivePairing.html#lab850">Injective Pairing &lt;-&gt; Uniqueness of Identity Proofs</a>
+<li><a href="UniMath.MoreFoundations.NoInjectivePairing.html#lab849">Injective Pairing &lt;-&gt; Uniqueness of Identity Proofs</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.Notations.html">Library UniMath.MoreFoundations.Notations</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Notations.html#lab851">Notations</a>
+<li><a href="UniMath.MoreFoundations.Notations.html#lab850">Notations</a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Notations.html#lab852">Variants on paths and coconus</a>
+<li><a href="UniMath.MoreFoundations.Notations.html#lab851">Variants on paths and coconus</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Notations.html#lab853">Squashing</a>
+<li><a href="UniMath.MoreFoundations.Notations.html#lab852">Squashing</a>
 
 </li>
 </ul>
@@ -3347,7 +3344,7 @@
 <h2><a href="UniMath.MoreFoundations.NullHomotopies.html">Library UniMath.MoreFoundations.NullHomotopies</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.NullHomotopies.html#lab854">Null homotopies, an aid for proving things about propositional truncation</a>
+<li><a href="UniMath.MoreFoundations.NullHomotopies.html#lab853">Null homotopies, an aid for proving things about propositional truncation</a>
 
 </li>
 </ul>
@@ -3357,65 +3354,65 @@
 <h2><a href="UniMath.MoreFoundations.Orders.html">Library UniMath.MoreFoundations.Orders</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Orders.html#lab855">More results on types of ordering</a>
+<li><a href="UniMath.MoreFoundations.Orders.html#lab854">More results on types of ordering</a>
 
 </li>
 </ul>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Orders.html#lab856">Preorders</a>
+<li><a href="UniMath.MoreFoundations.Orders.html#lab855">Preorders</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Orders.html#lab857">Strong orders</a>
+<li><a href="UniMath.MoreFoundations.Orders.html#lab856">Strong orders</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Orders.html#lab858">Reverse orders</a>
+<li><a href="UniMath.MoreFoundations.Orders.html#lab857">Reverse orders</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.PartA.html">Library UniMath.MoreFoundations.PartA</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.PartA.html#lab859">Generalisations of <span class="inlinecode"><span class="id" title="var">maponpaths</span></span></a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab858">Generalisations of <span class="inlinecode"><span class="id" title="var">maponpaths</span></span></a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.PartA.html#lab860">Pointed types</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab859">Pointed types</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab861">Paths</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab860">Paths</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab862">Pairs</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab861">Pairs</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab863">Paths between pairs</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab862">Paths between pairs</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab864">Projections from pair types</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab863">Projections from pair types</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab865">Maps from pair types</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab864">Maps from pair types</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab866">Paths in coproducts</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab865">Paths in coproducts</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab867">Sections and functions</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab866">Sections and functions</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab868">Transport</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab867">Transport</a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.PartA.html#lab869">Double transport</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab868">Double transport</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab870">Transport a pair</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab869">Transport a pair</a>
 
 </li>
 </ul>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab871">h-levels and paths</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab870">h-levels and paths</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.PartA.html#lab872">Surjectivity</a>
+<li><a href="UniMath.MoreFoundations.PartA.html#lab871">Surjectivity</a>
 
 </li>
 </ul>
@@ -3426,7 +3423,7 @@
 <h2><a href="UniMath.MoreFoundations.PathsOver.html">Library UniMath.MoreFoundations.PathsOver</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.PathsOver.html#lab873">Paths over paths in families of types</a>
+<li><a href="UniMath.MoreFoundations.PathsOver.html#lab872">Paths over paths in families of types</a>
 
 </li>
 </ul>
@@ -3436,10 +3433,10 @@
 <h2><a href="UniMath.MoreFoundations.Propositions.html">Library UniMath.MoreFoundations.Propositions</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Propositions.html#lab874">Factoring maps through squash</a>
+<li><a href="UniMath.MoreFoundations.Propositions.html#lab873">Factoring maps through squash</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Propositions.html#lab875">Connected types</a>
+<li><a href="UniMath.MoreFoundations.Propositions.html#lab874">Connected types</a>
 
 </li>
 </ul>
@@ -3450,36 +3447,36 @@
 <h2><a href="UniMath.MoreFoundations.Sets.html">Library UniMath.MoreFoundations.Sets</a></h2>
 <ul class="doclist">
 <li><ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Sets.html#lab876">More results on sets</a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab875">More results on sets</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Sets.html#lab877">Contents</a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab876">Contents</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Sets.html#lab878">Other universal properties for <span class="inlinecode"><span class="id" title="var">setquot</span></span></a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab877">Other universal properties for <span class="inlinecode"><span class="id" title="var">setquot</span></span></a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Sets.html#lab879">The equivalence relation of being in the same fiber</a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab878">The equivalence relation of being in the same fiber</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Sets.html#lab880">Subsets</a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab879">Subsets</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Sets.html#lab881">Minimal equivalence relations</a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab880">Minimal equivalence relations</a>
 
 </li>
 </ul>
 
 </li>
-<li><a href="UniMath.MoreFoundations.Sets.html#lab882">Additional lemmas on binary relations</a>
+<li><a href="UniMath.MoreFoundations.Sets.html#lab881">Additional lemmas on binary relations</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.StructureIdentity.html">Library UniMath.MoreFoundations.StructureIdentity</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.StructureIdentity.html#lab883">Structure identity</a>
+<li><a href="UniMath.MoreFoundations.StructureIdentity.html#lab882">Structure identity</a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.StructureIdentity.html#lab884">abstract the proof of Poset_rect for use in multiple situations</a>
+<li><a href="UniMath.MoreFoundations.StructureIdentity.html#lab883">abstract the proof of Poset_rect for use in multiple situations</a>
 
 </li>
 </ul>
@@ -3491,18 +3488,18 @@
 <h2><a href="UniMath.MoreFoundations.Tactics.html">Library UniMath.MoreFoundations.Tactics</a></h2>
 <h2><a href="UniMath.MoreFoundations.Univalence.html">Library UniMath.MoreFoundations.Univalence</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.Univalence.html#lab885">Additional results about univalence</a>
+<li><a href="UniMath.MoreFoundations.Univalence.html#lab884">Additional results about univalence</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.MoreFoundations.WeakEquivalences.html">Library UniMath.MoreFoundations.WeakEquivalences</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.WeakEquivalences.html#lab886">Weak equivalences</a>
+<li><a href="UniMath.MoreFoundations.WeakEquivalences.html#lab885">Weak equivalences</a>
 <ul class="doclist">
-<li><a href="UniMath.MoreFoundations.WeakEquivalences.html#lab887">Contents</a>
+<li><a href="UniMath.MoreFoundations.WeakEquivalences.html#lab886">Contents</a>
 
 </li>
-<li><a href="UniMath.MoreFoundations.WeakEquivalences.html#lab888">Direct products</a>
+<li><a href="UniMath.MoreFoundations.WeakEquivalences.html#lab887">Direct products</a>
 
 </li>
 </ul>
@@ -3511,55 +3508,55 @@
 </ul>
 <h2><a href="UniMath.OrderTheory.Lattice.Bounded.html">Library UniMath.OrderTheory.Lattice.Bounded</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.OrderTheory.Lattice.Bounded.html#lab889">Bounded lattices</a>
+<li><a href="UniMath.OrderTheory.Lattice.Bounded.html#lab888">Bounded lattices</a>
 
 </li>
 </ul>
 <h2><a href="UniMath.OrderTheory.Lattice.Lattice.html">Library UniMath.OrderTheory.Lattice.Lattice</a></h2>
 <ul class="doclist">
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab890">Lattice</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab889">Lattice</a>
 <ul class="doclist">
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab891">Definition</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab890">Definition</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab892">Partial order in a lattice</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab891">Partial order in a lattice</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab893">Lattice with a strong order</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab892">Lattice with a strong order</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab894">Lattice with a total order</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab893">Lattice with a total order</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab895">Lattice in an abmonoid</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab894">Lattice in an abmonoid</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab896">Truncated minus</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab895">Truncated minus</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab897">lattice and <span class="inlinecode"><span class="id" title="var">weq</span></span></a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab896">lattice and <span class="inlinecode"><span class="id" title="var">weq</span></span></a>
 <ul class="doclist">
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab898">Definition</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab897">Definition</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab899">Value of <span class="inlinecode"><span class="id" title="var">Lle</span></span></a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab898">Value of <span class="inlinecode"><span class="id" title="var">Lle</span></span></a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab900">Lattice with strong order</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab899">Lattice with strong order</a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab901">Lattice with a decidable order</a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab900">Lattice with a decidable order</a>
 
 </li>
 </ul>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab902">lattice in <span class="inlinecode"><span class="id" title="var">abmonoid</span></span></a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab901">lattice in <span class="inlinecode"><span class="id" title="var">abmonoid</span></span></a>
 <ul class="doclist">
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab903">lattice with a strong order in <span class="inlinecode"><span class="id" title="var">abmonoidfrac</span></span></a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab902">lattice with a strong order in <span class="inlinecode"><span class="id" title="var">abmonoidfrac</span></span></a>
 
 </li>
-<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab904">lattice with a decidable order in <span class="inlinecode"><span class="id" title="var">abmonoidfrac</span></span></a>
+<li><a href="UniMath.OrderTheory.Lattice.Lattice.html#lab903">lattice with a decidable order in <span class="inlinecode"><span class="id" title="var">abmonoidfrac</span></span></a>
 
 </li>
 </ul>

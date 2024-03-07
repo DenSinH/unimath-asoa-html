@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab883"></a><h1 class="section">Structure identity</h1>
+<a id="lab882"></a><h1 class="section">Structure identity</h1>
 
 </div>
 <div class="code">
@@ -38,7 +38,7 @@
 </div>
 
 <div class="doc">
-<a id="lab884"></a><h2 class="section">abstract the proof of Poset_rect for use in multiple situations</h2>
+<a id="lab883"></a><h2 class="section">abstract the proof of Poset_rect for use in multiple situations</h2>
 
 <div class="paragraph"> </div>
 

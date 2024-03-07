@@ -77,6 +77,7 @@ in a category, we know that homs are sets, so equality must be a prop  Lean: lp 
 Lean: llp @ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950ccf49524f1220d1/src/category_theory/model/wfs.leanL18 
 <div class="paragraph"> </div>
 
+<pre>
        g
     A ---&gt; E
     |     /|
@@ -84,6 +85,7 @@ Lean: llp @ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac0
     v /    v
     X ---&gt; B
        f
+</pre>
 
 </div>
 <div class="code">
@@ -107,26 +109,8 @@ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> "⊆" <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? <span class="id" title="var">f</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? <span class="id" title="var">g</span> <span class="id" title="var">K</span>.<br/>
-</div>
-
-<div class="doc">
-LLP for i in R' 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<span class="id" title="var">H</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span>).<br/>
-</div>
-
-<div class="doc">
-R ⊆ R' 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<span class="id" title="var">h</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span>).<br/>
-</div>
-
-<div class="doc">
-i in R 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">K</span>.<br/>
 <span class="id" title="keyword">Qed</span>.<br/>
 
@@ -134,12 +118,6 @@ i in R
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting"><span class="id" title="section">Lifting</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-not in Lean file 
-</div>
-<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="opp_rlp_is_llp_opp" class="idref" href="#opp_rlp_is_llp_opp"><span class="id" title="lemma">opp_rlp_is_llp_opp</span></a> {<a id="C:67" class="idref" href="#C:67"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} (<a id="L:68" class="idref" href="#L:68"><span class="id" title="binder">L</span></a> : <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class"><span class="id" title="definition">morphism_class</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#C:67"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_opp"><span class="id" title="definition">morphism_class_opp</span></a> (<a class="idref" href="UniMath.ModelCategories.Lifting.html#rlp"><span class="id" title="definition">rlp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#L:68"><span class="id" title="variable">L</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Lifting.html#llp"><span class="id" title="definition">llp</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_opp"><span class="id" title="definition">morphism_class_opp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#L:68"><span class="id" title="variable">L</span></a>)<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">)</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
@@ -147,47 +125,18 @@ not in Lean file
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">rlpf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">top</span> <span class="id" title="var">bottom</span> <span class="id" title="var">H</span>.<br/>
-</div>
-
-<div class="doc">
-extract lift fro rlp of f with respect to the opposite morphism of g 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">rlpf</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#rm_opp_mor"><span class="id" title="definition">rm_opp_mor</span></a> <span class="id" title="var">g</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> <span class="id" title="var">hg</span>.<br/>
-</div>
-
-<div class="doc">
-flip diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#rm_opp_mor"><span class="id" title="definition">rm_opp_mor</span></a> <span class="id" title="var">bottom</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#rm_opp_mor"><span class="id" title="definition">rm_opp_mor</span></a> <span class="id" title="var">top</span>).<br/>
-</div>
-
-<div class="doc">
-commutativity 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">symmetry</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-extract lift 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">hl</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">hlg</span> <span class="id" title="var">hlf</span>]].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-the opposite morphism of the lift is the lift of the opposite diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#opp_mor"><span class="id" title="definition">opp_mor</span></a> <span class="id" title="var">l</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">rlpf</span>.<br/>

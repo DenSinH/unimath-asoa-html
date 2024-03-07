@@ -198,47 +198,18 @@ if f' is a retract of f and f is in L for some WFS, then so is f'  proposition 1
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_llp"><span class="id" title="definition">wfs_llp</span></a> <span class="id" title="var">w</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">s</span>.<br/>
-</div>
-
-<div class="doc">
-existence of lift in part of diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs'lp"><span class="id" title="lemma">wfs'lp</span></a> <span class="id" title="var">w</span> <span class="id" title="var">hf</span> <span class="id" title="var">hg</span> (<span class="id" title="var">h</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <span class="id" title="var">ra</span>) (<span class="id" title="var">k</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <span class="id" title="var">rb</span>) <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <span class="id" title="var">s</span>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <span class="id" title="var">hr</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
 &nbsp;&nbsp;}<br/>
-&nbsp;&nbsp;</div>
-
-<div class="doc">
-extract lift 
-</div>
-<div class="code">
+&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">hl</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span>  [<span class="id" title="var">l</span> [<span class="id" title="var">hlh</span> <span class="id" title="var">hlk</span>]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-turn proof into normal ∑-type 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
-</div>
-
-<div class="doc">
-composition in diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<span class="id" title="var">l</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <span class="id" title="var">ib</span>).<br/>
-</div>
-
-<div class="doc">
-diagram chasing 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, &lt;- <span class="id" title="var">hi</span>, &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <span class="id" title="var">hlh</span>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <span class="id" title="var">ha</span>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
@@ -313,12 +284,6 @@ In MCAT, the statement is in reference of a single morphism, not a whole class
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">hf</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-rcases H f with ⟨z, g, h, hg, hh, hgh⟩,  Get factorization for f from H 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">H</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">eHf</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> <span class="id" title="var">eHf</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a> <span class="id" title="var">_</span> <span class="id" title="var">eHf</span>).<br/>
@@ -326,12 +291,6 @@ rcases H f with ⟨z, g, h, hg, hh, hgh⟩,  Get factorization for f from H
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">Hf</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">z</span> [<span class="id" title="var">g</span> [<span class="id" title="var">h</span> [<span class="id" title="var">hg</span> [<span class="id" title="var">hh</span> <span class="id" title="var">hgh</span>]]]]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-rcases w.lp hf hh g (𝟙 _) (by rw hgh; simp) with ⟨l, hl₁, hl₂⟩,  Use lifting property to get map l in diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs'lp"><span class="id" title="lemma">wfs'lp</span></a> <span class="id" title="var">w</span> <span class="id" title="var">hf</span> <span class="id" title="var">hh</span> <span class="id" title="var">g</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">hgh</span>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
@@ -341,12 +300,6 @@ rcases w.lp hf hh g (𝟙 _) (by rw hgh; simp) with ⟨l, hl₁, hl₂⟩,  Use 
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">hl1</span> <span class="id" title="var">hl2</span>]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Show that f is a retract of g 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">r</span> : <a class="idref" href="UniMath.ModelCategories.Retract.html#retract"><span class="id" title="definition">retract</span></a> <span class="id" title="var">g</span> <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.ModelCategories.Retract.html#make_retract"><span class="id" title="definition">make_retract</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>) <span class="id" title="var">l</span> <span class="id" title="var">h</span>).<br/>
@@ -357,21 +310,10 @@ Show that f is a retract of g
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>. <span class="id" title="var">now</span> <span class="id" title="tactic">symmetry</span>.<br/>
 &nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;</div>
-
-<div class="doc">
-convert goal to normal ∑-type 
-</div>
-<div class="code">
+&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-finish proof 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">x</span>, <span class="id" title="var">z</span>, <span class="id" title="var">g</span>, <span class="id" title="var">r</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">hg</span>.<br/>
 </div>
@@ -388,30 +330,12 @@ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">fiso</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_iso"><span class="id" title="definition">make_iso</span></a> <span class="id" title="var">_</span> <span class="id" title="var">H</span>).<br/>
-</div>
-
-<div class="doc">
-change f to the isomorphism in the goal 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">change</span> (<a class="idref" href="UniMath.ModelCategories.Lifting.html#lp"><span class="id" title="definition">lp</span></a> <span class="id" title="var">fiso</span> <span class="id" title="var">g</span>).<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">s</span>.<br/>
-</div>
-
-<div class="doc">
-lift we are looking for is h ∘ f^{-1} 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<span class="id" title="var">h</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_iso"><span class="id" title="definition">inv_from_iso</span></a> <span class="id" title="var">fiso</span><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">)</span></a>).<br/>
-</div>
-
-<div class="doc">
-diagram chasing 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#iso_inv_after_iso"><span class="id" title="definition">iso_inv_after_iso</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
@@ -426,30 +350,12 @@ diagram chasing
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">fiso</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#make_iso"><span class="id" title="definition">make_iso</span></a> <span class="id" title="var">_</span> <span class="id" title="var">H</span>).<br/>
-</div>
-
-<div class="doc">
-change f to the isomorphism in the goal 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">change</span> (<a class="idref" href="UniMath.ModelCategories.Lifting.html#lp"><span class="id" title="definition">lp</span></a> <span class="id" title="var">g</span> <span class="id" title="var">fiso</span>).<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">s</span>.<br/>
-</div>
-
-<div class="doc">
-lift we are looking for is h ∘ f^{-1} 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#inv_from_iso"><span class="id" title="definition">inv_from_iso</span></a> <span class="id" title="var">fiso</span><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <span class="id" title="var">k</span>).<br/>
-</div>
-
-<div class="doc">
-diagram chasing 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, &lt;- <span class="id" title="var">s</span>, &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#iso_inv_after_iso"><span class="id" title="definition">iso_inv_after_iso</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
@@ -467,67 +373,29 @@ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950
 <span class="id" title="keyword">Lemma</span> <a id="llp_univ" class="idref" href="#llp_univ"><span class="id" title="lemma">llp_univ</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#llp"><span class="id" title="definition">llp</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_univ"><span class="id" title="definition">morphism_class_univ</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_isos"><span class="id" title="definition">morphism_class_isos</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_subset_antisymm"><span class="id" title="lemma">morphism_class_subset_antisymm</span></a>; <span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">H</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-apply llp of f with itself 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> ((<span class="id" title="var">H</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>) <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>).<br/>
-</div>
-
-<div class="doc">
-choose horizontal maps to be identity 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">H</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-commutativity of diagram 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-extract lift l from diagram 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">hl</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">hfl</span> <span class="id" title="var">hlf</span>]].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_isos"><span class="id" title="definition">morphism_class_isos</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-show f is a z_iso (we have its inverse, the lift l) 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_z_isomorphism"><span class="id" title="definition">is_z_isomorphism</span></a> <span class="id" title="var">f</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">f_z_iso</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">l</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-finish proof 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#is_iso_from_is_z_iso"><span class="id" title="lemma">is_iso_from_is_z_iso</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">f_z_iso</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">g</span> <span class="id" title="var">_</span>.<br/>
-</div>
-
-<div class="doc">
-other inclusion is exactly the previous Lemma 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#lp_isos_univ"><span class="id" title="lemma">lp_isos_univ</span></a> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">H</span>).<br/>
 </div>
 
@@ -540,28 +408,12 @@ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950
 <div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="rlp_isos" class="idref" href="#rlp_isos"><span class="id" title="lemma">rlp_isos</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#rlp"><span class="id" title="definition">rlp</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_isos"><span class="id" title="definition">morphism_class_isos</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_univ"><span class="id" title="definition">morphism_class_univ</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-This proof is slightly different 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_subset_antisymm"><span class="id" title="lemma">morphism_class_subset_antisymm</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-an iso is a morphism 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">g</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_univ"><span class="id" title="definition">morphism_class_univ</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-other inclusion is easy with previous Lemmas 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.ModelCategories.WFS.html#llp_univ"><span class="id" title="lemma">llp_univ</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#rlp_llp_self"><span class="id" title="lemma">rlp_llp_self</span></a> <span class="id" title="var">_</span>).<br/>
 </div>
@@ -575,32 +427,15 @@ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950
 <div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="wfs_isos_univ" class="idref" href="#wfs_isos_univ"><span class="id" title="lemma">wfs_isos_univ</span></a> : <a class="idref" href="UniMath.ModelCategories.WFS.html#is_wfs"><span class="id" title="definition">is_wfs</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_isos"><span class="id" title="definition">morphism_class_isos</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a>) (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_univ"><span class="id" title="definition">morphism_class_univ</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a>).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-apply symmetry to immediately exact the previous Lemmas 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#make_is_wfs"><span class="id" title="definition">make_is_wfs</span></a>; <span class="id" title="tactic">try</span> <span class="id" title="tactic">symmetry</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#llp_univ"><span class="id" title="lemma">llp_univ</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#rlp_isos"><span class="id" title="lemma">rlp_isos</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-factorize a morphism through identity and itself 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">x</span>, (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">x</span>), <span class="id" title="var">f</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-this solves the second subgoal, stating that f is a morphism 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">repeat</span> <span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#identity_is_iso"><span class="id" title="lemma">identity_is_iso</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs.C"><span class="id" title="variable">C</span></a> <span class="id" title="var">x</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
@@ -643,30 +478,12 @@ this solves the second subgoal, stating that f is a morphism
 <span class="id" title="keyword">Lemma</span> <a id="wfs_L_contains_isos" class="idref" href="#wfs_L_contains_isos"><span class="id" title="lemma">wfs_L_contains_isos</span></a> {<a id="C:108" class="idref" href="#C:108"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} (<a id="w:109" class="idref" href="#w:109"><span class="id" title="binder">w</span></a> : <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs"><span class="id" title="definition">wfs</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#C:108"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_isos"><span class="id" title="definition">morphism_class_isos</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#C:108"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">⊆</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#w:109"><span class="id" title="variable">w</span></a><a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">)</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-isos are the llp of univ 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.ModelCategories.WFS.html#llp_univ"><span class="id" title="lemma">llp_univ</span></a>.<br/>
-</div>
-
-<div class="doc">
-rewrite llp property 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_llp"><span class="id" title="definition">wfs_llp</span></a> <span class="id" title="var">w</span>).<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.Lifting.html#llp_anti"><span class="id" title="lemma">llp_anti</span></a>.<br/>
-</div>
-
-<div class="doc">
-every morphism is a morphism 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">f</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tt"><span class="id" title="constructor">tt</span></a>.<br/>
 </div>
@@ -722,42 +539,16 @@ https://ncatlab.org/nlab/show/weak+factorization+systemClosuredPropertiesOfWeakF
 &nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-need to show that f'p has rlp w.r.t. all i ∈ L 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_R"><span class="id" title="definition">wfs_R</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_rlp"><span class="id" title="definition">wfs_rlp</span></a> <span class="id" title="var">w</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">i</span> <span class="id" title="var">i_l</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-commutative diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">p1</span> <span class="id" title="var">g</span> <span class="id" title="var">Hp1g</span>.<br/>
 
 <br/>
-</div>
 
-<div class="doc">
-obtain diagram
-      p1     p2
-    a --&gt; Pb --&gt; x
-   i|     |f'p   |p
-    v     v      v
-    b --&gt; z  --&gt; y
-       g      f
-  
-<div class="paragraph"> </div>
-
- use rlp of p to get lift  in outer diagram
-</div>
-<div class="code">
+<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_R"><span class="id" title="definition">wfs_R</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">p_r</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_rlp"><span class="id" title="definition">wfs_rlp</span></a> <span class="id" title="var">w</span>) <span class="id" title="tactic">in</span> <span class="id" title="var">p_r</span>.<br/>
 
@@ -768,59 +559,25 @@ obtain diagram
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
 &nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;</div>
-
-<div class="doc">
-extract lift 
-</div>
-<div class="code">
+&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">hl</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">hl1</span> <span class="id" title="var">hl2</span>]].<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">symmetry</span> <span class="id" title="tactic">in</span> <span class="id" title="var">hl2</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-use pullback property to get lift gh in
-          Pb --&gt; x
-    gh  /  |f'p  |p
-      /    v     v
-     b --&gt; z --&gt; y
-        g     f
-  
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> (<span class="id" title="var">isPb</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span> <span class="id" title="var">l</span> <span class="id" title="var">hl2</span>) <span class="id" title="keyword">as</span> [[<span class="id" title="var">gh</span> [<span class="id" title="var">hgh1</span> <span class="id" title="var">hgh2</span>]] <span class="id" title="var">_</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-gh is the lift in the inner diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">gh</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-use uniqueness of maps into pullback to show commutativity
-       in top triangle 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#MorphismsIntoPullbackEqual"><span class="id" title="lemma">MorphismsIntoPullbackEqual</span></a> <span class="id" title="var">isPb</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> &lt;-<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <span class="id" title="var">hgh1</span>, <span class="id" title="var">Hp1g</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <span class="id" title="var">hgh2</span>, <span class="id" title="var">hl1</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-commutativity in lower triangle is trivial by pullback property 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">hgh1</span>.<br/>
 </div>
 
@@ -836,12 +593,6 @@ Dual statement
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="Po:137" class="idref" href="#Po:137"><span class="id" title="binder">Po</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#Pushout"><span class="id" title="definition">Pushout</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#f:136"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#p:135"><span class="id" title="variable">p</span></a>) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">(</span></a>(<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#w:131"><span class="id" title="variable">w</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.ModelCategories.WFS.html#p:135"><span class="id" title="variable">p</span></a><a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">(</span></a>(<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#w:131"><span class="id" title="variable">w</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutIn1"><span class="id" title="definition">PushoutIn1</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#Po:137"><span class="id" title="variable">Po</span></a>)<a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">)</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-didn't expect Coq would be this powerful... 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_closed_pullbacks"><span class="id" title="lemma">wfs_closed_pullbacks</span></a> (<a class="idref" href="UniMath.ModelCategories.WFS.html#opp_wfs"><span class="id" title="definition">opp_wfs</span></a> <span class="id" title="var">_</span>)).<br/>
 </div>
 
@@ -860,23 +611,11 @@ https://ncatlab.org/nlab/show/weak+factorization+systemClosuredPropertiesOfWeakF
 &nbsp;&nbsp;(<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#w:140"><span class="id" title="variable">w</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductOfArrows"><span class="id" title="definition">CoproductOfArrows</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#CCa:147"><span class="id" title="variable">CCa</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#CCb:148"><span class="id" title="variable">CCb</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#f:144"><span class="id" title="variable">f</span></a>).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L"><span class="id" title="definition">wfs_L</span></a> <span class="id" title="tactic">in</span> *.<br/>
-</div>
-
-<div class="doc">
-create square with g ∈ R 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_llp"><span class="id" title="definition">wfs_llp</span></a> <span class="id" title="var">w</span>) <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">s</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-obtain a square for all i ∈ I  factor maps from A_i / B_i through coproduct object 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">hi</span> := <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="i:150" class="idref" href="#i:150"><span class="id" title="binder"><span id="i:151" class="id">i</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">CCa</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:150"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">h</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">ki</span> := <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a id="i:152" class="idref" href="#i:152"><span class="id" title="binder"><span id="i:153" class="id">i</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">CCb</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:152"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">k</span>).<br/>
 
@@ -884,12 +623,6 @@ obtain a square for all i ∈ I  factor maps from A_i / B_i through coproduct ob
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a id="i:154" class="idref" href="#i:154"><span class="id" title="binder"><span id="i:156" class="id">i</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">∃</span></a> <a id="li:155" class="idref" href="#li:155"><span class="id" title="binder"><span id="li:157" class="id">li</span></span></a><a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><span class="id" title="var">f</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:154"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#li:155"><span class="id" title="variable">li</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">hi</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:154"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">×</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.WFS.html#li:155"><span class="id" title="variable">li</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">g</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">ki</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:154"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a>) <span class="id" title="keyword">as</span> <span class="id" title="var">ilift</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">i</span>.<br/>
-</div>
-
-<div class="doc">
-extract lift in i-th diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">hf</span> <span class="id" title="var">i</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">H</span> (<span class="id" title="var">hi</span> <span class="id" title="var">i</span>) (<span class="id" title="var">ki</span> <span class="id" title="var">i</span>)).<br/>
 
@@ -902,13 +635,7 @@ extract lift in i-th diagram
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductOfArrowsIn"><span class="id" title="lemma">CoproductOfArrowsIn</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).<br/>
 &nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;</div>
-
-<div class="doc">
-we need the axiom of choice here
-     it is basically exactly the definition of the axiom of choice 
-</div>
-<div class="code">
+&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#9874e57674027e3ad2fc2edf7fb1b219"><span class="id" title="notation">∥</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a id="i:158" class="idref" href="#i:158"><span class="id" title="binder"><span id="i:160" class="id">i</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a id="li:159" class="idref" href="#li:159"><span class="id" title="binder"><span id="li:161" class="id">li</span></span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><span class="id" title="var">f</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:158"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#li:159"><span class="id" title="variable">li</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">hi</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:158"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">×</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.WFS.html#li:159"><span class="id" title="variable">li</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">g</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">ki</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:158"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a><a class="idref" href="UniMath.Foundations.Propositions.html#9874e57674027e3ad2fc2edf7fb1b219"><span class="id" title="notation">∥</span></a>) <span class="id" title="keyword">as</span> <span class="id" title="var">ilift_aoc</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">aocI</span> := <span class="id" title="var">aoc</span> <span class="id" title="var">I</span>).<br/>
@@ -917,12 +644,7 @@ we need the axiom of choice here
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">ilift</span>.<br/>
 &nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;</div>
-
-<div class="doc">
-obtain lift in original diagram 
-</div>
-<div class="code">
+&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">∃</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">(</span></a><a id="li:163" class="idref" href="#li:163"><span class="id" title="binder"><span id="li:166" class="id">li</span></span></a> : (<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a id="i:162" class="idref" href="#i:162"><span class="id" title="binder"><span id="i:165" class="id">i</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">(</span></a><span class="id" title="var">b</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:162"><span class="id" title="variable">i</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <span class="id" title="var">x</span><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">)</span></a><a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">)),</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a id="i:164" class="idref" href="#i:164"><span class="id" title="binder"><span id="i:167" class="id">i</span></span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><span class="id" title="var">f</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:164"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.WFS.html#li:163"><span class="id" title="variable">li</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:164"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">hi</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:164"><span class="id" title="variable">i</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">×</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.WFS.html#li:163"><span class="id" title="variable">li</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:164"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">g</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">ki</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#i:164"><span class="id" title="variable">i</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a><a class="idref" href="UniMath.Foundations.Propositions.html#94e052c6337a815c52cda44eea9df276"><span class="id" title="notation">)</span></a>) <span class="id" title="keyword">as</span> <span class="id" title="var">ilifts</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a> <span class="id" title="var">_</span> <span class="id" title="var">ilift_aoc</span>).<br/>
@@ -947,106 +669,42 @@ obtain lift in original diagram
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">ilift_sig</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">li</span> <span class="id" title="var">hli</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-turn individual lifts into lift from coproduct 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">hl</span> := <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#isCoproduct_Coproduct"><span class="id" title="definition">isCoproduct_Coproduct</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">CCb</span> <span class="id" title="var">x</span> <span class="id" title="var">li</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [[<span class="id" title="var">l</span> <span class="id" title="var">hl</span>] <span class="id" title="var">uniqueness</span>].<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">l</span>.<br/>
-</div>
-
-<div class="doc">
-factor maps through coproduct object 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>; <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowEta"><span class="id" title="lemma">CoproductArrowEta</span></a>, (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowEta"><span class="id" title="lemma">CoproductArrowEta</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">l</span>).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-factor f as well 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#precompWithCoproductArrow"><span class="id" title="lemma">precompWithCoproductArrow</span></a>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-maps are equal if maps through coproduct are equal 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowUnique"><span class="id" title="lemma">CoproductArrowUnique</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-now we can reason in separate diagrams again 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">i</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductInCommutes"><span class="id" title="lemma">CoproductInCommutes</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-this is basically exactly the relation we want to prove: 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> (<span class="id" title="var">hli</span> <span class="id" title="var">i</span>) <span class="id" title="keyword">as</span> [<span class="id" title="var">hlicomm</span> <span class="id" title="var">_</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-by definition 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">change</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">h</span>) <span class="id" title="keyword">with</span> (<span class="id" title="var">hi</span> <span class="id" title="var">i</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<span class="id" title="var">hl</span> <span class="id" title="var">i</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">hlicomm</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-factor through coproduct object 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowUnique"><span class="id" title="lemma">CoproductArrowUnique</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-reason about separate diagrams again 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">i</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductInCommutes"><span class="id" title="lemma">CoproductInCommutes</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-the relation we want to prove 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> (<span class="id" title="var">hli</span> <span class="id" title="var">i</span>) <span class="id" title="keyword">as</span> [<span class="id" title="var">_</span> <span class="id" title="var">klicomm</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-by definition 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">change</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">k</span>) <span class="id" title="keyword">with</span> (<span class="id" title="var">ki</span> <span class="id" title="var">i</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<span class="id" title="var">hl</span> <span class="id" title="var">i</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">klicomm</span>.<br/>
@@ -1066,131 +724,17 @@ Dual statement
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="aoc:179" class="idref" href="#aoc:179"><span class="id" title="binder">aoc</span></a> : <a class="idref" href="UniMath.MoreFoundations.AxiomOfChoice.html#AxiomOfChoice"><span class="id" title="definition">AxiomOfChoice</span></a>) :<br/>
 &nbsp;&nbsp;(<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_R"><span class="id" title="definition">wfs_R</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#w:170"><span class="id" title="variable">w</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.Limits.Products.html#ProductOfArrows"><span class="id" title="definition">ProductOfArrows</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#CCa:177"><span class="id" title="variable">CCa</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#CCb:178"><span class="id" title="variable">CCb</span></a> <a class="idref" href="UniMath.ModelCategories.WFS.html#f:174"><span class="id" title="variable">f</span></a>).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-again superpowers by Coq 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_closed_coproducts"><span class="id" title="lemma">wfs_closed_coproducts</span></a> (<a class="idref" href="UniMath.ModelCategories.WFS.html#opp_wfs"><span class="id" title="definition">opp_wfs</span></a> <span class="id" title="var">w</span>)).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">aoc</span>.<br/>
 </div>
 
 <br/>
+
+<br/>
 </div>
 
 <div class="doc">
-this cannot be shown without AOC  Lemma wfs_closed_transfinite_composition
-    {C : category}
-    {d : chain C}
-    {w : wfs C}
-    (CC : ColimCocone d)
-    (Hd : ∏ {u v : vertex nat_graph} (e : edge u v), wfs_L w _  (dmor d e))
-    (aoc : AxiomOfChoice) :
-  wfs_L w _  (colimIn CC 0).
-Proof.
-  unfold wfs_L in *.
-    rewrite (wfs_llp w) in *.
-
-<div class="paragraph"> </div>
-
-  intros a b g Rg h k hkcomm.
-
-<div class="paragraph"> </div>
-
-  transparent assert (Hind : (∏ (v : vertex nat_graph), ∃ (va : dob d v --&gt; a), va · g = colimIn CC v · k)).
-  {
-    intro v.
-    induction v as <span class="inlinecode">|<a class="idref" href="UniMath.CategoryTheory.ElementaryTopos.html#Topos.Exponentials.v"><span class="id" title="variable">v</span></a></span> <span class="inlinecode"><span class="id" title="var">Hv</span></span>.
-<ul class="doclist">
-<li> apply hinhpr.
-      exists h.
-      exact hkcomm.
-
-</li>
-<li> transparent assert (lpSv : (∃ (lp : dmor d (idpath (S v)) --&gt; g), arrow_mor11 lp = colimIn CC (S v) · k)).
-      {
-        use (hinhuniv _ Hv).
-        intro Hv'.
-        apply hinhpr.
-        use tpair.
-<ul class="doclist">
-<li> use mors_to_arrow_mor.
-          * exact (pr1 Hv').
-          * exact (colimIn CC (S v) · k).
-          * abstract (
-              etrans; <span class="inlinecode"><span class="id" title="tactic">exact</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a></span> <span class="inlinecode"><span class="id" title="var">Hv'</span>)|</span>;
-              apply pathsinv0;
-              etrans; <span class="inlinecode"><span class="id" title="tactic">apply</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#assoc"><span class="id" title="section">assoc</span></a>|</span>;
-              apply cancel_postcomposition;
-              exact (colimInCommutes CC _  (idpath (S v)))
-            ).
-
-</li>
-<li> reflexivity.
-
-</li>
-</ul>
-      }
-      use (hinhuniv _ lpSv).
-      clear lpSv; intro lpSv.
-      set (fillv := Hd _  (idpath (S v)) _   Rg _  (arrow_mor_comm (pr1 lpSv))).
-      use (hinhuniv _ fillv).
-      clear fillv; intro fillv.
-      apply hinhpr.
-      exists (pr1 fillv).
-      etrans; <span class="inlinecode"><span class="id" title="tactic">exact</span></span> <span class="inlinecode">(<span class="id" title="var">pr22</span></span> <span class="inlinecode"><span class="id" title="var">fillv</span>)|</span>.
-      exact (pr2 lpSv).
-
-</li>
-</ul>
-  }
-
-<div class="paragraph"> </div>
-
-  assert (∥∏ v : vertex nat_graph, ∑ va : dob d v --&gt; a, va · g = colimIn CC v · k∥) as Hind_aoc.
-  {
-    set (aocI := aoc natset).
-    simpl in aocI.
-    apply (aocI).
-    exact Hind.
-  }
-  use (hinhuniv _ Hind_aoc).
-  clear Hind Hind_aoc; intro Hind.
-  apply hinhpr.
-
-<div class="paragraph"> </div>
-
-  use tpair.
-<ul class="doclist">
-<li> use colimArrow.
-    use make_cocone.
-    * intro v.
-      exact (pr1 (Hind v)).
-    * intros u v e.
-      simpl in e.
-      rewrite &lt;- e.
-      admit. 
-</li>
-<li> split.
-    * etrans. apply colimArrowCommutes.
-      cbn.
-      admit.      * use colimArrowUnique'.
-      intro v.
-      etrans. apply assoc.
-      etrans. apply cancel_postcomposition.
-              apply colimArrowCommutes.
-      exact (pr2 (Hind v)).
-
-</li>
-</ul>
-Qed. 
-<div class="paragraph"> </div>
-
-
-<div class="paragraph"> </div>
-
 (i)   wfs&lt;X&gt;<i>contains_isos
 (ii)  wfs</i>&lt;X&gt;<i>retract
 (iii) wfs_closed</i>&lt;co&gt;products
@@ -1223,18 +767,6 @@ or lemma 14.1.8
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">top</span> <span class="id" title="var">bottom</span> <span class="id" title="var">comm_total</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-extract lp of λ<i>f and f (assumption)  this diagram has a lift
-       x ==== x
-  λ<i>f  |      | f
-       |      |
-       Mf --&gt; y
-          ρ<i>f
-    
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">hf</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>) <span class="id" title="var">h</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>.<br/>
@@ -1244,28 +776,9 @@ extract lp of λ<i>f and f (assumption)  this diagram has a lift
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">Hgh</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">h'</span>.<br/>
-</div>
-
-<div class="doc">
-extract lift 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">h'</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">lift_lff</span> [<span class="id" title="var">comm_lff1</span> <span class="id" title="var">comm_lff2</span>]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Since ρ<i>f ∈ R, this diagram has a lift
-        top     λ<i>f
-      a ---&gt; x ---&gt; Mf
-    g |             | ρ<i>f
-      |             |
-      b ----------&gt; y
-           bottom
-     g and rf indeed have the rlp 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.ModelCategories.Lifting.html#lp"><span class="id" title="definition">lp</span></a> <span class="id" title="var">g'</span> <span class="id" title="var">h</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">lp_grf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">rf_r</span> := <span class="id" title="var">Rh</span>).<br/>
@@ -1274,21 +787,10 @@ Since ρ<i>f ∈ R, this diagram has a lift
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">rf_r</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g'</span> <span class="id" title="var">hg'</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-extract this lift 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">lp_grf</span> (<span class="id" title="var">g</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <span class="id" title="var">top</span>) <span class="id" title="var">bottom</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
-</div>
-
-<div class="doc">
-unfold wfs_left_map, wfs_right_map. 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<span class="id" title="var">Hgh</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">comm_total</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
@@ -1297,22 +799,10 @@ unfold wfs_left_map, wfs_right_map.
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">H</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">lift_grf</span> [<span class="id" title="var">comm_grf1</span> <span class="id" title="var">comm_grf2</span>]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Compose lifts to get total lift 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<span class="id" title="var">lift_lff</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#68a45c64afbc011d212b280fa10aece5"><span class="id" title="notation">∘</span></a> <span class="id" title="var">lift_grf</span>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-diagram chasing 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>.<br/>
@@ -1325,23 +815,11 @@ diagram chasing
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_precomposition"><span class="id" title="lemma">cancel_precomposition</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">comm_lff2</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">comm_grf2</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-this side is easy, we know that f has a lift for all functions in L,
-       so also for its factorization 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">h'</span> <span class="id" title="var">k</span> <span class="id" title="var">Hk</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-get factorization of f 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_R"><span class="id" title="definition">wfs_R</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_rlp"><span class="id" title="definition">wfs_rlp</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <span class="id" title="var">hf</span>.<br/>

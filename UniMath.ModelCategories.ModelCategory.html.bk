@@ -119,154 +119,55 @@ Contents:
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.ModelCategory.html#is_model_category"><span class="id" title="definition">is_model_category</span></a> <a class="idref" href="UniMath.ModelCategories.ModelCategory.html#W:21"><span class="id" title="variable">W</span></a> <a class="idref" href="UniMath.ModelCategories.ModelCategory.html#K:22"><span class="id" title="variable">K</span></a> <a class="idref" href="UniMath.ModelCategories.ModelCategory.html#F:25"><span class="id" title="variable">F</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.ModelCategories.ModelCategory.html#make_is_model_category"><span class="id" title="definition">make_is_model_category</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">assumption</span>. </div>
-
-<div class="doc">
-W are still the weak equivalences 
-</div>
-<div class="code">
-&nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <span class="id" title="var">hAF</span> <span class="id" title="tactic">in</span> <span class="id" title="var">kaf</span>. </div>
-
-<div class="doc">
-K and AF = F ∩ W is a WFS by assumption (caf) 
-</div>
-<div class="code">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assumption</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-suffices to show K ∩ W ⊆ AK 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <span class="id" title="tactic">assumption</span>. &nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <span class="id" title="var">hAF</span> <span class="id" title="tactic">in</span> <span class="id" title="var">kaf</span>. &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assumption</span>.<br/>
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">enough</span> (<span class="id" title="var">K</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#e98ccf81321dd324deeecb21dc341190"><span class="id" title="notation">∩</span></a> <span class="id" title="var">W</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">⊆</span></a> <span class="id" title="var">AK</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">kw_sak</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-since then K ∩ W = AK 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">K</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#e98ccf81321dd324deeecb21dc341190"><span class="id" title="notation">∩</span></a> <span class="id" title="var">W</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">AK</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">kw_ak</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-only need to show other inclusion 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_subset_antisymm"><span class="id" title="lemma">morphism_class_subset_antisymm</span></a> <span class="id" title="var">kw_sak</span>).<br/>
-</div>
-
-<div class="doc">
-take f ∈ AC 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">f</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- </div>
-
-<div class="doc">
-AC = llp F 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#is_wfs_llp"><span class="id" title="definition">is_wfs_llp</span></a> <span class="id" title="var">akf</span>) <span class="id" title="tactic">in</span> <span class="id" title="var">hf</span>.<br/>
-</div>
-
-<div class="doc">
-C = llp AF 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#is_wfs_llp"><span class="id" title="definition">is_wfs_llp</span></a> <span class="id" title="var">kaf</span>).<br/>
-</div>
-
-<div class="doc">
-so now goal is llp F ⊆ llp AF 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">revert</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">f</span> <span class="id" title="var">hf</span>.<br/>
-</div>
-
-<div class="doc">
-use antisymmetry of llp to convert goal into AF ⊆ F 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.Lifting.html#llp_anti"><span class="id" title="lemma">llp_anti</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span>.<br/>
-</div>
-
-<div class="doc">
-this is trivial, since AF = F ∩ W, but requires some work in UniMath 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">hAF</span> <span class="id" title="tactic">in</span> <span class="id" title="var">hg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hg</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">hgf</span> ?].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">hgf</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- </div>
-
-<div class="doc">
-f ∈ AC ⊆ W (by hAC) 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">hAK</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">hf</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-K ∩ W = AK and F are a WFS by assumption (akf) 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">kw_ak</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">akf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-we show that indeed, C ∩ W ⊆ AC 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">f</span> <span class="id" title="var">hf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hf</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">f_k</span> <span class="id" title="var">f_w</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-factorize f through c, g : a --&gt; c ∈ AK, h : c --&gt; b ∈ F 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">acf_fact</span> := (<a class="idref" href="UniMath.ModelCategories.WFS.html#is_wfs_fact"><span class="id" title="definition">is_wfs_fact</span></a> <span class="id" title="var">akf</span>) <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a> <span class="id" title="var">_</span> <span class="id" title="var">acf_fact</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">clear</span> <span class="id" title="var">acf_fact</span>; <span class="id" title="tactic">intro</span> <span class="id" title="var">acf_fact</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">acf_fact</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">c</span> [<span class="id" title="var">g</span> [<span class="id" title="var">h</span> [<span class="id" title="var">g_ak</span> [<span class="id" title="var">h_f</span> <span class="id" title="var">gh</span>]]]]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-h ∈ W by 2 out of 3 property (h ∘ g = f) 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">h_w</span> : (<span class="id" title="var">W</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) <span class="id" title="var">h</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-g ∈ AC ⊆ W 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">hAK</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g_ak</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">g_w</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> ((<a class="idref" href="UniMath.ModelCategories.WeakEquivalences.html#is_weq_cancel_left"><span class="id" title="definition">is_weq_cancel_left</span></a> <span class="id" title="var">weq</span>) <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g_w</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">gh</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">f_w</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-h ∈ AF because AF = F ∩ W and h ∈ F by definition 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">h_af</span> : (<span class="id" title="var">AF</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>) <span class="id" title="var">h</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">hAF</span>.<br/>
@@ -275,27 +176,10 @@ h ∈ AF because AF = F ∩ W and h ∈ F by definition
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">exact</span> <span class="id" title="var">h_w</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-extract lift l from
-            g
-        a ----&gt; c
-        | l   / |
-      f |   /   | h
-        v /     v
-        b ===== b
-      
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs'lp"><span class="id" title="lemma">wfs'lp</span></a> (<a class="idref" href="UniMath.ModelCategories.WFS.html#make_wfs"><span class="id" title="definition">make_wfs</span></a> <span class="id" title="var">K</span> <span class="id" title="var">AF</span> <span class="id" title="var">kaf</span>) <span class="id" title="var">f_k</span> <span class="id" title="var">h_af</span> <span class="id" title="var">g</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">b</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-commutativity of diagram 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">gh</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
@@ -304,20 +188,6 @@ commutativity of diagram
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">hl1</span> <span class="id" title="var">hl2</span>]].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-this uses the retract argument
-        a ===== a ===== a
-        |       |       |
-      f |       | g     | f
-        v       v       v
-        b ----&gt; c ----&gt; b
-            l       h
-        to show that f is a retract of g
-      
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">r</span> : <a class="idref" href="UniMath.ModelCategories.Retract.html#retract"><span class="id" title="definition">retract</span></a> <span class="id" title="var">g</span> <span class="id" title="var">f</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.ModelCategories.Retract.html#make_retract"><span class="id" title="definition">make_retract</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">a</span>) (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">a</span>) <span class="id" title="var">l</span> <span class="id" title="var">h</span>).<br/>
@@ -328,12 +198,7 @@ this uses the retract argument
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a>. <span class="id" title="var">now</span> <span class="id" title="tactic">symmetry</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-so since g ∈ AK in a WFS acf = (AK, F), so must f be 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.WFS.html#wfs_L_retract"><span class="id" title="lemma">wfs_L_retract</span></a> (<a class="idref" href="UniMath.ModelCategories.WFS.html#make_wfs"><span class="id" title="definition">make_wfs</span></a> <span class="id" title="var">AK</span> <span class="id" title="var">F</span> <span class="id" title="var">akf</span>) <span class="id" title="var">r</span> <span class="id" title="var">g_ak</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 <span class="id" title="keyword">Qed</span>.<br/>

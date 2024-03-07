@@ -122,12 +122,6 @@ F' ⊗ F (compose left factors)
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">l'rf</span> := <a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <span class="id" title="var">F'</span> <span class="id" title="var">rf</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">r'rf</span> := <a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_R"><span class="id" title="definition">fact_R</span></a> <span class="id" title="var">F'</span> <span class="id" title="var">rf</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>; [<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#isapropdirprod"><span class="id" title="definition">isapropdirprod</span></a>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>|].<br/>
-</div>
-
-<div class="doc">
-complex rewrite 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">cbn</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Constructions.html#section_disp_id"><span class="id" title="definition">section_disp_id</span></a> <span class="id" title="var">F</span>).<br/>
 

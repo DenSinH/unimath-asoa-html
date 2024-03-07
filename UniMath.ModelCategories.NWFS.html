@@ -170,21 +170,10 @@ category.
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#make_dirprod"><span class="id" title="definition">make_dirprod</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_ob1"><span class="id" title="definition">three_ob1</span></a> <span class="id" title="var">xxx</span>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_ob2"><span class="id" title="definition">three_ob2</span></a> <span class="id" title="var">xxx</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor12"><span class="id" title="definition">three_mor12</span></a> <span class="id" title="var">xxx</span>).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">xxx</span> <span class="id" title="var">yyy</span> <span class="id" title="var">fff</span>.<br/>
-</div>
-
-<div class="doc">
-for morphisms we simply forget the 0th morphism 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor11"><span class="id" title="definition">three_mor11</span></a> <span class="id" title="var">fff</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor22"><span class="id" title="definition">three_mor22</span></a> <span class="id" title="var">fff</span>).<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* </div>
-
-<div class="doc">
-commutativity is just commutativity in the lower diagram 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor_comm"><span class="id" title="definition">three_mor_comm</span></a> <span class="id" title="var">fff</span>))<br/>
@@ -260,19 +249,21 @@ verify that they are indeed compatible
 </div>
 
 <br/>
-<span class="id" title="keyword">Definition</span> <a id="c_21_data" class="idref" href="#c_21_data"><span class="id" title="definition">c_21_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_2"><span class="id" title="definition">face_map_2</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_1"><span class="id" title="definition">face_map_1</span></a>.<br/>
-<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 </div>
 
 <div class="doc">
 this natural transformation boils down to square
-    0 ===== 0
-    |       |
-    |       |
-    1 ----&gt; 2
-  
+<pre>
+  0 ===== 0
+  |       |
+  |       |
+  1 ----&gt; 2
+</pre>
+
 </div>
 <div class="code">
+<span class="id" title="keyword">Definition</span> <a id="c_21_data" class="idref" href="#c_21_data"><span class="id" title="definition">c_21_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_2"><span class="id" title="definition">face_map_2</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_1"><span class="id" title="definition">face_map_1</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">xxx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simpl</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.PartA.html#make_dirprod"><span class="id" title="definition">make_dirprod</span></a> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>) (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor12"><span class="id" title="definition">three_mor12</span></a> <span class="id" title="var">xxx</span>)).<br/>
@@ -287,56 +278,14 @@ this natural transformation boils down to square
 <br/>
 <span class="id" title="keyword">Definition</span> <a id="c_21_axioms" class="idref" href="#c_21_axioms"><span class="id" title="definition">c_21_axioms</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#is_nat_trans"><span class="id" title="definition">is_nat_trans</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="UniMath.ModelCategories.NWFS.html#c_21_data"><span class="id" title="definition">c_21_data</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-natural transformation commutativity axiom 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">xxx</span> <span class="id" title="var">yyy</span> <span class="id" title="var">ff</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-use displayed properties to turn path in total category
-  into path in base category, given our displayed properties
-
-<div class="paragraph"> </div>
-
-  subtypePath: equality on ∑ x : X, P x is the same as equality
-  on X if P is a predicate (maps to a prop).
-  In the total category, objects are ∑ c : C, D c
-  i.e., objects with displayed data. Morphisms are morphisms
-  with displayed data. Our morphisms displayed data is indeed
-  propositional: commutative diagram.
-  
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>.<br/>
-&nbsp;&nbsp;* </div>
-
-<div class="doc">
-For any map in the base category, the induced map
-    on the displayed category is a property.
-
-<div class="paragraph"> </div>
-
-    This is because the induced map is a commuting square,
-    so an equality between maps. Therefore, the homset property
-    says this is a property. 
-</div>
-<div class="code">
+&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;* </div>
-
-<div class="doc">
-We are left to prove the commutativity in the base category,
-    given our displayed properties. This is effectively just commutativity
-    in the bottom square. 
-</div>
-<div class="code">
+&nbsp;&nbsp;* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsdirprod"><span class="id" title="definition">pathsdirprod</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
@@ -350,19 +299,21 @@ We are left to prove the commutativity in the base category,
 &nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#c_21_axioms"><span class="id" title="definition">c_21_axioms</span></a>).<br/>
 
 <br/>
-<span class="id" title="keyword">Definition</span> <a id="c_10_data" class="idref" href="#c_10_data"><span class="id" title="definition">c_10_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_1"><span class="id" title="definition">face_map_1</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_0"><span class="id" title="definition">face_map_0</span></a>.<br/>
-<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 </div>
 
 <div class="doc">
 this natural transformation boils down to square
-    0 ----&gt; 1
-    |       |
-    |       |
-    2 ===== 2
-  
+<pre>
+  0 ----&gt; 1
+  |       |
+  |       |
+  2 ===== 2
+</pre>
+
 </div>
 <div class="code">
+<span class="id" title="keyword">Definition</span> <a id="c_10_data" class="idref" href="#c_10_data"><span class="id" title="definition">c_10_data</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_data"><span class="id" title="definition">nat_trans_data</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_1"><span class="id" title="definition">face_map_1</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_0"><span class="id" title="definition">face_map_0</span></a>.<br/>
+<a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">xxx</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.Foundations.PartA.html#make_dirprod"><span class="id" title="definition">make_dirprod</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor01"><span class="id" title="definition">three_mor01</span></a> <span class="id" title="var">xxx</span>) (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">_</span>)).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
@@ -400,22 +351,6 @@ this natural transformation boils down to square
 <span class="id" title="keyword">Arguments</span> <a class="idref" href="UniMath.ModelCategories.NWFS.html#face_map_2"><span class="id" title="definition">face_map_2</span></a> {<span class="id" title="var">_</span>}.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-Lemma face_map_1_preserves_dom {C : category} : ∏ g : three C, arrow_dom (face_map_1 g) = three_ob0 g.
-Proof.
-  trivial.
-Defined.
-
-<div class="paragraph"> </div>
-
-Lemma face_map_1_preserves_cod {C : category} : ∏ g : three C, arrow_cod (face_map_1 g) = three_ob2 g.
-Proof.
-  trivial.
-Defined. 
-</div>
-<div class="code">
 
 <br/>
 
@@ -687,12 +622,14 @@ diagram after (7)
 
 <div class="doc">
 Shape of comonad morphism diagram (2.15, Garner)
+<pre>
   A ===== A ===== A  ~~&gt; id_A
   |       |       |
 f |   α   |λf  η  | f
   v       v       v
   B ---&gt; Kf ----&gt; B  ~~&gt; id_B
-     s       ρ<i>f
+     s       ρ_f
+</pre>
 
 </div>
 <div class="code">
@@ -710,45 +647,24 @@ f |   α   |λf  η  | f
 &nbsp;&nbsp;<span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> <span class="id" title="var">hαfη</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-top line of hαfη: 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">ida</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">a</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">Hida</span>.<br/>
 &nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-base_paths : equality in pr1 of ∑-type (paths in base category)
-       pathsdirprodweq : _ × _ = _ × _ -&gt; equality of terms
-    
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">top_line</span> := <a class="idref" href="UniMath.Foundations.PartA.html#dirprod_pr1"><span class="id" title="definition">dirprod_pr1</span></a> (<a class="idref" href="UniMath.MoreFoundations.WeakEquivalences.html#pathsdirprodweq"><span class="id" title="definition">pathsdirprodweq</span></a> (<a class="idref" href="UniMath.Foundations.PartA.html#base_paths"><span class="id" title="lemma">base_paths</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">hαfη</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">top_line</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">top_line</span>.<br/>
 &nbsp;&nbsp;}<br/>
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-f ⋅ s = λ<i>f  commutativity and ida = identity a 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">αfcomm</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">αfcomm'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">ida</span> <span class="id" title="tactic">in</span> <span class="id" title="var">Hida</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">Hida</span>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">αfcomm'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">αfcomm'</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-s · ρ<i>f = id_b  bottom line of hαfη 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">bottom_line</span> := <a class="idref" href="UniMath.Foundations.PartA.html#dirprod_pr2"><span class="id" title="definition">dirprod_pr2</span></a> (<a class="idref" href="UniMath.MoreFoundations.WeakEquivalences.html#pathsdirprodweq"><span class="id" title="definition">pathsdirprodweq</span></a> (<a class="idref" href="UniMath.Foundations.PartA.html#base_paths"><span class="id" title="lemma">base_paths</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">hαfη</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">bottom_line</span>.<br/>
 </div>
@@ -768,12 +684,14 @@ s · ρ<i>f = id_b  bottom line of hαfη
 
 <div class="doc">
 Shape of monad morphism diagram (2.15, Garner)
+<pre>
      λg       p
   C ---&gt; Kg ----&gt; C  ~~&gt; id_C
   |       |       |
 g |   η   |ρg  α  | g
   v       v       v
   D ===== D ===== D  ~~&gt; id_D
+</pre>
 
 </div>
 <div class="code">
@@ -791,44 +709,23 @@ g |   η   |ρg  α  | g
 &nbsp;&nbsp;<span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> <span class="id" title="var">hαgη</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-bottom line of hαgη: 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">idd</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#identity"><span class="id" title="definition">identity</span></a> <span class="id" title="var">d</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">Hidd</span>.<br/>
 &nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-base_paths : equality in pr1 of ∑-type (paths in base category)
-       pathsdirprodweq : _ × _ = _ × _ -&gt; equality of terms
-    
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">bottom_line</span> := <a class="idref" href="UniMath.Foundations.PartA.html#dirprod_pr2"><span class="id" title="definition">dirprod_pr2</span></a> (<a class="idref" href="UniMath.MoreFoundations.WeakEquivalences.html#pathsdirprodweq"><span class="id" title="definition">pathsdirprodweq</span></a> (<a class="idref" href="UniMath.Foundations.PartA.html#base_paths"><span class="id" title="lemma">base_paths</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">hαgη</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">bottom_line</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">bottom_line</span>.<br/>
 &nbsp;&nbsp;}<br/>
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-p ⋅ g = ρ<i>g  commutativity and ida = identity a 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">αgcomm</span>) <span class="id" title="keyword">as</span> <span class="id" title="var">αgcomm'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">idd</span> <span class="id" title="tactic">in</span> <span class="id" title="var">Hidd</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">Hidd</span>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">αgcomm'</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">αgcomm'</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-λg · p = id_c  top line of hαfη 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">top_line</span> := <a class="idref" href="UniMath.Foundations.PartA.html#dirprod_pr1"><span class="id" title="definition">dirprod_pr1</span></a> (<a class="idref" href="UniMath.MoreFoundations.WeakEquivalences.html#pathsdirprodweq"><span class="id" title="definition">pathsdirprodweq</span></a> (<a class="idref" href="UniMath.Foundations.PartA.html#base_paths"><span class="id" title="lemma">base_paths</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">hαgη</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">top_line</span>.<br/>
 </div>
@@ -848,13 +745,6 @@ p ⋅ g = ρ<i>g  commutativity and ida = identity a
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:143" class="idref" href="#f:143"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.ModelCategories.NWFS.html#a:139"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#b:140"><span class="id" title="variable">b</span></a>} {<a id="g:144" class="idref" href="#g:144"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.ModelCategories.NWFS.html#c:141"><span class="id" title="variable">c</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#d:142"><span class="id" title="variable">d</span></a>} (<a id="hf:145" class="idref" href="#hf:145"><span class="id" title="binder">hf</span></a> : <a class="idref" href="UniMath.ModelCategories.NWFS.html#nwfs_L_maps"><span class="id" title="definition">nwfs_L_maps</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#n:138"><span class="id" title="variable">n</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#f:143"><span class="id" title="variable">f</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="hg:146" class="idref" href="#hg:146"><span class="id" title="binder">hg</span></a> : <a class="idref" href="UniMath.ModelCategories.NWFS.html#nwfs_R_maps"><span class="id" title="definition">nwfs_R_maps</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#n:138"><span class="id" title="variable">n</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#g:144"><span class="id" title="variable">g</span></a>) : <a class="idref" href="UniMath.ModelCategories.Lifting.html#elp"><span class="id" title="definition">elp</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#f:143"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#g:144"><span class="id" title="variable">g</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-want to construct a lift of an L-map and an R-map
-     using monad properties 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">H</span>.<br/>
 
 <br/>
@@ -864,43 +754,14 @@ want to construct a lift of an L-map and an R-map
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">hk</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#mors_to_arrow_mor"><span class="id" title="definition">mors_to_arrow_mor</span></a> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">H</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Fhk</span> := <a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_on_morphisms"><span class="id" title="definition">functor_on_morphisms</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_functor"><span class="id" title="definition">fact_functor</span></a> <span class="id" title="var">n</span>) <span class="id" title="var">hk</span>).<br/>
-</div>
-
-<div class="doc">
-Kf --&gt; Kg 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Khk</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor11"><span class="id" title="definition">three_mor11</span></a> <span class="id" title="var">Fhk</span>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-commutativity in diagrams 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Hhk</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_mor_comm"><span class="id" title="definition">three_mor_comm</span></a> <span class="id" title="var">Fhk</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> <span class="id" title="var">Hhk</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">Hhk</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">Hhk0</span> <span class="id" title="var">Hhk1</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-              h
-    A ==== A ----&gt; C
-    |      |       |
-  f |  Lf  |       |
-    v      v  Khk  v   p
-    B ---&gt; Kf ---&gt; Kg ---&gt; C
-        s  |       |       |
-           |       |  Rg   | g
-           v       |       v
-           B ----&gt; D ===== D
-                k
-  
-</div>
-<div class="code">
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<span class="id" title="var">s</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">Khk</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">p</span>).<br/>
@@ -908,84 +769,40 @@ commutativity in diagrams
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>; [<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-f · (s · Khk · p) = h 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>, <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">Hs0</span>;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-λ<i>f · Khk · p = h  rewrite Hhk0 : (λ<i>f · Hhk = h · λ<i>g) 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hhk0</span>|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-h · λ<i>g · p = h  rewrite Hp1 : (λ<i>g · p = id_C) 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hp1</span>|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-h · id_C = h 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| </div>
-
-<div class="doc">
-s · Khk · p · g = k 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;| <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a> <span class="id" title="var">_</span> <span class="id" title="var">p</span> <span class="id" title="var">g</span>);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="var">Hp0</span>;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-s · Khk · ρ<i>g = k  rewrite Hhk1 : ρ<i>f · k = Khk · ρ<i>g 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> &lt;- <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a> <span class="id" title="var">Hhk1</span>)|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-s · ρ<i>f · k = k  rewrite Hs1 : s · ρ<i>f = id_B 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.MoreFoundations.PartA.html#maponpaths_2"><span class="id" title="definition">maponpaths_2</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">Hs1</span>|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-id_B · k = k 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_left"><span class="id" title="definition">id_left</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;]<br/>
 &nbsp;&nbsp;).<br/>
 </div>
 
 <br/>
-</div>
-
-<div class="doc">
-<a id="lab831"></a><h1 class="section">CATEGORY OF NWFS's ON A CATEGORY C</h1>
-
- 
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Section</span> <a id="NWFS_cat" class="idref" href="#NWFS_cat"><span class="id" title="section">NWFS_cat</span></a>.<br/>
@@ -1018,13 +835,7 @@ verify that indeed, whiskering with d1 yields id</i>{C^2} ⟹ id{C^2}
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>.<br/>
-&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>. </div>
-
-<div class="doc">
-~~&gt; identity x = identity x 
-</div>
-<div class="code">
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">trivial</span>.<br/>
+&nbsp;&nbsp;- <span class="id" title="tactic">intro</span>. &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">trivial</span>.<br/>
 </div>
 
 <br/>
@@ -1195,23 +1006,6 @@ We just show that fact_id corresponds with the identity monad morphisms
 </div>
 
 <br/>
-</div>
-
-<div class="doc">
-Lemma fact_id_is_nwfs_mor (n : nwfs C) : nwfs_mor_axioms n n (Ff_precategory_id (nwfs_fact n)).
-Proof.
-  split.
-<ul class="doclist">
-<li> apply fact_id_is_lnwfs_mor.
-
-</li>
-<li> apply fact_id_is_rnwfs_mor.
-
-</li>
-</ul>
-Qed. 
-</div>
-<div class="code">
 
 <br/>
 <span class="id" title="keyword">Lemma</span> <a id="lnwfs_mor_comp" class="idref" href="#lnwfs_mor_comp"><span class="id" title="lemma">lnwfs_mor_comp</span></a> {<a id="F:236" class="idref" href="#F:236"><span class="id" title="binder">F</span></a> <a id="F':237" class="idref" href="#F':237"><span class="id" title="binder">F'</span></a> <a id="F'':238" class="idref" href="#F'':238"><span class="id" title="binder">F''</span></a> : <a class="idref" href="UniMath.ModelCategories.NWFS.html#Ff"><span class="id" title="definition">Ff</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#NWFS_cat.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -1224,24 +1018,11 @@ Qed.
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="ax':245" class="idref" href="#ax':245"><span class="id" title="binder">ax'</span></a> : <a class="idref" href="UniMath.ModelCategories.NWFS.html#lnwfs_mor_axioms"><span class="id" title="definition">lnwfs_mor_axioms</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#n':240"><span class="id" title="variable">n'</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#n'':241"><span class="id" title="variable">n''</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#5ad3364fb0434c6c18ab91696ec699a4"><span class="id" title="variable">τ'</span></a>) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.NWFS.html#lnwfs_mor_axioms"><span class="id" title="definition">lnwfs_mor_axioms</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#n:239"><span class="id" title="variable">n</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#n'':241"><span class="id" title="variable">n''</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#ced5baeadc1bfcaf165df22b7751c1f2"><span class="id" title="variable">τ</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#5ad3364fb0434c6c18ab91696ec699a4"><span class="id" title="variable">τ'</span></a>).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
-</div>
-
-<div class="doc">
-Like for identity, we just show that the composition of the morphisms
-     corresponds with the composition of the corresponding L and R monad
-     morphisms. 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#lnwfs_mor"><span class="id" title="definition">lnwfs_mor</span></a> <span class="id" title="var">n</span> <span class="id" title="var">n''</span> (τ <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> τ') <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_comp"><span class="id" title="definition">nat_trans_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#lnwfs_L_monad_mor"><span class="id" title="definition">lnwfs_L_monad_mor</span></a> τ <span class="id" title="var">ax</span>) (<a class="idref" href="UniMath.ModelCategories.NWFS.html#lnwfs_L_monad_mor"><span class="id" title="definition">lnwfs_L_monad_mor</span></a> τ' <span class="id" title="var">ax'</span>)) <span class="id" title="keyword">as</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- </div>
-
-<div class="doc">
-for some reason this definition is completely unfolded 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#NWFS_cat.C"><span class="id" title="variable">C</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor_eq"><span class="id" title="lemma">arrow_mor_eq</span></a>.<br/>
@@ -1281,12 +1062,7 @@ for some reason this definition is completely unfolded
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_comp"><span class="id" title="definition">nat_trans_comp</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#rnwfs_R_monad_mor"><span class="id" title="definition">rnwfs_R_monad_mor</span></a> τ <span class="id" title="var">ax</span>) (<a class="idref" href="UniMath.ModelCategories.NWFS.html#rnwfs_R_monad_mor"><span class="id" title="definition">rnwfs_R_monad_mor</span></a> τ' <span class="id" title="var">ax'</span>)) <span class="id" title="keyword">as</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Core.NaturalTransformations.html#nat_trans_eq"><span class="id" title="lemma">nat_trans_eq</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;- </div>
-
-<div class="doc">
-for some reason this definition is completely unfolded 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#NWFS_cat.C"><span class="id" title="variable">C</span></a>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>; <span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> <span class="id" title="var">x</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartB.html#subtypePath"><span class="id" title="lemma">subtypePath</span></a>; [<span class="id" title="tactic">intro</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#homset_property"><span class="id" title="definition">homset_property</span></a>|].<br/>

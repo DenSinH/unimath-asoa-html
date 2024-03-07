@@ -124,55 +124,18 @@ filler lifting problem g --&gt; f commutes with mn and the filler of
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">δ</span> <span class="id" title="var">δ'</span> <span class="id" title="var">mn</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-commutativity of lifting data:
-       solution of lifting problem S must commute with mn: g --&gt; g':
-                   m
-       a ----&gt; x ----&gt; x'
-       |       |       |
-     f |  S   g|       |
-       v       v       v
-       b ----&gt; y ----&gt; y'
-                   n
-      δ : b --&gt; x
-      δ': b --&gt; x'
-    
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#right_lifting_data_comp"><span class="id" title="definition">right_lifting_data_comp</span></a> <span class="id" title="var">δ</span> <span class="id" title="var">δ'</span> <span class="id" title="var">mn</span>).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-propositional morphism data 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#isaprop_lifting_data_comp"><span class="id" title="lemma">isaprop_lifting_data_comp</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-identity 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x</span> <span class="id" title="var">a</span> <span class="id" title="var">g</span> <span class="id" title="var">H</span> <span class="id" title="var">S</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">abstract</span> (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-rewrites in term 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-associativity 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">f''</span> <span class="id" title="var">δ</span> <span class="id" title="var">δ'</span> <span class="id" title="var">δ''</span> <span class="id" title="var">S0</span> <span class="id" title="var">S1</span> <span class="id" title="var">mn</span> <span class="id" title="var">mn'</span> <span class="id" title="var">g2</span> <span class="id" title="var">g2'</span> <span class="id" title="var">S2</span>.<br/>
 
 <br/>
@@ -180,12 +143,7 @@ associativity
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>; <span class="id" title="tactic">apply</span> <span class="id" title="var">mn</span>|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <span class="id" title="var">mn'</span>|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-rewrites in term 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">now</span> <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
 <span class="id" title="keyword">Defined</span>.<br/>
@@ -220,36 +178,15 @@ needed later  all lifting problems of J wrt. g
 <span class="id" title="keyword">Definition</span> <a id="R_map_rlp_morcls_structure_on_objects" class="idref" href="#R_map_rlp_morcls_structure_on_objects"><span class="id" title="definition">R_map_rlp_morcls_structure_on_objects</span></a> (<a id="1a3fafaf5f6baf2d56e842f0a59566aa" class="idref" href="#1a3fafaf5f6baf2d56e842f0a59566aa"><span class="id" title="binder">η</span></a> : <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_L_map_structure"><span class="id" title="definition">morcls_L_map_structure</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#preliminaries.J"><span class="id" title="variable">J</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a id="x:45" class="idref" href="#x:45"><span class="id" title="binder">x</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">,</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#nwfs_R_maps"><span class="id" title="definition">nwfs_R_maps</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#preliminaries.n"><span class="id" title="variable">n</span></a>) <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#x:45"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#rlp_morcls_disp"><span class="id" title="definition">rlp_morcls_disp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#preliminaries.J"><span class="id" title="variable">J</span></a>) ((<a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor_identity"><span class="id" title="definition">functor_identity</span></a> <span class="id" title="var">_</span>) <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#x:45"><span class="id" title="variable">x</span></a>).<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-</div>
-
-<div class="doc">
-map on displayed objects (send arrow to itself, with lifting data) 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">Rf</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">S</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-add structure to f through η 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_L_map_structure"><span class="id" title="definition">morcls_L_map_structure</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">η</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Lg</span> := <span class="id" title="var">η</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span>).<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span>.<br/>
-</div>
-
-<div class="doc">
-since η lies over (identity _),
-     Lg is actually just g (with structure), and it is an L-Map
-     the filler follows from the fact that NWFS L-Maps and R-Maps
-     form a WFS 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#L_map_R_map_elp"><span class="id" title="lemma">L_map_R_map_elp</span></a> <span class="id" title="var">Lg</span> <span class="id" title="var">Rf</span>).<br/>
 <span class="id" title="keyword">Defined</span>.<br/>
 
@@ -258,12 +195,6 @@ since η lies over (identity _),
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a id="x:47" class="idref" href="#x:47"><span class="id" title="binder">x</span></a> <a id="y:48" class="idref" href="#y:48"><span class="id" title="binder">y</span></a> (<a id="xx:49" class="idref" href="#xx:49"><span class="id" title="binder">xx</span></a> : (<a class="idref" href="UniMath.ModelCategories.NWFS.html#nwfs_R_maps"><span class="id" title="definition">nwfs_R_maps</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#preliminaries.n"><span class="id" title="variable">n</span></a>) <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#x:47"><span class="id" title="variable">x</span></a>) (<a id="yy:50" class="idref" href="#yy:50"><span class="id" title="binder">yy</span></a> : (<a class="idref" href="UniMath.ModelCategories.NWFS.html#nwfs_R_maps"><span class="id" title="definition">nwfs_R_maps</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#preliminaries.n"><span class="id" title="variable">n</span></a>) <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#y:48"><span class="id" title="variable">y</span></a>) (<a id="f:51" class="idref" href="#f:51"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#x:47"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#y:48"><span class="id" title="variable">y</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">),</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#xx:49"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#f:51"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#yy:50"><span class="id" title="variable">yy</span></a><a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#R_map_rlp_morcls_structure_on_objects"><span class="id" title="definition">R_map_rlp_morcls_structure_on_objects</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#a70fb50a9c3fa41f1717c9b363ab73e3"><span class="id" title="variable">η</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#xx:49"><span class="id" title="variable">xx</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">--&gt;[</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#f:51"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Core.html#fedee33800776c247e193e7d19a683d6"><span class="id" title="notation">]</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#R_map_rlp_morcls_structure_on_objects"><span class="id" title="definition">R_map_rlp_morcls_structure_on_objects</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#a70fb50a9c3fa41f1717c9b363ab73e3"><span class="id" title="variable">η</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#yy:50"><span class="id" title="variable">yy</span></a><a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">)</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
-</div>
-
-<div class="doc">
-map on displayed objects respects morphism property 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">f'</span> <span class="id" title="var">ff</span> <span class="id" title="var">ff'</span> <span class="id" title="var">S</span> <span class="id" title="var">Sisalg</span> <span class="id" title="var">g</span> <span class="id" title="var">Jg</span> <span class="id" title="var">Sgf</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_L_map_structure"><span class="id" title="definition">morcls_L_map_structure</span></a> <span class="id" title="tactic">in</span> <span class="id" title="var">η</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
@@ -274,13 +205,6 @@ map on displayed objects respects morphism property
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-first "fix" the morphisms, since the (propositional)
-     commutativity is not equal 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.ModelCategories.Helpers.html#section_disp_on_eq_morphisms'"><span class="id" title="lemma">section_disp_on_eq_morphisms'</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#nwfs_fact"><span class="id" title="definition">nwfs_fact</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#preliminaries.n"><span class="id" title="variable">n</span></a>) (<span class="id" title="var">γ</span> := <span class="id" title="var">Sgf</span>)).<br/>
 
@@ -302,25 +226,6 @@ first "fix" the morphisms, since the (propositional)
 &nbsp;&nbsp;<span class="id" title="tactic">change</span> (<span class="id" title="var">S11</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">αf'</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">αf</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">S</span>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-        S00
-      ++++&gt; +++++&gt;
-    |      |      |
-    |   λf |      |λf'
-    |      v S11  v
- ρf | αf    +++++&gt; +++++++&gt;
-    |      |      |        |
-    |   ρf |      |ρf' αf' | f'
-    v      v      v        v
-      ===== -----&gt; ========
-            S22
-  Need to show that the +++&gt; maps are equal
-  This follows from the fact that S is an algebra map (Sisalg)
-  
-</div>
-<div class="code">
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">top_line</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00_eq"><span class="id" title="definition">arrow_mor00_eq</span></a> <span class="id" title="var">Sisalg</span>).<br/>
@@ -381,20 +286,9 @@ Garner 2008, Proposition 3.12 / Garner 2007, p18
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">H</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">η</span> <span class="id" title="var">cofibη</span>].<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-suffices to show R = J□ 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morcls_eq_impl_morcls_cl_eq"><span class="id" title="lemma">morcls_eq_impl_morcls_cl_eq</span></a>.<br/>
 &nbsp;&nbsp;{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;</div>
-
-<div class="doc">
-J□ is closed under retracts 
-</div>
-<div class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">x'</span> <span class="id" title="var">y'</span> <span class="id" title="var">g'</span> <span class="id" title="var">x</span> <span class="id" title="var">y</span> <span class="id" title="var">g</span> <span class="id" title="var">Hg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">Hg</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">Jg</span> <span class="id" title="var">Rgg'</span>].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Jg</span>).<br/>
@@ -414,26 +308,11 @@ J□ is closed under retracts
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a> <span class="id" title="var">_</span> <span class="id" title="var">Hf</span>);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">clear</span> <span class="id" title="var">Hf</span>; <span class="id" title="tactic">intro</span> <span class="id" title="var">Hf</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-R-Map ⊆ J□ 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">θ</span> := <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#R_map_rlp_morcls_structure"><span class="id" title="definition">R_map_rlp_morcls_structure</span></a> <span class="id" title="var">η</span>).<br/>
-</div>
-
-<div class="doc">
-θ is a functor that lies over identity 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">θ</span> <span class="id" title="var">f</span> <span class="id" title="var">Hf</span>).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-J□ ⊆ R-Map  the "inverse" of θ also lies over identity 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">θinv</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Equivalences.html#right_adjoint_of_is_equiv_over"><span class="id" title="definition">right_adjoint_of_is_equiv_over</span></a> <span class="id" title="var">_</span> <span class="id" title="var">cofibη</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<span class="id" title="var">θinv</span> <span class="id" title="var">f</span> <span class="id" title="var">Hf</span>).<br/>
 <span class="id" title="keyword">Qed</span>.<br/>
@@ -555,21 +434,9 @@ It is possible to show this more generally for <i>any</i>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">kj</span> := <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">(</span></a><a id="j:73" class="idref" href="#j:73"><span class="id" title="binder"><span id="j:74" class="id">j</span></span></a> : <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp"><span class="id" title="definition">morcls_lp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.Foundations.Init.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> <span class="id" title="var">_</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#j:73"><span class="id" title="variable">j</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">k</span>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-fill-in for each square 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">(</span></a><a id="j:75" class="idref" href="#j:75"><span class="id" title="binder"><span id="j:77" class="id">j</span></span></a> : <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp"><span class="id" title="definition">morcls_lp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.f"><span class="id" title="variable">f</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a id="lj:76" class="idref" href="#lj:76"><span class="id" title="binder"><span id="lj:78" class="id">lj</span></span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_map"><span class="id" title="definition">morcls_lp_map</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#j:75"><span class="id" title="variable">j</span></a>)<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lj:76"><span class="id" title="variable">lj</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">hj</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#j:75"><span class="id" title="variable">j</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">×</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lj:76"><span class="id" title="variable">lj</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.f"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">kj</span> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#j:75"><span class="id" title="variable">j</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a>) <span class="id" title="keyword">as</span> <span class="id" title="var">jlift</span>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">j</span>.<br/>
-</div>
-
-<div class="doc">
-use lifting data of j with respect to g 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">rldJf</span> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_map"><span class="id" title="definition">morcls_lp_map</span></a> <span class="id" title="var">j</span>)) (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_map"><span class="id" title="definition">morcls_lp_map</span></a> <span class="id" title="var">j</span>))).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_precomposition"><span class="id" title="lemma">cancel_precomposition</span></a>. <span class="id" title="tactic">exact</span> <span class="id" title="var">S</span>.<br/>
@@ -590,41 +457,18 @@ use lifting data of j with respect to g
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> <span class="id" title="var">l</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>; <span class="id" title="tactic">rewrite</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowEta"><span class="id" title="lemma">CoproductArrowEta</span></a>, (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowEta"><span class="id" title="lemma">CoproductArrowEta</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">l</span>).<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-factor g as well 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#precompWithCoproductArrow"><span class="id" title="lemma">precompWithCoproductArrow</span></a>).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-maps are equal if maps through coproduct are equal 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowUnique"><span class="id" title="lemma">CoproductArrowUnique</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-now we can reason in separate diagrams again 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">j</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductInCommutes"><span class="id" title="lemma">CoproductInCommutes</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_dom_coprod"><span class="id" title="definition">morcls_lp_dom_coprod</span></a>)).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-this is basically exactly the relation we want to prove: 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> (<span class="id" title="var">hlj</span> <span class="id" title="var">j</span>) <span class="id" title="keyword">as</span> [<span class="id" title="var">hljcomm</span> <span class="id" title="var">_</span>].<br/>
 
 <br/>
@@ -633,33 +477,16 @@ this is basically exactly the relation we want to prove:
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_precomposition"><span class="id" title="lemma">cancel_precomposition</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a> (<span class="id" title="var">hl</span> <span class="id" title="var">j</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">reflexivity</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-factor through coproduct object 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductArrowUnique"><span class="id" title="lemma">CoproductArrowUnique</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-reason about separate diagrams again 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">j</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductInCommutes"><span class="id" title="lemma">CoproductInCommutes</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_cod_coprod"><span class="id" title="definition">morcls_lp_cod_coprod</span></a>)).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-the relation we want to prove 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> (<span class="id" title="var">hlj</span> <span class="id" title="var">j</span>) <span class="id" title="keyword">as</span> [<span class="id" title="var">_</span> <span class="id" title="var">kljcomm</span>].<br/>
 
 <br/>
@@ -686,58 +513,22 @@ we need the actual diagram for the other direction
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">g</span> <span class="id" title="var">Jg</span> <span class="id" title="var">h</span> <span class="id" title="var">k</span> <span class="id" title="var">H</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-obtain maps in total diagram 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">l</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">ltot</span> [<span class="id" title="var">Hl1</span> <span class="id" title="var">Hl2</span>]].<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">simpl</span> <span class="id" title="tactic">in</span> <span class="id" title="var">Hl1</span>, <span class="id" title="var">Hl2</span>, <span class="id" title="var">ltot</span>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-The lift we are looking for is formed using the
-     inclusion of arrow_cod f into the coproduct of all domains 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Jtot</span> := <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Total.html#total_category"><span class="id" title="definition">total_category</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_disp"><span class="id" title="definition">morcls_disp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.J"><span class="id" title="variable">J</span></a>)).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-f as object of the total category of the morphism class J 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">g'</span> := (<span class="id" title="var">g</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">Jg</span>) : <span class="id" title="var">Jtot</span>).<br/>
-</div>
-
-<div class="doc">
-H as lifting problem J --&gt; g 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Hlp</span> := (<span class="id" title="var">g'</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.PartA.html#make_dirprod"><span class="id" title="definition">make_dirprod</span></a> <span class="id" title="var">h</span> <span class="id" title="var">k</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <span class="id" title="var">H</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">)</span></a>) : <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp"><span class="id" title="definition">morcls_lp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#lifting_with_J.f"><span class="id" title="variable">f</span></a>).<br/>
-</div>
-
-<div class="doc">
-inclusion of arrow_cod/dom g into coproduct of all domains 
-</div>
-<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">codg_in</span> := (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_cod_coprod"><span class="id" title="definition">morcls_lp_cod_coprod</span></a>) <span class="id" title="var">Hlp</span>)).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">domg_in</span> := (<a class="idref" href="UniMath.CategoryTheory.Limits.Coproducts.html#CoproductIn"><span class="id" title="definition">CoproductIn</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_dom_coprod"><span class="id" title="definition">morcls_lp_dom_coprod</span></a>) <span class="id" title="var">Hlp</span>)).<br/>
 
 <br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<span class="id" title="var">codg_in</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">ltot</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-h = (inclusion of arrow_dom g) · (top morphism of canonical diagram) 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">h</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">domg_in</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram"><span class="id" title="definition">morcls_lp_coprod_diagram</span></a>)<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a>) <span class="id" title="keyword">as</span> <span class="id" title="var">Hh</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
@@ -751,12 +542,6 @@ h = (inclusion of arrow_dom g) · (top morphism of canonical diagram)
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a>.<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-commutativity of g with inclusions of domain / codomain 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">assert</span> (<span class="id" title="var">g</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">codg_in</span> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="var">domg_in</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod"><span class="id" title="definition">morcls_lp_coprod</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a>) <span class="id" title="keyword">as</span> <span class="id" title="var">Hg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">unfold</span> <span class="id" title="var">codg_in</span>, <span class="id" title="var">domg_in</span>, <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod"><span class="id" title="definition">morcls_lp_coprod</span></a>.<br/>
@@ -798,6 +583,7 @@ commutativity of g with inclusions of domain / codomain
 
 <div class="doc">
 We turn the diagram
+<pre>
           h_x
     ∑A_x ----&gt; C
      |         |
@@ -805,21 +591,22 @@ We turn the diagram
      v         v
     ∑B_x ----&gt; D
           k_x
-
-<div class="paragraph"> </div>
-
+</pre>
 into the pushout diagram
+<pre>
          h_x
     ∑A_x ----&gt; C--\
      |         |  |
 ∑f_x |     λ1g |  \
      v         v   |
     ∑B_x ---&gt; E1g  | id · g
-      \<i></i>       \  |
+      \__       \  |
          \_   ρ1g|
-      k_x  \<i>___</i> \|
+      k_x  \_____ \|
                    D
+</pre>
 using the pushout property. Inserting an identity morphism gives a diagram
+<pre>
           h_x
     ∑A_x ----&gt; C ====== C
      |         |        |
@@ -827,6 +614,7 @@ using the pushout property. Inserting an identity morphism gives a diagram
      v         v        v
     ∑B_x ---&gt; E1g ----&gt; D  ~~&gt; k_x
                    ρ1g
+</pre>
 
 </div>
 <div class="code">
@@ -858,12 +646,14 @@ using the pushout property. Inserting an identity morphism gives a diagram
 </div>
 
 <div class="doc">
+<pre>
     C ===== C
     |       |
  λ1g|       | g
     v       v
    E1g ---&gt; D
        ρ1g
+</pre>
 
 </div>
 <div class="code">
@@ -882,12 +672,14 @@ using the pushout property. Inserting an identity morphism gives a diagram
 </div>
 
 <div class="doc">
+<pre>
     λ1g
   C ---&gt; E1g
   |       |
  g|       | ρ1g
   v       v
   D ===== D
+</pre>
 
 </div>
 <div class="code">
@@ -919,32 +711,16 @@ Lifting w.r.t. the coproduct diagram of J is the same as lifting
 &nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">H</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">Hl1</span> <span class="id" title="var">Hl2</span>]].<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutIn1"><span class="id" title="definition">PushoutIn1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram_pushout"><span class="id" title="definition">morcls_lp_coprod_diagram_pushout</span></a><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <span class="id" title="var">l</span>).<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">split</span>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-∑fx · (PushoutIn1 · l) = ∑hx 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc"><span class="id" title="definition">assoc</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Pushouts.html#PushoutSqrCommutes"><span class="id" title="definition">PushoutSqrCommutes</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp_coprod_diagram_pushout"><span class="id" title="definition">morcls_lp_coprod_diagram_pushout</span></a>)).<br/>
 
 <br/>
-</div>
-
-<div class="doc">
-∑hx · λ1f · l = ∑hx 
-</div>
-<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>. <span class="id" title="tactic">exact</span> <span class="id" title="var">Hl1</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a>.<br/>
-&nbsp;&nbsp;- </div>
-
-<div class="doc">
-(PushoutIn1 · l) · f = ∑kx 
-</div>
-<div class="code">
+&nbsp;&nbsp;- <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#assoc'"><span class="id" title="definition">assoc'</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a>. <span class="id" title="tactic">exact</span> <span class="id" title="var">Hl2</span>.<br/>
 
