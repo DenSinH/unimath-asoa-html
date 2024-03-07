@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1155"></a><h1 class="section">Lattice</h1>
+<a id="lab890"></a><h1 class="section">Lattice</h1>
  Catherine Lelay. Nov. 2016 - 
 <div class="paragraph"> </div>
 
@@ -126,7 +126,7 @@ Define new lattices using:
 </div>
 
 <div class="doc">
-<a id="lab1156"></a><h2 class="section">Definition</h2>
+<a id="lab891"></a><h2 class="section">Definition</h2>
 
 </div>
 <div class="code">
@@ -209,7 +209,7 @@ Define new lattices using:
 </div>
 
 <div class="doc">
-<a id="lab1157"></a><h2 class="section">Partial order in a lattice</h2>
+<a id="lab892"></a><h2 class="section">Partial order in a lattice</h2>
 
 <div class="paragraph"> </div>
 
@@ -438,7 +438,7 @@ Define new lattices using:
 </div>
 
 <div class="doc">
-<a id="lab1158"></a><h2 class="section">Lattice with a strong order</h2>
+<a id="lab893"></a><h2 class="section">Lattice with a strong order</h2>
 
 </div>
 <div class="code">
@@ -552,7 +552,7 @@ Define new lattices using:
 </div>
 
 <div class="doc">
-<a id="lab1159"></a><h2 class="section">Lattice with a total order</h2>
+<a id="lab894"></a><h2 class="section">Lattice with a total order</h2>
 
 </div>
 <div class="code">
@@ -770,7 +770,7 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1160"></a><h2 class="section">Lattice in an abmonoid</h2>
+<a id="lab895"></a><h2 class="section">Lattice in an abmonoid</h2>
 
 </div>
 <div class="code">
@@ -811,7 +811,7 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1161"></a><h2 class="section">Truncated minus</h2>
+<a id="lab896"></a><h2 class="section">Truncated minus</h2>
 
 </div>
 <div class="code">
@@ -1123,11 +1123,11 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1162"></a><h2 class="section">lattice and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#weq"><span class="id" title="definition">weq</span></a></span></h2>
+<a id="lab897"></a><h2 class="section">lattice and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#weq"><span class="id" title="definition">weq</span></a></span></h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1163"></a><h3 class="section">Definition</h3>
+<a id="lab898"></a><h3 class="section">Definition</h3>
 
 </div>
 <div class="code">
@@ -1158,7 +1158,7 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1164"></a><h3 class="section">Value of <span class="inlinecode"><a class="idref" href="UniMath.OrderTheory.Lattice.Lattice.html#Lle"><span class="id" title="definition">Lle</span></a></span></h3>
+<a id="lab899"></a><h3 class="section">Value of <span class="inlinecode"><a class="idref" href="UniMath.OrderTheory.Lattice.Lattice.html#Lle"><span class="id" title="definition">Lle</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -1180,7 +1180,7 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1165"></a><h3 class="section">Lattice with strong order</h3>
+<a id="lab900"></a><h3 class="section">Lattice with strong order</h3>
 
 </div>
 <div class="code">
@@ -1228,7 +1228,7 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1166"></a><h3 class="section">Lattice with a decidable order</h3>
+<a id="lab901"></a><h3 class="section">Lattice with a decidable order</h3>
 
 </div>
 <div class="code">
@@ -1274,7 +1274,7 @@ It is a lattice with a strong order
 </div>
 
 <div class="doc">
-<a id="lab1167"></a><h2 class="section">lattice in <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoid"><span class="id" title="definition">abmonoid</span></a></span></h2>
+<a id="lab902"></a><h2 class="section">lattice in <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoid"><span class="id" title="definition">abmonoid</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -1636,7 +1636,7 @@ definition of abmonoidfrac_lattice
 </div>
 
 <div class="doc">
-<a id="lab1168"></a><h3 class="section">lattice with a strong order in <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoidfrac"><span class="id" title="definition">abmonoidfrac</span></a></span></h3>
+<a id="lab903"></a><h3 class="section">lattice with a strong order in <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoidfrac"><span class="id" title="definition">abmonoidfrac</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -1858,7 +1858,7 @@ definition of abmonoidfrac_lattice
 </div>
 
 <div class="doc">
-<a id="lab1169"></a><h3 class="section">lattice with a decidable order in <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoidfrac"><span class="id" title="definition">abmonoidfrac</span></a></span></h3>
+<a id="lab904"></a><h3 class="section">lattice with a decidable order in <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoidfrac"><span class="id" title="definition">abmonoidfrac</span></a></span></h3>
 
 </div>
 <div class="code">

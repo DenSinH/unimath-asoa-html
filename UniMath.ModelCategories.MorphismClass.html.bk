@@ -36,8 +36,15 @@
 <span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">cat</span>.<br/>
 
 <br/>
+</div>
 
-<br/>
+<div class="doc">
+See UniMath/MoreFoundations/Subtypes.v 
+<div class="paragraph"> </div>
+
+ A subset in Coq is like (A : hSet) : A -&gt; Prop 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="morphism_class" class="idref" href="#morphism_class"><span class="id" title="definition">morphism_class</span></a> (<a id="C:1" class="idref" href="#C:1"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>) : <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a> :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">(</span></a><a id="X:2" class="idref" href="#X:2"><span class="id" title="binder">X</span></a> <a id="Y:3" class="idref" href="#Y:3"><span class="id" title="binder">Y</span></a> : <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#C:1"><span class="id" title="variable">C</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.Foundations.Sets.html#hsubtype"><span class="id" title="definition">hsubtype</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#X:2"><span class="id" title="variable">X</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#Y:3"><span class="id" title="variable">Y</span></a>).<br/>
 

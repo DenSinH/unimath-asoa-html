@@ -24,10 +24,10 @@
 **********************************************************
 Contents:
 <ul class="doclist">
-<li> Definition of left modules (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#LModule"><span class="id" title="definition">LModule</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span>) over a monad <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span>
+<li> Definition of left modules (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#LModule"><span class="id" title="definition">LModule</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span>) over a monad <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span>
 
 </li>
-<li> category of left modules <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#category_LModule"><span class="id" title="definition">category_LModule</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span> of range <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span> over a monad <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span>
+<li> category of left modules <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#category_LModule"><span class="id" title="definition">category_LModule</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span> of range <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span> over a monad <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span>
 
 </li>
 <li> Tautological left module <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#tautological_LModule"><span class="id" title="definition">tautological_LModule</span></a></span> : a monad is a module over itself
@@ -104,7 +104,7 @@ Written by: Ambroise Lafont (November 2016)
 </div>
 
 <div class="doc">
-<a id="lab640"></a><h1 class="section">Definition of module</h1>
+<a id="lab448"></a><h1 class="section">Definition of module</h1>
 
 </div>
 <div class="code">
@@ -173,7 +173,7 @@ Definition of modules over M of codomain D
 </div>
 
 <div class="doc">
-<a id="lab641"></a><h1 class="section">Monad category</h1>
+<a id="lab449"></a><h1 class="section">Monad category</h1>
 
 </div>
 <div class="code">

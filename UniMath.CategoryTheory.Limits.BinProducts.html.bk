@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab526"></a><h1 class="section">Direct implementation of binary products</h1>
+<a id="lab334"></a><h1 class="section">Direct implementation of binary products</h1>
 
 
 <div class="paragraph"> </div>
@@ -35,7 +35,7 @@ Extended by: Langston Barrett (@siddharthist), 2018
 
 <div class="paragraph"> </div>
 
-<a id="lab527"></a><h2 class="section">Contents</h2>
+<a id="lab335"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -54,7 +54,7 @@ Extended by: Langston Barrett (@siddharthist), 2018
 <li> Binary products from limits (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.BinProducts.html#BinProducts_from_Lims"><span class="id" title="lemma">BinProducts_from_Lims</span></a></span>)
 
 </li>
-<li> Equivalent universal property: <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a>)</span> <span class="inlinecode">×</span> <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span>
+<li> Equivalent universal property: <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a>)</span> <span class="inlinecode">×</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span>
 
 </li>
 <li> Terminal object as the unit (up to isomorphism) of binary products
@@ -102,7 +102,7 @@ Extended by: Langston Barrett (@siddharthist), 2018
 </div>
 
 <div class="doc">
-<a id="lab528"></a><h2 class="section">Definition of binary products</h2>
+<a id="lab336"></a><h2 class="section">Definition of binary products</h2>
 
 </div>
 <div class="code">
@@ -382,7 +382,7 @@ Extended by: Langston Barrett (@siddharthist), 2018
 </div>
 
 <div class="doc">
-<a id="lab529"></a><h2 class="section">Binary products from limits (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.BinProducts.html#BinProducts_from_Lims"><span class="id" title="lemma">BinProducts_from_Lims</span></a></span>)</h2>
+<a id="lab337"></a><h2 class="section">Binary products from limits (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.BinProducts.html#BinProducts_from_Lims"><span class="id" title="lemma">BinProducts_from_Lims</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -451,7 +451,7 @@ Extended by: Langston Barrett (@siddharthist), 2018
 </div>
 
 <div class="doc">
-<a id="lab530"></a><h2 class="section">Definition of binary product functor (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#binproduct_functor"><span class="id" title="definition">binproduct_functor</span></a></span>)</h2>
+<a id="lab338"></a><h2 class="section">Definition of binary product functor (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#binproduct_functor"><span class="id" title="definition">binproduct_functor</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -525,7 +525,7 @@ In the following section we show that if the morphism to components are
 </div>
 
 <div class="doc">
-<a id="lab531"></a><h2 class="section">Definition of a binary product structure on a functor category</h2>
+<a id="lab339"></a><h2 class="section">Definition of a binary product structure on a functor category</h2>
 
 <div class="paragraph"> </div>
 
@@ -640,7 +640,7 @@ In the following section we show that if the morphism to components are
 </div>
 
 <div class="doc">
-The product morphism of a diagram with vertex <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a></span> 
+The product morphism of a diagram with vertex <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a></span> 
 </div>
 <div class="code">
 
@@ -936,7 +936,7 @@ The product morphism of a diagram with vertex <span class="inlinecode"><a class=
 </div>
 
 <div class="doc">
-<a id="lab532"></a><h2 class="section">Construction of BinProduct from an isomorphism to BinProduct.</h2>
+<a id="lab340"></a><h2 class="section">Construction of BinProduct from an isomorphism to BinProduct.</h2>
 
 </div>
 <div class="code">
@@ -1001,7 +1001,7 @@ The product morphism of a diagram with vertex <span class="inlinecode"><a class=
 </div>
 
 <div class="doc">
-<a id="lab533"></a><h2 class="section">Equivalent universal property: <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a>)</span> <span class="inlinecode">×</span> <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span></h2>
+<a id="lab341"></a><h2 class="section">Equivalent universal property: <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a>)</span> <span class="inlinecode">×</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Equivalences.FullyFaithful.html#from_equiv_to_fully_faithful.B"><span class="id" title="variable">B</span></a>)</span></h2>
 
 
 <div class="paragraph"> </div>
@@ -1069,11 +1069,11 @@ Match non-implicit arguments of <span class="inlinecode"><a class="idref" href="
 </div>
 
 <div class="doc">
-<a id="lab534"></a><h2 class="section">Terminal object as the unit (up to isomorphism) of binary products</h2>
+<a id="lab342"></a><h2 class="section">Terminal object as the unit (up to isomorphism) of binary products</h2>
 
 <div class="paragraph"> </div>
 
- <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span>
+ <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span>
 </div>
 <div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="terminal_binprod_unit_l_z_aux" class="idref" href="#terminal_binprod_unit_l_z_aux"><span class="id" title="lemma">terminal_binprod_unit_l_z_aux</span></a> {<a id="C:272" class="idref" href="#C:272"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} (<a id="T:273" class="idref" href="#T:273"><span class="id" title="binder">T</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#C:272"><span class="id" title="variable">C</span></a>) (<a id="BC:274" class="idref" href="#BC:274"><span class="id" title="binder">BC</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProducts"><span class="id" title="definition">BinProducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#C:272"><span class="id" title="variable">C</span></a>) (<a id="x:275" class="idref" href="#x:275"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#C:272"><span class="id" title="variable">C</span></a>) :<br/>
@@ -1099,7 +1099,7 @@ Match non-implicit arguments of <span class="inlinecode"><a class="idref" href="
 &nbsp;&nbsp;&nbsp;&nbsp;+ </div>
 
 <div class="doc">
-The unique <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> 
+The unique <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> 
 </div>
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a>.<br/>
@@ -1111,7 +1111,7 @@ The unique <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics
 </div>
 
 <div class="doc">
-<span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span>
+<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">×</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">≅</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span>
 </div>
 <div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="terminal_binprod_unit_r_z_aux" class="idref" href="#terminal_binprod_unit_r_z_aux"><span class="id" title="lemma">terminal_binprod_unit_r_z_aux</span></a> {<a id="C:280" class="idref" href="#C:280"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} (<a id="T:281" class="idref" href="#T:281"><span class="id" title="binder">T</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#C:280"><span class="id" title="variable">C</span></a>) (<a id="BC:282" class="idref" href="#BC:282"><span class="id" title="binder">BC</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#BinProducts"><span class="id" title="definition">BinProducts</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#C:280"><span class="id" title="variable">C</span></a>) (<a id="x:283" class="idref" href="#x:283"><span class="id" title="binder">x</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#C:280"><span class="id" title="variable">C</span></a>) :<br/>
@@ -1138,7 +1138,7 @@ The unique <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics
 &nbsp;&nbsp;&nbsp;&nbsp;+ </div>
 
 <div class="doc">
-The unique <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> 
+The unique <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> 
 </div>
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#TerminalArrow"><span class="id" title="definition">TerminalArrow</span></a>.<br/>

@@ -64,7 +64,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;).<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intros</span> <span class="id" title="var">f</span> <span class="id" title="var">g</span> <span class="id" title="var">γ</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;* </div>
+
+<div class="doc">
+arrow dom f ∐ cod f --&gt; dom g ∐ cod g
+         simply given by γ: f --&gt; g 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.BinCoproducts.html#BinCoproductOfArrows"><span class="id" title="definition">BinCoproductOfArrows</span></a>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor00"><span class="id" title="definition">arrow_mor00</span></a> <span class="id" title="var">γ</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_mor11"><span class="id" title="definition">arrow_mor11</span></a> <span class="id" title="var">γ</span>).<br/>

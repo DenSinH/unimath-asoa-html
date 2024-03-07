@@ -21,17 +21,17 @@
 </div>
 
 <div class="doc">
-<a id="lab1012"></a><h1 class="section">Generalities on hProp.  Vladimir Voevodsky . May - Sep. 2011 .</h1>
+<a id="lab759"></a><h1 class="section">Generalities on hProp.  Vladimir Voevodsky . May - Sep. 2011 .</h1>
 
 
 <div class="paragraph"> </div>
 
 In this file we introduce the hProp - an analog of Prop defined based on the
 univalent semantics. We further introduce the hProp version of the "inhabited"
-construction - i.e. for any <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> in <span class="inlinecode"><span class="id" title="var">UU0</span></span> we construct an object <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> and a
-function <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> which plays the role of <span class="inlinecode"><span class="id" title="var">inhabits</span></span> from the
+construction - i.e. for any <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> in <span class="inlinecode"><span class="id" title="var">UU0</span></span> we construct an object <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> and a
+function <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> which plays the role of <span class="inlinecode"><span class="id" title="var">inhabits</span></span> from the
 Coq standard library. The semantic meaning of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a></span> is that it is universal
-among functions from <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> to objects of hProp. Proving that <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> is in
+among functions from <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> to objects of hProp. Proving that <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> is in
 <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> requires a resizing rule which can be written in the putative notation
 for such rules as follows :
 
@@ -70,13 +70,13 @@ preferred choice in this situation.
 
 <div class="paragraph"> </div>
 
-<a id="lab1013"></a><h2 class="section">Contents</h2>
+<a id="lab760"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> of types of h-level 1
 
 </li>
-<li> The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#tildehProp"><span class="id" title="definition">tildehProp</span></a></span> of pairs (P, p : P) where <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
+<li> The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#tildehProp"><span class="id" title="definition">tildehProp</span></a></span> of pairs (P, p : P) where <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
 
 </li>
 <li> Intuitionistic logic on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
@@ -135,7 +135,7 @@ preferred choice in this situation.
 
 <div class="paragraph"> </div>
 
-<a id="lab1014"></a><h2 class="section">Preamble</h2>
+<a id="lab761"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -162,11 +162,11 @@ Universe structure
 </div>
 
 <div class="doc">
-<a id="lab1015"></a><h2 class="section">To upstream files</h2>
+<a id="lab762"></a><h2 class="section">To upstream files</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1016"></a><h2 class="section">The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> of types of h-level 1</h2>
+<a id="lab763"></a><h2 class="section">The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> of types of h-level 1</h2>
 
 </div>
 <div class="code">
@@ -185,7 +185,7 @@ Universe structure
 </div>
 
 <div class="doc">
-<a id="lab1017"></a><h2 class="section">The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#tildehProp"><span class="id" title="definition">tildehProp</span></a></span> of pairs (P, p : P) where <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span></h2>
+<a id="lab764"></a><h2 class="section">The type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#tildehProp"><span class="id" title="definition">tildehProp</span></a></span> of pairs (P, p : P) where <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -288,11 +288,11 @@ Definition isdecEq (X : UU) : hProp := make_hProp _ (isapropisdeceq X).
 
 <div class="paragraph"> </div>
 
-<a id="lab1018"></a><h2 class="section">Intuitionistic logic on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span></h2>
+<a id="lab765"></a><h2 class="section">Intuitionistic logic on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span></h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1019"></a><h3 class="section">The <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> version of the "inhabited" construction.</h3>
+<a id="lab766"></a><h3 class="section">The <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> version of the "inhabited" construction.</h3>
 
 </div>
 <div class="code">
@@ -332,7 +332,7 @@ Definition isdecEq (X : UU) : hProp := make_hProp _ (isapropisdeceq X).
 Note that the previous definitions do not require RR1 in an essential way
   (except for the placing of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> - without RR1 it would be
   placed in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> <span class="inlinecode"><span class="id" title="var">UU1</span></span>). The first place where RR1 is essentially required is
-  in application of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a></span> to a function <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> 
+  in application of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hinhuniv"><span class="id" title="definition">hinhuniv</span></a></span> to a function <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> <span class="inlinecode"><span class="id" title="var">Y</span></span> 
 </div>
 <div class="code">
 
@@ -374,7 +374,7 @@ Note that the previous definitions do not require RR1 in an essential way
 </div>
 
 <div class="doc">
-<a id="lab1020"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> and negation <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#neg"><span class="id" title="definition">neg</span></a></span></h3>
+<a id="lab767"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> and negation <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#neg"><span class="id" title="definition">neg</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -410,7 +410,7 @@ Note that the previous definitions do not require RR1 in an essential way
 </div>
 
 <div class="doc">
-<a id="lab1021"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#coprod"><span class="id" title="inductive">coprod</span></a></span></h3>
+<a id="lab768"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#ishinh"><span class="id" title="definition">ishinh</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#coprod"><span class="id" title="inductive">coprod</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -452,7 +452,7 @@ Note that the previous definitions do not require RR1 in an essential way
 </div>
 
 <div class="doc">
-<a id="lab1022"></a><h2 class="section">Images and surjectivity for functions between types</h2>
+<a id="lab769"></a><h2 class="section">Images and surjectivity for functions between types</h2>
 
 (both depend only on the behavior of the corresponding function between the sets
 of connected components) 
@@ -508,7 +508,7 @@ of connected components)
 </div>
 
 <div class="doc">
-<a id="lab1023"></a><h3 class="section">The two-out-of-three properties of surjections</h3>
+<a id="lab770"></a><h3 class="section">The two-out-of-three properties of surjections</h3>
 
 </div>
 <div class="code">
@@ -539,7 +539,7 @@ of connected components)
 </div>
 
 <div class="doc">
-<a id="lab1024"></a><h3 class="section">A function between types which is an inclusion and a surjection is a weak equivalence</h3>
+<a id="lab771"></a><h3 class="section">A function between types which is an inclusion and a surjection is a weak equivalence</h3>
 
 </div>
 <div class="code">
@@ -579,7 +579,7 @@ On the other hand, a weak equivalence is surjective
 </div>
 
 <div class="doc">
-<a id="lab1025"></a><h3 class="section">Intuitionistic logic on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>.</h3>
+<a id="lab772"></a><h3 class="section">Intuitionistic logic on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>.</h3>
 
 </div>
 <div class="code">
@@ -677,7 +677,7 @@ On the other hand, a weak equivalence is surjective
 </div>
 
 <div class="doc">
-<a id="lab1026"></a><h3 class="section">Associativity and commutativity of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hdisj"><span class="id" title="definition">hdisj</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hconj"><span class="id" title="definition">hconj</span></a></span> up to logical equivalence</h3>
+<a id="lab773"></a><h3 class="section">Associativity and commutativity of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hdisj"><span class="id" title="definition">hdisj</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hconj"><span class="id" title="definition">hconj</span></a></span> up to logical equivalence</h3>
 
 </div>
 <div class="code">
@@ -694,7 +694,7 @@ On the other hand, a weak equivalence is surjective
 </div>
 
 <div class="doc">
-<a id="lab1027"></a><h3 class="section">Proof of the only non-trivial axiom of intuitionistic logic for our constructions. For the full list of axioms see e.g.  http://plato.stanford.edu/entries/logic-intuitionistic/</h3>
+<a id="lab774"></a><h3 class="section">Proof of the only non-trivial axiom of intuitionistic logic for our constructions. For the full list of axioms see e.g.  http://plato.stanford.edu/entries/logic-intuitionistic/</h3>
 
 </div>
 <div class="code">
@@ -722,7 +722,7 @@ On the other hand, a weak equivalence is surjective
 </div>
 
 <div class="doc">
-<a id="lab1028"></a><h3 class="section">Negation and quantification.</h3>
+<a id="lab775"></a><h3 class="section">Negation and quantification.</h3>
 
 
 <div class="paragraph"> </div>
@@ -776,7 +776,7 @@ implications hold see ???.
 </div>
 
 <div class="doc">
-<a id="lab1029"></a><h3 class="section">Negation and conjunction ("and") and disjunction ("or").</h3>
+<a id="lab776"></a><h3 class="section">Negation and conjunction ("and") and disjunction ("or").</h3>
 
 
 <div class="paragraph"> </div>
@@ -869,7 +869,7 @@ names <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartC.
 </div>
 
 <div class="doc">
-<a id="lab1030"></a><h3 class="section">Property of being decidable and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hdisj"><span class="id" title="definition">hdisj</span></a></span> ("or").</h3>
+<a id="lab777"></a><h3 class="section">Property of being decidable and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hdisj"><span class="id" title="definition">hdisj</span></a></span> ("or").</h3>
 
 
 <div class="paragraph"> </div>
@@ -895,7 +895,7 @@ For being decidable <span class="inlinecode"><a class="idref" href="UniMath.Foun
 </div>
 
 <div class="doc">
-<a id="lab1031"></a><h3 class="section">The double negation version of <span class="inlinecode"><span class="id" title="var">hinhabited</span></span> (does not require RR1).</h3>
+<a id="lab778"></a><h3 class="section">The double negation version of <span class="inlinecode"><span class="id" title="var">hinhabited</span></span> (does not require RR1).</h3>
 
 </div>
 <div class="code">
@@ -927,7 +927,7 @@ For being decidable <span class="inlinecode"><a class="idref" href="UniMath.Foun
 </div>
 
 <div class="doc">
-<a id="lab1032"></a><h2 class="section">Univalence for hProp</h2>
+<a id="lab779"></a><h2 class="section">Univalence for hProp</h2>
 
 </div>
 <div class="code">

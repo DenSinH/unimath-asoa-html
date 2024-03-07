@@ -25,7 +25,7 @@
 
 <div class="paragraph"> </div>
 
-Theory about set-valued presheaves. We write PreShv C for <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a>^<a class="idref" href="UniMath.Algebra.IteratedBinaryOperations.html#Monoids2.op"><span class="id" title="variable">op</span></a>,<span class="id" title="var">HSET</span></span>.
+Theory about set-valued presheaves. We write PreShv C for <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a>^<a class="idref" href="UniMath.Algebra.BinaryOperations.html#op"><span class="id" title="definition">op</span></a>,<span class="id" title="var">HSET</span></span>.
 
 <div class="paragraph"> </div>
 
@@ -231,7 +231,7 @@ Various limits and colimits in PreShv C
 </div>
 
 <div class="doc">
-<a id="lab657"></a><h1 class="section">Define some standard presheaves</h1>
+<a id="lab465"></a><h1 class="section">Define some standard presheaves</h1>
 
 </div>
 <div class="code">
@@ -260,7 +260,7 @@ Various limits and colimits in PreShv C
 </div>
 
 <div class="doc">
-<a id="lab658"></a><h1 class="section">Definition of the subobject classifier in a presheaf.</h1>
+<a id="lab466"></a><h1 class="section">Definition of the subobject classifier in a presheaf.</h1>
 
 <div class="paragraph"> </div>
 

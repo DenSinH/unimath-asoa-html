@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1033"></a><h1 class="section">Generalities on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>.  Vladimir Voevodsky. Feb. - Sep. 2011</h1>
+<a id="lab780"></a><h1 class="section">Generalities on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>.  Vladimir Voevodsky. Feb. - Sep. 2011</h1>
 
 
 <div class="paragraph"> </div>
@@ -42,7 +42,7 @@ moment without the Type in Type patch.
 
 <div class="paragraph"> </div>
 
-<a id="lab1034"></a><h2 class="section">Contents</h2>
+<a id="lab781"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> The type of sets i.e. of types of h-level 2 in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
@@ -56,8 +56,8 @@ moment without the Type in Type patch.
 </ul>
 
 </li>
-<li> Types <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> which satisfy "weak" axiom of choice for all families
-  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
+<li> Types <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> which satisfy "weak" axiom of choice for all families
+  <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
 
 </li>
 <li> The type of monic subtypes of a type (subsets of the set of connected
@@ -134,7 +134,7 @@ moment without the Type in Type patch.
 <li> Set quotients defined in terms of equivalence classes
 
 </li>
-<li> Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying
+<li> Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying
    compatibility condition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#iscomprelfun"><span class="id" title="definition">iscomprelfun</span></a></span>
 
 </li>
@@ -182,11 +182,11 @@ moment without the Type in Type patch.
 <li> The quotient set of a type by a relation
 
 </li>
-<li> Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot2"><span class="id" title="definition">setquot2</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying
+<li> Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot2"><span class="id" title="definition">setquot2</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying
    compatibility condition <span class="inlinecode"><span class="id" title="var">iscomplrelfun</span></span>
 
 </li>
-<li> Weak equivalence from <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_fin.Test_isfinite_isdeceq.x'"><span class="id" title="variable">x'</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_fin.Test_isfinite_isdeceq.x'"><span class="id" title="variable">x'</span></a>)</span>
+<li> Weak equivalence from <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="var">x'</span></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><span class="id" title="var">x'</span>)</span>
 
 </li>
 </ul>
@@ -199,7 +199,7 @@ moment without the Type in Type patch.
 
 <div class="paragraph"> </div>
 
-<a id="lab1035"></a><h2 class="section">Preamble</h2>
+<a id="lab782"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -214,7 +214,7 @@ moment without the Type in Type patch.
 </div>
 
 <div class="doc">
-<a id="lab1036"></a><h2 class="section">The type of sets i.e. of types of h-level 2 in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span></h2>
+<a id="lab783"></a><h2 class="section">The type of sets i.e. of types of h-level 2 in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -307,7 +307,7 @@ moment without the Type in Type patch.
 </div>
 
 <div class="doc">
-<a id="lab1037"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> as a set</h3>
+<a id="lab784"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span> as a set</h3>
 
 </div>
 <div class="code">
@@ -323,7 +323,7 @@ moment without the Type in Type patch.
 </div>
 
 <div class="doc">
-<a id="lab1038"></a><h3 class="section">Booleans as a set</h3>
+<a id="lab785"></a><h3 class="section">Booleans as a set</h3>
 
 </div>
 <div class="code">
@@ -347,19 +347,19 @@ moment without the Type in Type patch.
 </div>
 
 <div class="doc">
-<a id="lab1039"></a><h2 class="section">Types <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> which satisfy "weak" axiom of choice for all families <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span></h2>
+<a id="lab786"></a><h2 class="section">Types <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> which satisfy "weak" axiom of choice for all families <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span></h2>
 
 
 <div class="paragraph"> </div>
 
-Weak axiom of choice for <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> is the condition that for any family <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
-over <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> such that all members of the family are inhabited the space of sections
+Weak axiom of choice for <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> is the condition that for any family <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
+over <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> such that all members of the family are inhabited the space of sections
 of the family is inhabited. Equivalently one can formulate it as an assertion
-that for any surjection (see below) <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.p"><span class="id" title="variable">p</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> the space of sections of this
-surjection i.e. functions <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> together with a homotopy from
-<span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#funcomp"><span class="id" title="definition">funcomp</span></a></span> <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.p"><span class="id" title="variable">p</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#idfun"><span class="id" title="definition">idfun</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> is inhabited. It does not provide a choice of a
+that for any surjection (see below) <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.p"><span class="id" title="variable">p</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> the space of sections of this
+surjection i.e. functions <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> together with a homotopy from
+<span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#funcomp"><span class="id" title="definition">funcomp</span></a></span> <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.p"><span class="id" title="variable">p</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#idfun"><span class="id" title="definition">idfun</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> is inhabited. It does not provide a choice of a
 section for such a family or a surjection. In topos-theoretic semantics this
-condition corresponds to "local projectivity" of <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span>. It automatically holds
+condition corresponds to "local projectivity" of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span>. It automatically holds
 for the point <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a></span> but need not hold for sub-objects of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a></span> i.e. for types
 of h-level 1 (propositions). In particular it does not have to hold for general
 types with decidable equality.
@@ -460,11 +460,11 @@ Uses RR1
 </div>
 
 <div class="doc">
-<a id="lab1040"></a><h2 class="section">The type of monic subtypes of a type (subsets of the set of connected components)</h2>
+<a id="lab787"></a><h2 class="section">The type of monic subtypes of a type (subsets of the set of connected components)</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1041"></a><h3 class="section">General definitions</h3>
+<a id="lab788"></a><h3 class="section">General definitions</h3>
 
 </div>
 <div class="code">
@@ -537,7 +537,7 @@ Uses RR1
 </div>
 
 <div class="doc">
-<a id="lab1042"></a><h3 class="section">Direct product of two subtypes</h3>
+<a id="lab789"></a><h3 class="section">Direct product of two subtypes</h3>
 
 </div>
 <div class="code">
@@ -611,7 +611,7 @@ Uses RR1
 </div>
 
 <div class="doc">
-<a id="lab1043"></a><h3 class="section">A subtype with paths between any two elements is an <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>.</h3>
+<a id="lab790"></a><h3 class="section">A subtype with paths between any two elements is an <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>.</h3>
 
 </div>
 <div class="code">
@@ -688,11 +688,11 @@ Uses RR1
 </div>
 
 <div class="doc">
-<a id="lab1044"></a><h2 class="section">Relations on types (or equivalently relations on the sets of connected components)</h2>
+<a id="lab791"></a><h2 class="section">Relations on types (or equivalently relations on the sets of connected components)</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1045"></a><h3 class="section">Relations and boolean relations</h3>
+<a id="lab792"></a><h3 class="section">Relations and boolean relations</h3>
 
 </div>
 <div class="code">
@@ -709,7 +709,7 @@ Uses RR1
 </div>
 
 <div class="doc">
-<a id="lab1046"></a><h3 class="section">Standard properties of relations</h3>
+<a id="lab793"></a><h3 class="section">Standard properties of relations</h3>
 
 </div>
 <div class="code">
@@ -804,7 +804,7 @@ Note that the property of being (co-)antisymmetric is different from other
 <div class="doc">
 Note that the following condition on a relation is different from all the
   other which we have considered since it is not a property but a structure,
-  i.e. it is in general unclear whether <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#neqchoice"><span class="id" title="definition">neqchoice</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a>)</span> is provable. 
+  i.e. it is in general unclear whether <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#neqchoice"><span class="id" title="definition">neqchoice</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>)</span> is provable. 
 </div>
 <div class="code">
 
@@ -889,7 +889,7 @@ the relations on a set form a set
 </div>
 
 <div class="doc">
-<a id="lab1047"></a><h3 class="section">Elementary implications between properties of relations</h3>
+<a id="lab794"></a><h3 class="section">Elementary implications between properties of relations</h3>
 
 </div>
 <div class="code">
@@ -936,7 +936,7 @@ the relations on a set form a set
 </div>
 
 <div class="doc">
-<a id="lab1048"></a><h3 class="section">Standard properties of relations and logical equivalences</h3>
+<a id="lab795"></a><h3 class="section">Standard properties of relations and logical equivalences</h3>
 
 </div>
 <div class="code">
@@ -1084,7 +1084,7 @@ the relations on a set form a set
 </div>
 
 <div class="doc">
-<a id="lab1049"></a><h3 class="section">Preorderings, partial orderings, and associated types.</h3>
+<a id="lab796"></a><h3 class="section">Preorderings, partial orderings, and associated types.</h3>
 
 </div>
 <div class="code">
@@ -1298,7 +1298,7 @@ poset concepts
 </div>
 
 <div class="doc">
-<a id="lab1050"></a><h3 class="section">Eqivalence relations and associated types.</h3>
+<a id="lab797"></a><h3 class="section">Eqivalence relations and associated types.</h3>
 
 </div>
 <div class="code">
@@ -1322,7 +1322,7 @@ poset concepts
 </div>
 
 <div class="doc">
-<a id="lab1051"></a><h3 class="section">Direct product of two relations</h3>
+<a id="lab798"></a><h3 class="section">Direct product of two relations</h3>
 
 </div>
 <div class="code">
@@ -1366,7 +1366,7 @@ poset concepts
 </div>
 
 <div class="doc">
-<a id="lab1052"></a><h3 class="section">Negation of a relation and its properties</h3>
+<a id="lab799"></a><h3 class="section">Negation of a relation and its properties</h3>
 
 </div>
 <div class="code">
@@ -1425,7 +1425,7 @@ poset concepts
 </div>
 
 <div class="doc">
-<a id="lab1053"></a><h3 class="section">Boolean representation of decidable equality</h3>
+<a id="lab800"></a><h3 class="section">Boolean representation of decidable equality</h3>
 
 </div>
 <div class="code">
@@ -1483,7 +1483,7 @@ poset concepts
 </div>
 
 <div class="doc">
-<a id="lab1054"></a><h3 class="section">Boolean representation of decidable relations</h3>
+<a id="lab801"></a><h3 class="section">Boolean representation of decidable relations</h3>
 
 </div>
 <div class="code">
@@ -1551,16 +1551,16 @@ poset concepts
 
 <div class="doc">
 The following construction of "ct" ("canonical term") is inspired by the
-  ideas of George Gonthier. The expression <span class="inlinecode"><span class="id" title="var">ct</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a>)</span> where <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> is in
-  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hrel"><span class="id" title="definition">hrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> for some <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> and has a canonical structure of a decidable relation
-  and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span> are closed terms of type <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> such that <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span> is inhabited is the
-  term of type <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span> which relizes the canonical term in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#isdecrel"><span class="id" title="definition">isdecrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span>.
+  ideas of George Gonthier. The expression <span class="inlinecode"><span class="id" title="var">ct</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><span class="id" title="var">y</span>)</span> where <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> is in
+  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hrel"><span class="id" title="definition">hrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> for some <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> and has a canonical structure of a decidable relation
+  and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><span class="id" title="var">y</span></span> are closed terms of type <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> such that <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="var">y</span></span> is inhabited is the
+  term of type <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="var">y</span></span> which relizes the canonical term in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#isdecrel"><span class="id" title="definition">isdecrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="var">y</span></span>.
 
 <div class="paragraph"> </div>
 
   Definition pathstor_comp {X : UU} (R : decrel X) (x x' : X)
   (e : (decreltobrel R x x') = true) : R x x'.
-  Proof. unfold decreltobrel. intros.  induction (pr2 R x x') as <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">e'</span></span> <span class="inlinecode">|</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#ne"><span class="id" title="lemma">ne</span></a></span> <span class="inlinecode"></span>.
+  Proof. unfold decreltobrel. intros.  induction (pr2 R x x') as <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">e'</span></span> <span class="inlinecode">|</span> <span class="inlinecode"><span class="id" title="var">ne</span></span> <span class="inlinecode"></span>.
   apply e'. induction (nopathsfalsetotrue e).
 Defined.
 
@@ -1625,7 +1625,7 @@ Defined.
 </div>
 
 <div class="doc">
-<a id="lab1055"></a><h3 class="section">Restriction of a relation to a subtype</h3>
+<a id="lab802"></a><h3 class="section">Restriction of a relation to a subtype</h3>
 
 </div>
 <div class="code">
@@ -1760,7 +1760,7 @@ Defined.
 </div>
 
 <div class="doc">
-<a id="lab1056"></a><h3 class="section">Equivalence classes with respect to a given relation</h3>
+<a id="lab803"></a><h3 class="section">Equivalence classes with respect to a given relation</h3>
 
 </div>
 <div class="code">
@@ -1803,7 +1803,7 @@ Defined.
 </div>
 
 <div class="doc">
-<a id="lab1057"></a><h3 class="section">Direct product of equivalence classes</h3>
+<a id="lab804"></a><h3 class="section">Direct product of equivalence classes</h3>
 
 </div>
 <div class="code">
@@ -1838,7 +1838,7 @@ Defined.
 </div>
 
 <div class="doc">
-<a id="lab1058"></a><h2 class="section">Surjections to sets are epimorphisms</h2>
+<a id="lab805"></a><h2 class="section">Surjections to sets are epimorphisms</h2>
 
 </div>
 <div class="code">
@@ -1868,7 +1868,7 @@ Defined.
 </div>
 
 <div class="doc">
-<a id="lab1059"></a><h2 class="section">Epimorphisms are surjections to sets</h2>
+<a id="lab806"></a><h2 class="section">Epimorphisms are surjections to sets</h2>
 
 
 <div class="paragraph"> </div>
@@ -1955,7 +1955,7 @@ TODO find a proof without univalence for propositions (if possible)
 </div>
 
 <div class="doc">
-<a id="lab1060"></a><h2 class="section">Universal property enjoyed by surjections</h2>
+<a id="lab807"></a><h2 class="section">Universal property enjoyed by surjections</h2>
 
 <pre>
     f
@@ -2042,7 +2042,7 @@ then there exists a unique function from B to C that makes the diagram commute
 </div>
 
 <div class="doc">
-<a id="lab1061"></a><h2 class="section">Set quotients of types.</h2>
+<a id="lab808"></a><h2 class="section">Set quotients of types.</h2>
 
 
 <div class="paragraph"> </div>
@@ -2070,7 +2070,7 @@ be considered in the section about types of h-level 3.
 
 <div class="paragraph"> </div>
 
-<a id="lab1062"></a><h3 class="section">Setquotient defined in terms of equivalence classes</h3>
+<a id="lab809"></a><h3 class="section">Setquotient defined in terms of equivalence classes</h3>
 
 </div>
 <div class="code">
@@ -2154,7 +2154,7 @@ be considered in the section about types of h-level 3.
 </div>
 
 <div class="doc">
-<a id="lab1063"></a><h3 class="section">Universal property of <span class="inlinecode"><span class="id" title="var">seqtquot</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying compatibility condition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#iscomprelfun"><span class="id" title="definition">iscomprelfun</span></a></span></h3>
+<a id="lab810"></a><h3 class="section">Universal property of <span class="inlinecode"><span class="id" title="var">seqtquot</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying compatibility condition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#iscomprelfun"><span class="id" title="definition">iscomprelfun</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -2239,7 +2239,7 @@ Note : the axioms rax, sax and trans are not used in the proof of
 </div>
 
 <div class="doc">
-<a id="lab1064"></a><h3 class="section">Functoriality of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for functions mapping one relation to another</h3>
+<a id="lab811"></a><h3 class="section">Functoriality of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for functions mapping one relation to another</h3>
 
 </div>
 <div class="code">
@@ -2291,7 +2291,7 @@ Note : the axioms rax, sax and trans are not used in the proof of
 </div>
 
 <div class="doc">
-<a id="lab1065"></a><h3 class="section">Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for predicates of one and several variables</h3>
+<a id="lab812"></a><h3 class="section">Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for predicates of one and several variables</h3>
 
 </div>
 <div class="code">
@@ -2371,24 +2371,24 @@ Important note : theorems proved above can not be used (al least at the
   moment) to construct terms whose complete normalization (evaluation) is
   important. For example they should not be used * directly * to construct
   <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdeceq"><span class="id" title="definition">isdeceq</span></a></span> property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> since <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdeceq"><span class="id" title="definition">isdeceq</span></a></span> is in turn used to construct
-  boolean equality <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#booleq"><span class="id" title="definition">booleq</span></a></span> and evaluation of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#booleq"><span class="id" title="definition">booleq</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span> is important for
+  boolean equality <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#booleq"><span class="id" title="definition">booleq</span></a></span> and evaluation of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#booleq"><span class="id" title="definition">booleq</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="var">y</span></span> is important for
   computational purposes. Terms produced using these universality theorems will
   not fully normalize even in simple cases due to the following steps in the
   proof of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquotunivprop"><span class="id" title="lemma">setquotunivprop</span></a></span>. As a part of the proof term of this theorem there
   appears the composition of an application of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hPropUnivalence"><span class="id" title="lemma">hPropUnivalence</span></a></span>, transfer of
-  the resulting term of the identity type by <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a></span> along <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> followed by
+  the resulting term of the identity type by <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a></span> along <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> followed by
   the reconstruction of a equivalence (two directional implication) between the
   corresponding propositions through <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#eqweqmaphProp"><span class="id" title="definition">eqweqmaphProp</span></a></span>. The resulting
-  implications are "opaque" and the proofs of disjunctions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">\/</span> <span class="inlinecode"><span class="id" title="var">Q</span></span> produced
+  implications are "opaque" and the proofs of disjunctions <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">\/</span> <span class="inlinecode"><span class="id" title="var">Q</span></span> produced
   with the use of such implications can not be evaluated to one of the summands
   of the disjunction. An example is given by the following theorem
   <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#isdeceqsetquot_non_constr"><span class="id" title="lemma">isdeceqsetquot_non_constr</span></a></span> which, as simple experiments show, can not be used
   to compute the value of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#isdeceqsetquot"><span class="id" title="definition">isdeceqsetquot</span></a></span>. Below we give another proof of
-  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdeceq"><span class="id" title="definition">isdeceq</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a>)</span> using the same assumptions which is "constructive"
+  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdeceq"><span class="id" title="definition">isdeceq</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>)</span> using the same assumptions which is "constructive"
   i.e. usable for the evaluation purposes. 
 <div class="paragraph"> </div>
 
-<a id="lab1066"></a><h3 class="section">The case when <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquotfun"><span class="id" title="definition">setquotfun</span></a></span> is a surjection, inclusion or a weak equivalence</h3>
+<a id="lab813"></a><h3 class="section">The case when <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquotfun"><span class="id" title="definition">setquotfun</span></a></span> is a surjection, inclusion or a weak equivalence</h3>
 
 </div>
 <div class="code">
@@ -2482,7 +2482,7 @@ Important note : theorems proved above can not be used (al least at the
 </div>
 
 <div class="doc">
-<a id="lab1067"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> with respect to the product of two relations</h3>
+<a id="lab814"></a><h3 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> with respect to the product of two relations</h3>
 
 </div>
 <div class="code">
@@ -2554,7 +2554,7 @@ Important note : theorems proved above can not be used (al least at the
 </div>
 
 <div class="doc">
-<a id="lab1068"></a><h3 class="section">Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for functions of two variables</h3>
+<a id="lab815"></a><h3 class="section">Universal property of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for functions of two variables</h3>
 
 </div>
 <div class="code">
@@ -2615,7 +2615,7 @@ Important note : theorems proved above can not be used (al least at the
 </div>
 
 <div class="doc">
-<a id="lab1069"></a><h3 class="section">Functoriality of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for functions of two variables mapping one relation to another</h3>
+<a id="lab816"></a><h3 class="section">Functoriality of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> for functions of two variables mapping one relation to another</h3>
 
 </div>
 <div class="code">
@@ -2689,7 +2689,7 @@ Important note : theorems proved above can not be used (al least at the
 </div>
 
 <div class="doc">
-<a id="lab1070"></a><h3 class="section">Set quotients with respect to decidable equivalence relations have decidable equality</h3>
+<a id="lab817"></a><h3 class="section">Set quotients with respect to decidable equivalence relations have decidable equality</h3>
 
 </div>
 <div class="code">
@@ -2789,7 +2789,7 @@ Important note : theorems proved above can not be used (al least at the
 </div>
 
 <div class="doc">
-<a id="lab1071"></a><h3 class="section">Relations on quotient sets</h3>
+<a id="lab818"></a><h3 class="section">Relations on quotient sets</h3>
 
 
 <div class="paragraph"> </div>
@@ -3133,7 +3133,7 @@ Constructive proof of decidability of the quotient relation
 </div>
 
 <div class="doc">
-<a id="lab1072"></a><h3 class="section">Subtypes of quotients and quotients of subtypes</h3>
+<a id="lab819"></a><h3 class="section">Subtypes of quotients and quotients of subtypes</h3>
 
 </div>
 <div class="code">
@@ -3245,10 +3245,10 @@ Comment: unfortunetely <span class="inlinecode"><a class="idref" href="UniMath.F
 
 <div class="paragraph"> </div>
 
-  <span class="inlinecode"><span class="id" title="keyword">Lemma</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#test"><span class="id" title="section">test</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#eqrel"><span class="id" title="definition">eqrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hsubtype"><span class="id" title="definition">hsubtype</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a>))</span> <span class="inlinecode">(<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>)</span>
-   <span class="inlinecode">(<span class="id" title="keyword">is</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>))</span> <span class="inlinecode">:</span>
-     <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#reseqrel"><span class="id" title="definition">reseqrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.PartA.html#funcomp"><span class="id" title="definition">funcomp</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a>)</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a>))</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a></span> <span class="inlinecode"><span class="id" title="var">_</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="keyword">is</span>))</span>
-           <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#fromsubquot"><span class="id" title="definition">fromsubquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a></span> <span class="inlinecode"><span class="id" title="var">_</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode"><span class="id" title="keyword">is</span>)).</span>
+  <span class="inlinecode"><span class="id" title="keyword">Lemma</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.BinProducts.html#test"><span class="id" title="section">test</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#eqrel"><span class="id" title="definition">eqrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hsubtype"><span class="id" title="definition">hsubtype</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot"><span class="id" title="definition">setquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>))</span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>)</span>
+   <span class="inlinecode">(<span class="id" title="keyword">is</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>))</span> <span class="inlinecode">:</span>
+     <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#reseqrel"><span class="id" title="definition">reseqrel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.PartA.html#funcomp"><span class="id" title="definition">funcomp</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a>)</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a>))</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a></span> <span class="inlinecode"><span class="id" title="var">_</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="keyword">is</span>))</span>
+           <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#fromsubquot"><span class="id" title="definition">fromsubquot</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a></span> <span class="inlinecode"><span class="id" title="var">_</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode"><span class="id" title="keyword">is</span>)).</span>
    <span class="inlinecode"><a class="proof" href="#">Show proof.</a><br/><div class="proof"></span> <span class="inlinecode"><span class="id" title="tactic">intros</span>.</span> <span class="inlinecode"><span class="id" title="tactic">apply</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a>.</span> <span class="inlinecode"></div></span>
 
 <div class="paragraph"> </div>
@@ -3261,9 +3261,9 @@ Comment: unfortunetely <span class="inlinecode"><a class="idref" href="UniMath.F
   The issue which arises here is the same one which arises in several other
   places in the work with quotients. It can be traced back first to the failure
   of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#invmaponpathsincl"><span class="id" title="definition">invmaponpathsincl</span></a></span> to map <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a></span> and then to the fact that
-  for <span class="inlinecode">(<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<span class="id" title="keyword">is</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>)</span> the term
-  <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.t"><span class="id" title="variable">t</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#proofirrelevance"><span class="id" title="lemma">proofirrelevance</span></a></span> <span class="inlinecode"><span class="id" title="keyword">is</span></span> <span class="inlinecode">:</span> <span class="inlinecode">∏</span> <span class="inlinecode"><span class="id" title="var">x1</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.x2"><span class="id" title="variable">x2</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>,</span> <span class="inlinecode"><span class="id" title="var">x1</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.x2"><span class="id" title="variable">x2</span></a></span> does not satisfy
-  (definitionally) the condition <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.t"><span class="id" title="variable">t</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">==</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span>.
+  for <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<span class="id" title="keyword">is</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>)</span> the term
+  <span class="inlinecode"><span class="id" title="var">t</span></span> <span class="inlinecode">:=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#proofirrelevance"><span class="id" title="lemma">proofirrelevance</span></a></span> <span class="inlinecode"><span class="id" title="keyword">is</span></span> <span class="inlinecode">:</span> <span class="inlinecode">∏</span> <span class="inlinecode"><span class="id" title="var">x1</span></span> <span class="inlinecode"><span class="id" title="var">x2</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>,</span> <span class="inlinecode"><span class="id" title="var">x1</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><span class="id" title="var">x2</span></span> does not satisfy
+  (definitionally) the condition <span class="inlinecode"><span class="id" title="var">t</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">==</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#idpath"><span class="id" title="abbreviation">idpath</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span>.
 
 <div class="paragraph"> </div>
 
@@ -3293,7 +3293,7 @@ Comment: unfortunetely <span class="inlinecode"><a class="idref" href="UniMath.F
   as far as I can see, provide any problems for normalization or for the
   decidability of typing. Using tfc one can give a construction of
   <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#proofirrelevance"><span class="id" title="lemma">proofirrelevance</span></a></span> as follows (recall that
-  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode">∏</span> <span class="inlinecode"><span class="id" title="var">x1</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.x2"><span class="id" title="variable">x2</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#iscontr"><span class="id" title="definition">iscontr</span></a></span> <span class="inlinecode">(<span class="id" title="var">x1</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.x2"><span class="id" title="variable">x2</span></a>)</span>) :
+  <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaprop"><span class="id" title="definition">isaprop</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode">∏</span> <span class="inlinecode"><span class="id" title="var">x1</span></span> <span class="inlinecode"><span class="id" title="var">x2</span>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#iscontr"><span class="id" title="definition">iscontr</span></a></span> <span class="inlinecode">(<span class="id" title="var">x1</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><span class="id" title="var">x2</span>)</span>) :
 
 <div class="paragraph"> </div>
 
@@ -3309,10 +3309,10 @@ Comment: unfortunetely <span class="inlinecode"><a class="idref" href="UniMath.F
   will enable to define <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#invmaponpathsincl"><span class="id" title="definition">invmaponpathsincl</span></a></span> in such a way that the existing
   proofs of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#setquotl0"><span class="id" title="lemma">setquotl0</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#fromsubquot"><span class="id" title="definition">fromsubquot</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#weqsubquot"><span class="id" title="definition">weqsubquot</span></a></span> will provide the
   desired behavior of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#fromsubquot"><span class="id" title="definition">fromsubquot</span></a></span> on terms of the form
-  <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a></span> <span class="inlinecode"><span class="id" title="var">_</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode"><span class="id" title="keyword">is</span>)</span>. 
+  <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a></span> <span class="inlinecode"><span class="id" title="var">_</span></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquotpr"><span class="id" title="lemma">setquotpr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode"><span class="id" title="keyword">is</span>)</span>. 
 <div class="paragraph"> </div>
 
-<a id="lab1073"></a><h3 class="section">The set of connected components of type.</h3>
+<a id="lab820"></a><h3 class="section">The set of connected components of type.</h3>
 
 </div>
 <div class="code">
@@ -3343,7 +3343,7 @@ Comment: unfortunetely <span class="inlinecode"><a class="idref" href="UniMath.F
 </div>
 
 <div class="doc">
-<a id="lab1074"></a><h2 class="section">Set quotients. Construction 2.</h2>
+<a id="lab821"></a><h2 class="section">Set quotients. Construction 2.</h2>
 
 
 <div class="paragraph"> </div>
@@ -3372,7 +3372,7 @@ set_quotients and the one given here agree up to an isomorphism
 (weak equivalence). 
 <div class="paragraph"> </div>
 
-<a id="lab1075"></a><h3 class="section">Functions compatible with a relation</h3>
+<a id="lab822"></a><h3 class="section">Functions compatible with a relation</h3>
 
 </div>
 <div class="code">
@@ -3626,10 +3626,10 @@ Lemma test {X : UU} (R : eqrel X) (Y : hSet) (f : setquot R -&gt; Y) :
            (λ x x' : X, λ r : R x x',
                                 maponpaths f (iscompsetquotpr R x x' r))).
 Proof.
- intros. apply funextfun. intro c. simpl. induction c as <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a></span> <span class="inlinecode"><span class="id" title="var">iseq</span></span> <span class="inlinecode"></span>. simpl. 
+ intros. apply funextfun. intro c. simpl. induction c as <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a></span> <span class="inlinecode"><span class="id" title="var">iseq</span></span> <span class="inlinecode"></span>. simpl. 
 <div class="paragraph"> </div>
 
-<a id="lab1076"></a><h3 class="section">The quotient set of a type by a relation.</h3>
+<a id="lab823"></a><h3 class="section">The quotient set of a type by a relation.</h3>
 
 </div>
 <div class="code">
@@ -3695,7 +3695,7 @@ We will be asuming below that setquot2 is in UU.  In the future it should
 </div>
 
 <div class="doc">
-<a id="lab1077"></a><h3 class="section">Universal property of <span class="inlinecode"><span class="id" title="var">seqtquot2</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying compatibility condition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#iscomprelfun"><span class="id" title="definition">iscomprelfun</span></a></span></h3>
+<a id="lab824"></a><h3 class="section">Universal property of <span class="inlinecode"><span class="id" title="var">seqtquot2</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> for functions to sets satisfying compatibility condition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#iscomprelfun"><span class="id" title="definition">iscomprelfun</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -3717,7 +3717,7 @@ We will be asuming below that setquot2 is in UU.  In the future it should
 </div>
 
 <div class="doc">
-<a id="lab1078"></a><h3 class="section">Weak equivalence from <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_fin.Test_isfinite_isdeceq.x'"><span class="id" title="variable">x'</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_fin.Test_isfinite_isdeceq.x'"><span class="id" title="variable">x'</span></a>)</span></h3>
+<a id="lab825"></a><h3 class="section">Weak equivalence from <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode"><span class="id" title="var">x'</span></span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#setquot2pr"><span class="id" title="definition">setquot2pr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode"><span class="id" title="var">x'</span>)</span></h3>
 
 </div>
 <div class="code">
@@ -3761,7 +3761,7 @@ We will be asuming below that setquot2 is in UU.  In the future it should
 </div>
 
 <div class="doc">
-<a id="lab1079"></a><h2 class="section">Consequences of univalence</h2>
+<a id="lab826"></a><h2 class="section">Consequences of univalence</h2>
 
 </div>
 <div class="code">

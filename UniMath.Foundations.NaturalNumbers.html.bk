@@ -21,13 +21,13 @@
 </div>
 
 <div class="doc">
-<a id="lab801"></a><h1 class="section">Natural numbers and their properties. Vladimir Voevodsky. Apr. - Sep. 2011</h1>
+<a id="lab548"></a><h1 class="section">Natural numbers and their properties. Vladimir Voevodsky. Apr. - Sep. 2011</h1>
 
 
 <div class="paragraph"> </div>
 
 This file contains the formulations and proofs of general properties of natural
-numbers from the univalent perspecive. <a id="lab802"></a><h2 class="section">Contents</h2>
+numbers from the univalent perspecive. <a id="lab549"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> Equality and inequality on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>
@@ -85,13 +85,13 @@ numbers from the univalent perspecive. <a id="lab802"></a><h2 class="section">Co
 <li> Addition and comparisons
 
 </li>
-<li> Comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span>
+<li> Comparisons and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span>
 
 </li>
-<li> Two comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span>
+<li> Two comparisons and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span>
 
 </li>
-<li> Comparison alternatives and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span>
+<li> Comparison alternatives and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span>
 
 </li>
 <li> Cancellation properties of <span class="inlinecode"><span class="id" title="var">plus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>
@@ -121,7 +121,7 @@ numbers from the univalent perspecive. <a id="lab802"></a><h2 class="section">Co
 <li> Division with a remainder on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>
 
 </li>
-<li> Exponentiation <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natpower"><span class="id" title="definition">natpower</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> ("n to the power of m") on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>
+<li> Exponentiation <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natpower"><span class="id" title="definition">natpower</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> ("n to the power of m") on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>
 
 </li>
 <li> Factorial on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>
@@ -130,23 +130,23 @@ numbers from the univalent perspecive. <a id="lab802"></a><h2 class="section">Co
 </ul>
 
 </li>
-<li> The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#di"><span class="id" title="definition">di</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> whose image is the
-  complement of one element <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span>.
+<li> The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#di"><span class="id" title="definition">di</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> whose image is the
+  complement of one element <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span>.
 
 </li>
-<li> The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#si"><span class="id" title="definition">si</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> that take the value <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span>
+<li> The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#si"><span class="id" title="definition">si</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> that take the value <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span>
   twice.
 
 </li>
-<li> Inductive types <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.WellFoundedRelations.html#le"><span class="id" title="definition">le</span></a></span> with values in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
+<li> Inductive types <span class="inlinecode"><span class="id" title="var">le</span></span> with values in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span>
 <ul class="doclist">
-<li> A generalization of <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.WellFoundedRelations.html#le"><span class="id" title="definition">le</span></a></span> and its properties
+<li> A generalization of <span class="inlinecode"><span class="id" title="var">le</span></span> and its properties
 
 </li>
-<li> Inductive types <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.WellFoundedRelations.html#le"><span class="id" title="definition">le</span></a></span> with values in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> are in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
+<li> Inductive types <span class="inlinecode"><span class="id" title="var">le</span></span> with values in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> are in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
 
 </li>
-<li> Comparison between <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.WellFoundedRelations.html#le"><span class="id" title="definition">le</span></a></span> with values in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natleh"><span class="id" title="definition">natleh</span></a></span>
+<li> Comparison between <span class="inlinecode"><span class="id" title="var">le</span></span> with values in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natleh"><span class="id" title="definition">natleh</span></a></span>
 
 </li>
 </ul>
@@ -156,7 +156,7 @@ numbers from the univalent perspecive. <a id="lab802"></a><h2 class="section">Co
 
 <div class="paragraph"> </div>
 
-<a id="lab803"></a><h2 class="section">Preamble</h2>
+<a id="lab550"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -172,7 +172,7 @@ numbers from the univalent perspecive. <a id="lab802"></a><h2 class="section">Co
 To up-stream files  
 <div class="paragraph"> </div>
 
-<a id="lab804"></a><h2 class="section">Equality and inequality on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h2>
+<a id="lab551"></a><h2 class="section">Equality and inequality on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -290,7 +290,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab805"></a><h3 class="section">Basic properties of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> and the proofs of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdeceq"><span class="id" title="definition">isdeceq</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaset"><span class="id" title="definition">isaset</span></a></span> for <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h3>
+<a id="lab552"></a><h3 class="section">Basic properties of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> and the proofs of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdeceq"><span class="id" title="definition">isdeceq</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isaset"><span class="id" title="definition">isaset</span></a></span> for <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h3>
 
 </div>
 <div class="code">
@@ -369,7 +369,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab806"></a><h3 class="section"><span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode"></span> is a decidable inclusion.</h3>
+<a id="lab553"></a><h3 class="section"><span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode"></span> is a decidable inclusion.</h3>
 
 </div>
 <div class="code">
@@ -396,11 +396,11 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab807"></a><h2 class="section">Inequalities on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h2>
+<a id="lab554"></a><h2 class="section">Inequalities on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab808"></a><h3 class="section">Boolean "less or equal" and "greater or equal" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h3>
+<a id="lab555"></a><h3 class="section">Boolean "less or equal" and "greater or equal" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h3>
 
 </div>
 <div class="code">
@@ -417,13 +417,13 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab809"></a><h3 class="section">Semi-boolean "greater" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span></h3>
+<a id="lab556"></a><h3 class="section">Semi-boolean "greater" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span></h3>
 
 
 <div class="paragraph"> </div>
 
 1. Note that due to its definition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span> automatically has the property that
-   <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> <span class="inlinecode">&lt;-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a>)</span> and the same applies to all other
+   <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> <span class="inlinecode">&lt;-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgth"><span class="id" title="definition">natgth</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span>)</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a>)</span> and the same applies to all other
    inequalities defined in this section.
 2. We choose "greater" as the root relation from which we define all other
    relations on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> because it is more natural to extend "greater" to integers
@@ -568,7 +568,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab810"></a><h3 class="section">Semi-boolean "less" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natlth"><span class="id" title="definition">natlth</span></a></span></h3>
+<a id="lab557"></a><h3 class="section">Semi-boolean "less" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natlth"><span class="id" title="definition">natlth</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -647,7 +647,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab811"></a><h3 class="section">Semi-boolean "less or equal " on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natleh"><span class="id" title="definition">natleh</span></a></span></h3>
+<a id="lab558"></a><h3 class="section">Semi-boolean "less or equal " on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natleh"><span class="id" title="definition">natleh</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -796,7 +796,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab812"></a><h3 class="section">Semi-boolean "greater or equal" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgeh"><span class="id" title="definition">natgeh</span></a></span>.</h3>
+<a id="lab559"></a><h3 class="section">Semi-boolean "greater or equal" on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natgeh"><span class="id" title="definition">natgeh</span></a></span>.</h3>
 
 </div>
 <div class="code">
@@ -849,7 +849,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab813"></a><h3 class="section">Simple implications between comparisons</h3>
+<a id="lab560"></a><h3 class="section">Simple implications between comparisons</h3>
 
 </div>
 <div class="code">
@@ -898,7 +898,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab814"></a><h3 class="section">Comparison alternatives</h3>
+<a id="lab561"></a><h3 class="section">Comparison alternatives</h3>
 
 </div>
 <div class="code">
@@ -953,7 +953,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab815"></a><h3 class="section">Mixed transitivities</h3>
+<a id="lab562"></a><h3 class="section">Mixed transitivities</h3>
 
 </div>
 <div class="code">
@@ -996,7 +996,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab816"></a><h3 class="section">Two comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span></h3>
+<a id="lab563"></a><h3 class="section">Two comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -1057,7 +1057,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab817"></a><h3 class="section">Comparision alternatives and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span></h3>
+<a id="lab564"></a><h3 class="section">Comparision alternatives and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -1100,7 +1100,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab818"></a><h2 class="section">Some properties of <span class="inlinecode"><span class="id" title="var">plus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h2>
+<a id="lab565"></a><h2 class="section">Some properties of <span class="inlinecode"><span class="id" title="var">plus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -1111,7 +1111,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab819"></a><h3 class="section">The structure of the additive abelian monoid on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab566"></a><h3 class="section">The structure of the additive abelian monoid on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -1174,7 +1174,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab820"></a><h3 class="section">Addition and comparisons</h3>
+<a id="lab567"></a><h3 class="section">Addition and comparisons</h3>
 
 <div class="paragraph"> </div>
 
@@ -1393,7 +1393,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab821"></a><h3 class="section">Comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span></h3>
+<a id="lab568"></a><h3 class="section">Comparisons and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span></h3>
 
 </div>
 <div class="code">
@@ -1422,7 +1422,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab822"></a><h3 class="section">Two comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span></h3>
+<a id="lab569"></a><h3 class="section">Two comparisons and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span></h3>
 
 </div>
 <div class="code">
@@ -1471,7 +1471,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab823"></a><h3 class="section">Comparision alternatives and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span></h3>
+<a id="lab570"></a><h3 class="section">Comparision alternatives and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">+</span> <span class="inlinecode">1</span></h3>
 
 </div>
 <div class="code">
@@ -1523,7 +1523,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab824"></a><h3 class="section">Cancellation properties of <span class="inlinecode"><span class="id" title="var">plus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab571"></a><h3 class="section">Cancellation properties of <span class="inlinecode"><span class="id" title="var">plus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -1614,7 +1614,7 @@ To up-stream files
 </div>
 
 <div class="doc">
-<a id="lab825"></a><h3 class="section">Some properties of <span class="inlinecode"><span class="id" title="var">minus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab572"></a><h3 class="section">Some properties of <span class="inlinecode"><span class="id" title="var">minus</span></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 
 <div class="paragraph"> </div>
@@ -1762,7 +1762,7 @@ where "n - m" := (minus n m) : nat_scope.
 </div>
 
 <div class="doc">
-<a id="lab826"></a><h3 class="section">Comparisons and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">-</span> <span class="inlinecode">1</span></h3>
+<a id="lab573"></a><h3 class="section">Comparisons and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">-</span> <span class="inlinecode">1</span></h3>
 
 </div>
 <div class="code">
@@ -1869,7 +1869,7 @@ where "n - m" := (minus n m) : nat_scope.
 </div>
 
 <div class="doc">
-<a id="lab827"></a><h3 class="section">Basic algebraic properties of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#mul"><span class="id" title="definition">mul</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h3>
+<a id="lab574"></a><h3 class="section">Basic algebraic properties of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#mul"><span class="id" title="definition">mul</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span>.</h3>
 
 
 <div class="paragraph"> </div>
@@ -1984,7 +1984,7 @@ where "n - m" := (minus n m) : nat_scope.
 </div>
 
 <div class="doc">
-<a id="lab828"></a><h3 class="section">Cancellation properties of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#mul"><span class="id" title="definition">mul</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab575"></a><h3 class="section">Cancellation properties of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#mul"><span class="id" title="definition">mul</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -2026,7 +2026,7 @@ where "n - m" := (minus n m) : nat_scope.
 </div>
 
 <div class="doc">
-<a id="lab829"></a><h3 class="section">Multiplication and comparisons</h3>
+<a id="lab576"></a><h3 class="section">Multiplication and comparisons</h3>
 
 <div class="paragraph"> </div>
 
@@ -2156,7 +2156,7 @@ where "n - m" := (minus n m) : nat_scope.
 </div>
 
 <div class="doc">
-<a id="lab830"></a><h3 class="section">Division with a remainder on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab577"></a><h3 class="section">Division with a remainder on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 
 <div class="paragraph"> </div>
@@ -2320,7 +2320,7 @@ for all pairs (n,m) including pairs of the form (n,0).
 </div>
 
 <div class="doc">
-<a id="lab831"></a><h3 class="section">Exponentiation <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natpower"><span class="id" title="definition">natpower</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> ("n to the power m") on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab578"></a><h3 class="section">Exponentiation <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#natpower"><span class="id" title="definition">natpower</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> ("n to the power m") on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -2336,7 +2336,7 @@ for all pairs (n,m) including pairs of the form (n,0).
 </div>
 
 <div class="doc">
-<a id="lab832"></a><h3 class="section">Factorial on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
+<a id="lab579"></a><h3 class="section">Factorial on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -2352,7 +2352,7 @@ for all pairs (n,m) including pairs of the form (n,0).
 </div>
 
 <div class="doc">
-<a id="lab833"></a><h2 class="section">The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#di"><span class="id" title="definition">di</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> whose image is the complement of one element <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span>.</h2>
+<a id="lab580"></a><h2 class="section">The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#di"><span class="id" title="definition">di</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> whose image is the complement of one element <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span>.</h2>
 
 </div>
 <div class="code">
@@ -2465,7 +2465,7 @@ for all pairs (n,m) including pairs of the form (n,0).
 </div>
 
 <div class="doc">
-<a id="lab834"></a><h2 class="section">The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#si"><span class="id" title="definition">si</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> that take the value <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.i"><span class="id" title="variable">i</span></a></span> twice.</h2>
+<a id="lab581"></a><h2 class="section">The order-preserving functions <span class="inlinecode"><a class="idref" href="UniMath.Foundations.NaturalNumbers.html#si"><span class="id" title="definition">si</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> that take the value <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.i"><span class="id" title="variable">i</span></a></span> twice.</h2>
 
 </div>
 <div class="code">

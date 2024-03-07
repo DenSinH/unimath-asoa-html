@@ -21,8 +21,8 @@
 </div>
 
 <div class="doc">
-<a id="lab648"></a><h1 class="section">Monics</h1>
-<a id="lab649"></a><h2 class="section">Contents</h2>
+<a id="lab456"></a><h1 class="section">Monics</h1>
+<a id="lab457"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> Definitions of Monics
@@ -59,7 +59,7 @@
 </div>
 
 <div class="doc">
-<a id="lab650"></a><h1 class="section">Definition of Monics</h1>
+<a id="lab458"></a><h1 class="section">Definition of Monics</h1>
 
 </div>
 <div class="code">
@@ -225,7 +225,7 @@ Transport of isMonic
 </div>
 
 <div class="doc">
-<a id="lab651"></a><h1 class="section">Construction of the subcategory consisting of all monics.</h1>
+<a id="lab459"></a><h1 class="section">Construction of the subcategory consisting of all monics.</h1>
 
 </div>
 <div class="code">
@@ -309,7 +309,7 @@ Transport of isMonic
 </div>
 
 <div class="doc">
-<a id="lab652"></a><h1 class="section">In functor categories monics can be constructed from pointwise monics</h1>
+<a id="lab460"></a><h1 class="section">In functor categories monics can be constructed from pointwise monics</h1>
 
 </div>
 <div class="code">

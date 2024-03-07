@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab338"></a><h1 class="section">Other structures in <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
+<a id="lab146"></a><h1 class="section">Other structures in <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab339"></a><h2 class="section">Contents</h2>
+<a id="lab147"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -117,7 +117,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab340"></a><h2 class="section">Natural numbers object (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#NNO_HSET"><span class="id" title="definition">NNO_HSET</span></a></span>)</h2>
+<a id="lab148"></a><h2 class="section">Natural numbers object (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#NNO_HSET"><span class="id" title="definition">NNO_HSET</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -154,7 +154,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab341"></a><h2 class="section">Exponentials (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#Exponentials_HSET"><span class="id" title="lemma">Exponentials_HSET</span></a></span>)</h2>
+<a id="lab149"></a><h2 class="section">Exponentials (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#Exponentials_HSET"><span class="id" title="lemma">Exponentials_HSET</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -227,16 +227,16 @@ This checks that if we use constprod_functor2 the flip is not necessary
 </div>
 
 <div class="doc">
-<a id="lab342"></a><h2 class="section">Construction of exponentials for functors into HSET</h2>
+<a id="lab150"></a><h2 class="section">Construction of exponentials for functors into HSET</h2>
 
 <div class="paragraph"> </div>
 
- This section defines exponential in <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a>,<span class="id" title="var">HSET</span></span> following a slight
+ This section defines exponential in <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a>,<span class="id" title="var">HSET</span></span> following a slight
 variation of Moerdijk-MacLane (p. 46, Prop. 1).
 
 <div class="paragraph"> </div>
 
-The formula for <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a>,<span class="id" title="keyword">Set</span></span> is G^F(f)=Hom(Hom(f,−)×id(F),G) taken from:
+The formula for <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a>,<span class="id" title="keyword">Set</span></span> is G^F(f)=Hom(Hom(f,−)×id(F),G) taken from:
 
 <div class="paragraph"> </div>
 
@@ -367,7 +367,7 @@ http://mathoverflow.net/questions/104152/exponentials-in-functor-categories
 </div>
 
 <div class="doc">
-<a id="lab343"></a><h2 class="section">Kernel pairs (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#kernel_pair_HSET"><span class="id" title="definition">kernel_pair_HSET</span></a></span>)</h2>
+<a id="lab151"></a><h2 class="section">Kernel pairs (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#kernel_pair_HSET"><span class="id" title="definition">kernel_pair_HSET</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -472,7 +472,7 @@ Formulation in the categorical language of the universal property
 </div>
 
 <div class="doc">
-<a id="lab344"></a><h2 class="section">Effective epis (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#EffectiveEpis_HSET"><span class="id" title="lemma">EffectiveEpis_HSET</span></a></span>)</h2>
+<a id="lab152"></a><h2 class="section">Effective epis (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#EffectiveEpis_HSET"><span class="id" title="lemma">EffectiveEpis_HSET</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -492,7 +492,7 @@ Formulation in the categorical language of the universal property
 </div>
 
 <div class="doc">
-<a id="lab345"></a><h2 class="section">Split epis with axiom of choice (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#SplitEpis_HSET"><span class="id" title="lemma">SplitEpis_HSET</span></a></span>)</h2>
+<a id="lab153"></a><h2 class="section">Split epis with axiom of choice (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#SplitEpis_HSET"><span class="id" title="lemma">SplitEpis_HSET</span></a></span>)</h2>
 
 </div>
 <div class="code">
@@ -513,7 +513,7 @@ Formulation in the categorical language of the universal property
 </div>
 
 <div class="doc">
-<a id="lab346"></a><h2 class="section">Forgetful <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor"><span class="id" title="definition">functor</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.Type.Core.html#type_precat"><span class="id" title="definition">type_precat</span></a></span></h2>
+<a id="lab154"></a><h2 class="section">Forgetful <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Functors.html#functor"><span class="id" title="definition">functor</span></a></span> to <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.Type.Core.html#type_precat"><span class="id" title="definition">type_precat</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -565,7 +565,7 @@ Defined.
 
 <div class="paragraph"> </div>
 
-<a id="lab347"></a><h2 class="section">Subobject classifier</h2>
+<a id="lab155"></a><h2 class="section">Subobject classifier</h2>
 
 </div>
 <div class="code">
@@ -635,9 +635,9 @@ The aforementioned square is a pullback
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- </div>
 
 <div class="doc">
-The hypothesis H states that that each <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> is in the image of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span>,
+The hypothesis H states that that each <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> is in the image of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span>,
               and since <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> is monic (injective), this assignment extends to a map
-              <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Z"><span class="id" title="variable">Z</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> defined by <span class="inlinecode"><span class="id" title="var">z</span></span> <span class="inlinecode">↦</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a>^-1</span> <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><span class="id" title="var">z</span>)</span>. 
+              <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Kernels.html#transport_kernels.Z"><span class="id" title="variable">Z</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> defined by <span class="inlinecode"><span class="id" title="var">z</span></span> <span class="inlinecode">↦</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a>^-1</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><span class="id" title="var">z</span>)</span>. 
 </div>
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">z</span>.<br/>
@@ -651,7 +651,7 @@ The hypothesis H states that that each <span class="inlinecode"><a class="idref"
 
 <div class="doc">
 The first triangle commutes by definition of the above map:
-                <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> sends the preimage <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a>^-1</span> <span class="inlinecode">(<a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><span class="id" title="var">z</span>)</span> to <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><span class="id" title="var">z</span></span>. 
+                <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> sends the preimage <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a>^-1</span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><span class="id" title="var">z</span>)</span> to <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><span class="id" title="var">z</span></span>. 
 </div>
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.UnivalenceAxiom.html#funextfun"><span class="id" title="definition">funextfun</span></a>; <span class="id" title="tactic">intro</span> <span class="id" title="var">z</span>; <span class="id" title="var">cbn</span>.<br/>
@@ -689,7 +689,7 @@ Precompose with <span class="inlinecode"><a class="idref" href="UniMath.Category
 </div>
 
 <div class="doc">
-For any subset <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>, the carrier <span class="inlinecode">∑</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a>,</span> <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.y"><span class="id" title="variable">y</span></a></span> is a pullback
+For any subset <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>, the carrier <span class="inlinecode">∑</span> <span class="inlinecode"><span class="id" title="var">y</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><span class="id" title="var">Y</span>,</span> <span class="inlinecode"><span class="id" title="var">s</span></span> <span class="inlinecode"><span class="id" title="var">y</span></span> is a pullback
     of <span class="inlinecode"><span class="id" title="var">s</span></span> with the constantly-true arrow. 
 </div>
 <div class="code">
@@ -792,7 +792,7 @@ If the following is a pullback square,
 <div class="doc">
 We know that <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#carrier"><span class="id" title="definition">carrier</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"><span class="id" title="var">O'</span>)</span> is a pullback of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"><span class="id" title="var">O'</span></span> and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Structures.html#const_htrue"><span class="id" title="definition">const_htrue</span></a></span>.
             By hypothesis, X is as well. Thus, we have a canonical isomorphism
-            <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#carrier"><span class="id" title="definition">carrier</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"><span class="id" title="var">O'</span>)</span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span>, which commutes with the pullback projections.
+            <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#carrier"><span class="id" title="definition">carrier</span></a></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"><span class="id" title="var">O'</span>)</span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span>, which commutes with the pullback projections.
             In particular, the following triangle commutes (where <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.m"><span class="id" title="variable">m</span></a></span> is, by hypothesis,
             the first pullback projection of X):
 <pre>

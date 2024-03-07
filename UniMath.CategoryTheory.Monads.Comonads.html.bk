@@ -404,7 +404,7 @@ the last variant of the laws is convertible with the one before
 </div>
 
 <div class="doc">
-<a id="lab634"></a><h1 class="section">Definition and lemmas for cobind</h1>
+<a id="lab442"></a><h1 class="section">Definition and lemmas for cobind</h1>
 
 </div>
 <div class="code">
@@ -466,7 +466,7 @@ Definition of cobind
 </div>
 
 <div class="doc">
-<a id="lab635"></a><h1 class="section">Helper lemma for showing two comonads are equal</h1>
+<a id="lab443"></a><h1 class="section">Helper lemma for showing two comonads are equal</h1>
 
 </div>
 <div class="code">
@@ -474,7 +474,7 @@ Definition of cobind
 </div>
 
 <div class="doc">
-<a id="lab636"></a><h1 class="section">Alternate (equivalent) definition of Comonad</h1>
+<a id="lab444"></a><h1 class="section">Alternate (equivalent) definition of Comonad</h1>
 
 </div>
 <div class="code">
@@ -513,7 +513,7 @@ Definition of cobind
 </div>
 
 <div class="doc">
-<a id="lab637"></a><h1 class="section">Equivalence of Comonad and Comonad'</h1>
+<a id="lab445"></a><h1 class="section">Equivalence of Comonad and Comonad'</h1>
 
 </div>
 <div class="code">

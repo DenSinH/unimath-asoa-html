@@ -76,6 +76,12 @@
 <span class="id" title="keyword">Context</span> (<a id="H:5" class="idref" href="#H:5"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#is_connected"><span class="id" title="definition">is_connected</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.Ff_cocomplete_diagram.g"><span class="id" title="variable">g</span></a>).<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+diagram of middle objects 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="Ff_diagram_pointwise_ob1" class="idref" href="#Ff_diagram_pointwise_ob1"><span class="id" title="definition">Ff_diagram_pointwise_ob1</span></a> (<a id="a:6" class="idref" href="#a:6"><span class="id" title="binder">a</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.C"><span class="id" title="variable">C</span></a>) : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.Ff_cocomplete_diagram.g"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.C"><span class="id" title="variable">C</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.Foundations.Preamble.html#tpair"><span class="id" title="constructor">tpair</span></a>.<br/>
@@ -106,6 +112,14 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+this construction only works for non-empty graphs, since
+   we need an arrow arrow_dom a --&gt; colim (CCFf_pt_ob1 a),
+   but we can only find this for a non-empty graph 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="ColimFf_ob" class="idref" href="#ColimFf_ob"><span class="id" title="definition">ColimFf_ob</span></a> (<a id="v0:10" class="idref" href="#v0:10"><span class="id" title="binder">v0</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#vertex"><span class="id" title="definition">vertex</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.Ff_cocomplete_diagram.g"><span class="id" title="variable">g</span></a>) (<a id="a:11" class="idref" href="#a:11"><span class="id" title="binder">a</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.C"><span class="id" title="variable">C</span></a>) : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_disp"><span class="id" title="definition">three_disp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.C"><span class="id" title="variable">C</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#a:11"><span class="id" title="variable">a</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colim"><span class="id" title="definition">colim</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#CCFf_pt_ob1"><span class="id" title="definition">CCFf_pt_ob1</span></a> <span class="id" title="var">a</span>)).<br/>
@@ -215,6 +229,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="var">_</span><a class="idref" href="UniMath.Foundations.Preamble.html#b66601545ff7e22c5dcb7c86aa0cca21"><span class="id" title="notation">,,</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#ColimFf_axioms"><span class="id" title="lemma">ColimFf_axioms</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#v0:18"><span class="id" title="variable">v0</span></a>).<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+we need an edge from v0 to v for this to work,
+   regarding equality of (arrow_dom v/v0 · colimIn v/v0) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Definition</span> <a id="colim_nat_trans_in_data" class="idref" href="#colim_nat_trans_in_data"><span class="id" title="definition">colim_nat_trans_in_data</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<a id="v0:19" class="idref" href="#v0:19"><span class="id" title="binder">v0</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#vertex"><span class="id" title="definition">vertex</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.Ff_cocomplete_diagram.g"><span class="id" title="variable">g</span></a>} {<a id="v:20" class="idref" href="#v:20"><span class="id" title="binder">v</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#vertex"><span class="id" title="definition">vertex</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.Ff_cocomplete_diagram.g"><span class="id" title="variable">g</span></a>} :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#dob"><span class="id" title="definition">dob</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#Ff_cocomplete.Ff_cocomplete_diagram.d"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#v:20"><span class="id" title="variable">v</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#ColimFf"><span class="id" title="definition">ColimFf</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#v0:19"><span class="id" title="variable">v0</span></a>.<br/>
@@ -304,7 +325,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colimArrowUnique"><span class="id" title="lemma">colimArrowUnique</span></a>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intro</span> <span class="id" title="var">u</span>;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colimArrowCommutes"><span class="id" title="lemma">colimArrowCommutes</span></a>|];<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+<div class="doc">
+naturality of coconeIn cc at u 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">etrans</span>; [<span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.Foundations.PartA.html#pathsinv0"><span class="id" title="definition">pathsinv0</span></a> (<a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">pr22</span></a> <a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#coconeIn"><span class="id" title="definition">coconeIn</span></a> <span class="id" title="var">cc</span> <span class="id" title="var">u</span>) <span class="id" title="var">a</span><a class="idref" href="UniMath.MoreFoundations.Notations.html#:::'pr22'_x"><span class="id" title="notation">)</span></a>))|];<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#id_right"><span class="id" title="definition">id_right</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<br/>
@@ -508,6 +534,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#dob"><span class="id" title="definition">dob</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#LNWFS_cocomplete.d"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#v:56"><span class="id" title="variable">v</span></a>)) (<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colim"><span class="id" title="definition">colim</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#LNWFS_cocomplete.Finf"><span class="id" title="variable">Finf</span></a>) <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#f:57"><span class="id" title="variable">f</span></a>).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
 &nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Lv</span> := (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#dob"><span class="id" title="definition">dob</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#LNWFS_cocomplete.d"><span class="id" title="variable">d</span></a> <span class="id" title="var">v</span>)).<br/>
+</div>
+
+<div class="doc">
+λf · σf · m11 = λ_{λ∞f}
+    where λf · σf = λλf (component of comul)
+    and λλf · m11 = λ_{λ∞f} (commutativity of fact_L (pr1 Lv) (fact_L (colim Finf)) f)
+  
+</div>
+<div class="code">
 &nbsp;&nbsp;<span class="id" title="var">etrans</span>. <span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#cancel_postcomposition"><span class="id" title="lemma">cancel_postcomposition</span></a>.<br/>
 &nbsp;&nbsp;{<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">set</span> (<span class="id" title="var">Σf</span> := <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#c70caeff44002166fd8fb01253665491"><span class="id" title="definition">lnwfs_Σ</span></a> (<a class="idref" href="UniMath.Foundations.Preamble.html#pr2"><span class="id" title="projection">pr2</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#dob"><span class="id" title="definition">dob</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#LNWFS_cocomplete.d"><span class="id" title="variable">d</span></a> <span class="id" title="var">v</span>)) <span class="id" title="var">f</span>).<br/>

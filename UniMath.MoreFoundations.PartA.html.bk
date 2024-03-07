@@ -31,7 +31,7 @@ This file contain various results that could be upstreamed to Foundations/PartA.
 </div>
 
 <div class="doc">
-<a id="lab1122"></a><h1 class="section">Generalisations of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a></span></h1>
+<a id="lab859"></a><h1 class="section">Generalisations of <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a></span></h1>
 
 
 <div class="paragraph"> </div>
@@ -544,7 +544,7 @@ Homotopy equivalence on total spaces.
 </div>
 
 <div class="doc">
-<a id="lab1123"></a><h2 class="section">Pointed types</h2>
+<a id="lab860"></a><h2 class="section">Pointed types</h2>
 
 </div>
 <div class="code">
@@ -634,7 +634,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1124"></a><h2 class="section">Paths</h2>
+<a id="lab861"></a><h2 class="section">Paths</h2>
 
 </div>
 <div class="code">
@@ -709,7 +709,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1125"></a><h2 class="section">Pairs</h2>
+<a id="lab862"></a><h2 class="section">Pairs</h2>
 
 </div>
 <div class="code">
@@ -737,7 +737,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1126"></a><h2 class="section">Paths between pairs</h2>
+<a id="lab863"></a><h2 class="section">Paths between pairs</h2>
 
 </div>
 <div class="code">
@@ -763,7 +763,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1127"></a><h2 class="section">Projections from pair types</h2>
+<a id="lab864"></a><h2 class="section">Projections from pair types</h2>
 
 </div>
 <div class="code">
@@ -794,7 +794,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1128"></a><h2 class="section">Maps from pair types</h2>
+<a id="lab865"></a><h2 class="section">Maps from pair types</h2>
 
 </div>
 <div class="code">
@@ -809,7 +809,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1129"></a><h2 class="section">Paths in coproducts</h2>
+<a id="lab866"></a><h2 class="section">Paths in coproducts</h2>
 
 </div>
 <div class="code">
@@ -890,7 +890,7 @@ associativity of ∑
 </div>
 
 <div class="doc">
-<a id="lab1130"></a><h2 class="section">Sections and functions</h2>
+<a id="lab867"></a><h2 class="section">Sections and functions</h2>
 
 </div>
 <div class="code">
@@ -941,7 +941,7 @@ Naturality of homotopies
 </div>
 
 <div class="doc">
-<a id="lab1131"></a><h2 class="section">Transport</h2>
+<a id="lab868"></a><h2 class="section">Transport</h2>
 
 </div>
 <div class="code">
@@ -1041,7 +1041,7 @@ Naturality of homotopies
 </div>
 
 <div class="doc">
-<a id="lab1132"></a><h3 class="section">Double transport</h3>
+<a id="lab869"></a><h3 class="section">Double transport</h3>
 
 </div>
 <div class="code">
@@ -1075,7 +1075,7 @@ Naturality of homotopies
 </div>
 
 <div class="doc">
-<a id="lab1133"></a><h3 class="section">Transport a pair</h3>
+<a id="lab870"></a><h3 class="section">Transport a pair</h3>
 
 </div>
 <div class="code">
@@ -1106,7 +1106,7 @@ Naturality of homotopies
 </div>
 
 <div class="doc">
-<a id="lab1134"></a><h2 class="section">h-levels and paths</h2>
+<a id="lab871"></a><h2 class="section">h-levels and paths</h2>
 
 </div>
 <div class="code">
@@ -1738,7 +1738,7 @@ A variation on the above theme
 </div>
 
 <div class="doc">
-<a id="lab1135"></a><h2 class="section">Surjectivity</h2>
+<a id="lab872"></a><h2 class="section">Surjectivity</h2>
 
 </div>
 <div class="code">

@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab377"></a><h1 class="section">Functors</h1>
+<a id="lab185"></a><h1 class="section">Functors</h1>
 
 
 <div class="paragraph"> </div>
@@ -33,7 +33,7 @@ Authors: Benedikt Ahrens, Chris Kapulkin, Mike Shulman (January 2013)
 
 <div class="paragraph"> </div>
 
-<a id="lab378"></a><h2 class="section">Contents:</h2>
+<a id="lab186"></a><h2 class="section">Contents:</h2>
 
 
 <div class="paragraph"> </div>
@@ -105,7 +105,7 @@ Authors: Benedikt Ahrens, Chris Kapulkin, Mike Shulman (January 2013)
 </div>
 
 <div class="doc">
-<a id="lab379"></a><h1 class="section">Functors : Morphisms of precategories</h1>
+<a id="lab187"></a><h1 class="section">Functors : Morphisms of precategories</h1>
 
 </div>
 <div class="code">
@@ -298,7 +298,7 @@ Authors: Benedikt Ahrens, Chris Kapulkin, Mike Shulman (January 2013)
 </div>
 
 <div class="doc">
-<a id="lab380"></a><h2 class="section">Functors preserve isomorphisms</h2>
+<a id="lab188"></a><h2 class="section">Functors preserve isomorphisms</h2>
 
 </div>
 <div class="code">
@@ -452,7 +452,7 @@ Authors: Benedikt Ahrens, Chris Kapulkin, Mike Shulman (January 2013)
 </div>
 
 <div class="doc">
-<a id="lab381"></a><h2 class="section">Functors and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a></span></h2>
+<a id="lab189"></a><h2 class="section">Functors and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -609,7 +609,7 @@ Authors: Benedikt Ahrens, Chris Kapulkin, Mike Shulman (January 2013)
 </div>
 
 <div class="doc">
-<a id="lab382"></a><h2 class="section">Functors preserve inverses</h2>
+<a id="lab190"></a><h2 class="section">Functors preserve inverses</h2>
 
 </div>
 <div class="code">
@@ -627,7 +627,7 @@ Authors: Benedikt Ahrens, Chris Kapulkin, Mike Shulman (January 2013)
 </div>
 
 <div class="doc">
-<a id="lab383"></a><h2 class="section">Conservative functors</h2>
+<a id="lab191"></a><h2 class="section">Conservative functors</h2>
 
 <div class="paragraph"> </div>
 
@@ -667,11 +667,11 @@ These are functors that reflect isomorphisms. F : C ⟶ D is conservative
 </div>
 
 <div class="doc">
-<a id="lab384"></a><h2 class="section">Composition of functors, identity functors</h2>
+<a id="lab192"></a><h2 class="section">Composition of functors, identity functors</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab385"></a><h3 class="section">Composition</h3>
+<a id="lab193"></a><h3 class="section">Composition</h3>
 
 </div>
 <div class="code">
@@ -707,7 +707,7 @@ These are functors that reflect isomorphisms. F : C ⟶ D is conservative
 </div>
 
 <div class="doc">
-<a id="lab386"></a><h3 class="section">Identity functor</h3>
+<a id="lab194"></a><h3 class="section">Identity functor</h3>
 
 </div>
 <div class="code">
@@ -732,7 +732,7 @@ These are functors that reflect isomorphisms. F : C ⟶ D is conservative
 </div>
 
 <div class="doc">
-<a id="lab387"></a><h3 class="section">Constant functor</h3>
+<a id="lab195"></a><h3 class="section">Constant functor</h3>
 
 </div>
 <div class="code">
@@ -787,7 +787,7 @@ Notations do not survive the end of sections, so we redeclare them here.
 </div>
 
 <div class="doc">
-<a id="lab388"></a><h2 class="section">Fully faithful functors</h2>
+<a id="lab196"></a><h2 class="section">Fully faithful functors</h2>
 
 </div>
 <div class="code">
@@ -899,7 +899,7 @@ FF^1 is indeed post-inverse to  F.
 </div>
 
 <div class="doc">
-<a id="lab389"></a><h3 class="section">Fully faithful functors reflect isos</h3>
+<a id="lab197"></a><h3 class="section">Fully faithful functors reflect isos</h3>
 
 </div>
 <div class="code">
@@ -1134,7 +1134,7 @@ Computation check
 </div>
 
 <div class="doc">
-<a id="lab390"></a><h2 class="section">(Split) essentially surjective functors</h2>
+<a id="lab198"></a><h2 class="section">(Split) essentially surjective functors</h2>
 
 <div class="paragraph"> </div>
 
@@ -1239,7 +1239,7 @@ If the composition of two functors is essentially surjective,
 </div>
 
 <div class="doc">
-<a id="lab391"></a><h2 class="section">Faithful functors</h2>
+<a id="lab199"></a><h2 class="section">Faithful functors</h2>
 
 </div>
 <div class="code">
@@ -1348,7 +1348,7 @@ a simpler instance of that principle
 </div>
 
 <div class="doc">
-<a id="lab392"></a><h2 class="section">Full functors</h2>
+<a id="lab200"></a><h2 class="section">Full functors</h2>
 
 </div>
 <div class="code">
@@ -1387,7 +1387,7 @@ Composition of full functors yields a full functor
 </div>
 
 <div class="doc">
-<a id="lab393"></a><h2 class="section">Fully faithful is the same as full and faithful</h2>
+<a id="lab201"></a><h2 class="section">Fully faithful is the same as full and faithful</h2>
 
 </div>
 <div class="code">
@@ -1505,9 +1505,9 @@ Fully faithful functors induce equivalences on commutative triangles
 </div>
 
 <div class="doc">
-<a id="lab394"></a><h2 class="section">Image on objects of a functor</h2>
+<a id="lab202"></a><h2 class="section">Image on objects of a functor</h2>
  is used later to define the full image subcategory of a category <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span>
-       defined by a functor <span class="inlinecode"><a class="idref" href="UniMath.Induction.W.Core.html#F"><span class="id" title="abbreviation">F</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span> 
+       defined by a functor <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.F"><span class="id" title="variable">F</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a></span> 
 </div>
 <div class="code">
 

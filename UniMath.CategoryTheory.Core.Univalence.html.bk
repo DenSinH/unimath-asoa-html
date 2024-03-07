@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab415"></a><h1 class="section">Univalent categories (AKA saturated categories)</h1>
+<a id="lab223"></a><h1 class="section">Univalent categories (AKA saturated categories)</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab416"></a><h2 class="section">Contents</h2>
+<a id="lab224"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -70,7 +70,7 @@
 </div>
 
 <div class="doc">
-<a id="lab417"></a><h2 class="section">Univalent categories: <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a></span> is an equivalence</h2>
+<a id="lab225"></a><h2 class="section">Univalent categories: <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a></span> is an equivalence</h2>
 
 </div>
 <div class="code">
@@ -148,7 +148,7 @@
 </div>
 
 <div class="doc">
-<a id="lab418"></a><h2 class="section">Definition of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#isotoid"><span class="id" title="definition">isotoid</span></a></span></h2>
+<a id="lab226"></a><h2 class="section">Definition of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#isotoid"><span class="id" title="definition">isotoid</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -181,7 +181,7 @@
 </div>
 
 <div class="doc">
-<a id="lab419"></a><h2 class="section">Properties of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#isotoid"><span class="id" title="definition">isotoid</span></a></span></h2>
+<a id="lab227"></a><h2 class="section">Properties of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#idtoiso"><span class="id" title="definition">idtoiso</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Univalence.html#isotoid"><span class="id" title="definition">isotoid</span></a></span></h2>
 
 </div>
 <div class="code">

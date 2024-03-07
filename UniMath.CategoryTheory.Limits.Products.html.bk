@@ -76,7 +76,7 @@ Written by: Anders Mörtberg 2016
 </div>
 
 <div class="doc">
-<a id="lab620"></a><h1 class="section">Definition of indexed products of objects in a precategory</h1>
+<a id="lab428"></a><h1 class="section">Definition of indexed products of objects in a precategory</h1>
 
 </div>
 <div class="code">
@@ -284,7 +284,7 @@ Written by: Anders Mörtberg 2016
 </div>
 
 <div class="doc">
-<a id="lab621"></a><h1 class="section">The product functor: C^I -&gt; C</h1>
+<a id="lab429"></a><h1 class="section">The product functor: C^I -&gt; C</h1>
 
 </div>
 <div class="code">
@@ -328,7 +328,7 @@ Written by: Anders Mörtberg 2016
 </div>
 
 <div class="doc">
-<a id="lab622"></a><h1 class="section">Products lift to functor categories</h1>
+<a id="lab430"></a><h1 class="section">Products lift to functor categories</h1>
 
 </div>
 <div class="code">
@@ -413,7 +413,7 @@ Written by: Anders Mörtberg 2016
 </div>
 
 <div class="doc">
-The product morphism of a diagram with vertex <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#A"><span class="id" title="abbreviation">A</span></a></span> 
+The product morphism of a diagram with vertex <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#A"><span class="id" title="section">A</span></a></span> 
 </div>
 <div class="code">
 
@@ -482,7 +482,7 @@ The product morphism of a diagram with vertex <span class="inlinecode"><a class=
 </div>
 
 <div class="doc">
-<a id="lab623"></a><h1 class="section">Products from limits</h1>
+<a id="lab431"></a><h1 class="section">Products from limits</h1>
 
 </div>
 <div class="code">
@@ -697,7 +697,7 @@ The product morphism of a diagram with vertex <span class="inlinecode"><a class=
 </div>
 
 <div class="doc">
-<a id="lab624"></a><h2 class="section">Construction of Product from an isomorphism to Product.</h2>
+<a id="lab432"></a><h2 class="section">Construction of Product from an isomorphism to Product.</h2>
 
 </div>
 <div class="code">

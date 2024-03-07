@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab693"></a><h1 class="section">Subobject classifiers</h1>
+<a id="lab501"></a><h1 class="section">Subobject classifiers</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab694"></a><h2 class="section">Contents</h2>
+<a id="lab502"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -81,7 +81,7 @@
 </div>
 
 <div class="doc">
-<a id="lab695"></a><h2 class="section">Definition</h2>
+<a id="lab503"></a><h2 class="section">Definition</h2>
 
 </div>
 <div class="code">
@@ -110,7 +110,7 @@
 </div>
 
 <div class="doc">
-<a id="lab696"></a><h2 class="section">Accessors</h2>
+<a id="lab504"></a><h2 class="section">Accessors</h2>
 
 </div>
 <div class="code">
@@ -188,7 +188,7 @@
 </div>
 
 <div class="doc">
-The arrow Goldblatt calls <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a>!</span> <span class="inlinecode">:=</span> <span class="inlinecode">(!</span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a>)</span> <span class="inlinecode">·</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a></span> 
+The arrow Goldblatt calls <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a>!</span> <span class="inlinecode">:=</span> <span class="inlinecode">(!</span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a>)</span> <span class="inlinecode">·</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a></span> 
 </div>
 <div class="code">
 <span class="id" title="keyword">Definition</span> <a id="const_true" class="idref" href="#const_true"><span class="id" title="definition">const_true</span></a> {<a id="C:39" class="idref" href="#C:39"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} {<a id="T:40" class="idref" href="#T:40"><span class="id" title="binder">T</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Terminal.html#Terminal"><span class="id" title="definition">Terminal</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.html#C:39"><span class="id" title="variable">C</span></a>} (<a id="X:41" class="idref" href="#X:41"><span class="id" title="binder">X</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#ob"><span class="id" title="definition">ob</span></a> <a class="idref" href="UniMath.CategoryTheory.SubobjectClassifier.html#C:39"><span class="id" title="variable">C</span></a>)<br/>

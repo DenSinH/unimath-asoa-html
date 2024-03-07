@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab969"></a><h1 class="section">Univalent Foundations. Vladimir Voevodsky. Feb. 2010 - Sep. 2011.</h1>
+<a id="lab716"></a><h1 class="section">Univalent Foundations. Vladimir Voevodsky. Feb. 2010 - Sep. 2011.</h1>
 
   Port to coq trunk (8.4-8.5) in March 2014. The third part of the original
   uu0 file, created on Dec. 3, 2014.
@@ -35,10 +35,10 @@ Only one universe is used and never as a type.
 
 <div class="paragraph"> </div>
 
-<a id="lab970"></a><h2 class="section">Contents</h2>
+<a id="lab717"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
-<li> Sections of "double fibration" <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<span class="id" title="var">PP</span></span> <span class="inlinecode">:</span> <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.t"><span class="id" title="variable">t</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.t"><span class="id" title="variable">t</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> and
+<li> Sections of "double fibration" <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<span class="id" title="var">PP</span></span> <span class="inlinecode">:</span> <span class="inlinecode">∏</span> <span class="inlinecode"><span class="id" title="var">t</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><span class="id" title="var">t</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> and
   pairs of sections
 <ul class="doclist">
 <li> General case
@@ -53,13 +53,13 @@ Only one universe is used and never as a type.
 </ul>
 
 </li>
-<li> Homotopy fibers of the map <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>,</span> <span class="inlinecode"><span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span>
+<li> Homotopy fibers of the map <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>,</span> <span class="inlinecode"><span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span>
 <ul class="doclist">
 <li> General case
 
 </li>
 <li> The weak equivalence between sections spaces (dependent products) defined
-   by a family of weak equivalences <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span>
+   by a family of weak equivalences <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span>
 
 </li>
 <li> Composition of functions with a weak equaivalence on the right
@@ -69,7 +69,7 @@ Only one universe is used and never as a type.
 
 </li>
 <li> The map between section spaces (dependent products) defined by the map
-  between the bases <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span>
+  between the bases <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span>
 <ul class="doclist">
 <li> General case
 
@@ -130,7 +130,7 @@ Only one universe is used and never as a type.
 </ul>
 
 </li>
-<li> Theorems saying that  <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#iscontr"><span class="id" title="definition">iscontr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode"></span>, <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#isweq"><span class="id" title="definition">isweq</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"></span> etc. are of h-level 1
+<li> Theorems saying that  <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#iscontr"><span class="id" title="definition">iscontr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode"></span>, <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#isweq"><span class="id" title="definition">isweq</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"></span> etc. are of h-level 1
 
 </li>
 <li> Theorems saying that various <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span> maps are inclusions
@@ -181,7 +181,7 @@ Only one universe is used and never as a type.
 
 <div class="paragraph"> </div>
 
-<a id="lab971"></a><h2 class="section">Preamble</h2>
+<a id="lab718"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -196,11 +196,11 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab972"></a><h2 class="section">Sections of "double fibration" <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<span class="id" title="var">PP</span></span> <span class="inlinecode">:</span> <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.t"><span class="id" title="variable">t</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.t"><span class="id" title="variable">t</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> and pairs of sections</h2>
+<a id="lab719"></a><h2 class="section">Sections of "double fibration" <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> <span class="inlinecode">(<span class="id" title="var">PP</span></span> <span class="inlinecode">:</span> <span class="inlinecode">∏</span> <span class="inlinecode"><span class="id" title="var">t</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><span class="id" title="var">t</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a>)</span> and pairs of sections</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab973"></a><h3 class="section">General case</h3>
+<a id="lab720"></a><h3 class="section">General case</h3>
 
 </div>
 <div class="code">
@@ -265,7 +265,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab974"></a><h3 class="section">Functions to a dependent sum (to a <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span>)</h3>
+<a id="lab721"></a><h3 class="section">Functions to a dependent sum (to a <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span>)</h3>
 
 </div>
 <div class="code">
@@ -281,7 +281,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab975"></a><h3 class="section">Functions to direct product</h3>
+<a id="lab722"></a><h3 class="section">Functions to direct product</h3>
 
 <div class="paragraph"> </div>
 
@@ -314,11 +314,11 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab976"></a><h2 class="section">Homotopy fibers of the map <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span></h2>
+<a id="lab723"></a><h2 class="section">Homotopy fibers of the map <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode">∏</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>,</span> <span class="inlinecode"><span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span></h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab977"></a><h3 class="section">General case</h3>
+<a id="lab724"></a><h3 class="section">General case</h3>
 
 </div>
 <div class="code">
@@ -396,7 +396,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab978"></a><h3 class="section">The weak equivalence  between section spaces (dependent products) defined by a family of weak equivalences  <span class="inlinecode"></span> <span class="inlinecode">(<a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode"></span></h3>
+<a id="lab725"></a><h3 class="section">The weak equivalence  between section spaces (dependent products) defined by a family of weak equivalences  <span class="inlinecode"></span> <span class="inlinecode">(<a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode">≃</span> <span class="inlinecode">(<span class="id" title="var">Q</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a>)</span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">
@@ -424,7 +424,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab979"></a><h3 class="section">Composition of functions with a weak equivalence on the right</h3>
+<a id="lab726"></a><h3 class="section">Composition of functions with a weak equivalence on the right</h3>
 
 </div>
 <div class="code">
@@ -438,11 +438,11 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab980"></a><h2 class="section">The map between section spaces (dependent products) defined by the map between the bases <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span></h2>
+<a id="lab727"></a><h2 class="section">The map between section spaces (dependent products) defined by the map between the bases <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span></h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab981"></a><h3 class="section">General case</h3>
+<a id="lab728"></a><h3 class="section">General case</h3>
 
 </div>
 <div class="code">
@@ -532,7 +532,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab982"></a><h3 class="section">Composition of functions with a weak equivalence on the left</h3>
+<a id="lab729"></a><h3 class="section">Composition of functions with a weak equivalence on the left</h3>
 
 </div>
 <div class="code">
@@ -545,11 +545,11 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab983"></a><h2 class="section">Sections of families over an empty type and over coproducts</h2>
+<a id="lab730"></a><h2 class="section">Sections of families over an empty type and over coproducts</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab984"></a><h3 class="section">General case</h3>
+<a id="lab731"></a><h3 class="section">General case</h3>
 
 </div>
 <div class="code">
@@ -604,7 +604,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab985"></a><h3 class="section">Functions from the empty type</h3>
+<a id="lab732"></a><h3 class="section">Functions from the empty type</h3>
 
 </div>
 <div class="code">
@@ -628,7 +628,7 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab986"></a><h3 class="section">Functions from a coproduct</h3>
+<a id="lab733"></a><h3 class="section">Functions from a coproduct</h3>
 
 </div>
 <div class="code">
@@ -658,11 +658,11 @@ Only one universe is used and never as a type.
 </div>
 
 <div class="doc">
-<a id="lab987"></a><h2 class="section">Sections of families over contractible types and over <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span> (over dependent sums)</h2>
+<a id="lab734"></a><h2 class="section">Sections of families over contractible types and over <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span> (over dependent sums)</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab988"></a><h3 class="section">General case</h3>
+<a id="lab735"></a><h3 class="section">General case</h3>
 
 </div>
 <div class="code">
@@ -735,7 +735,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab989"></a><h3 class="section">Functions from <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a></span> <span class="inlinecode"></span> and from contractible types</h3>
+<a id="lab736"></a><h3 class="section">Functions from <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a></span> <span class="inlinecode"></span> and from contractible types</h3>
 
 </div>
 <div class="code">
@@ -751,7 +751,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab990"></a><h3 class="section">Functions from <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span></h3>
+<a id="lab737"></a><h3 class="section">Functions from <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">
@@ -764,7 +764,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab991"></a><h3 class="section">Functions from direct product</h3>
+<a id="lab738"></a><h3 class="section">Functions from direct product</h3>
 
 </div>
 <div class="code">
@@ -777,11 +777,11 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab992"></a><h2 class="section">Theorem saying that if each member of a family is of h-level n then the space of sections of the family is of h-level n.</h2>
+<a id="lab739"></a><h2 class="section">Theorem saying that if each member of a family is of h-level n then the space of sections of the family is of h-level n.</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab993"></a><h3 class="section">General case</h3>
+<a id="lab740"></a><h3 class="section">General case</h3>
 
 </div>
 <div class="code">
@@ -869,7 +869,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab994"></a><h3 class="section">Functions to a contractible type</h3>
+<a id="lab741"></a><h3 class="section">Functions to a contractible type</h3>
 
 </div>
 <div class="code">
@@ -893,7 +893,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab995"></a><h3 class="section">Functions to a proposition</h3>
+<a id="lab742"></a><h3 class="section">Functions to a proposition</h3>
 
 </div>
 <div class="code">
@@ -908,7 +908,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab996"></a><h3 class="section">Functions to an empty type (generalization of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartC.html#isapropneg"><span class="id" title="lemma">isapropneg</span></a></span> <span class="inlinecode"></span>)</h3>
+<a id="lab743"></a><h3 class="section">Functions to an empty type (generalization of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartC.html#isapropneg"><span class="id" title="lemma">isapropneg</span></a></span> <span class="inlinecode"></span>)</h3>
 
 </div>
 <div class="code">
@@ -923,7 +923,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab997"></a><h2 class="section">Theorems saying that  <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#iscontr"><span class="id" title="definition">iscontr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode"></span>, <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#isweq"><span class="id" title="definition">isweq</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"></span> etc. are of h-level 1</h2>
+<a id="lab744"></a><h2 class="section">Theorems saying that  <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#iscontr"><span class="id" title="definition">iscontr</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.LModules.html#Pullback_module.T"><span class="id" title="variable">T</span></a></span> <span class="inlinecode"></span>, <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartA.html#isweq"><span class="id" title="definition">isweq</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"></span> etc. are of h-level 1</h2>
 
 </div>
 <div class="code">
@@ -1054,7 +1054,7 @@ General equivalence between curried and uncurried function types
 </div>
 
 <div class="doc">
-<a id="lab998"></a><h2 class="section">Theorems saying that various <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span> maps are inclusions</h2>
+<a id="lab745"></a><h2 class="section">Theorems saying that various <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span> maps are inclusions</h2>
 
 </div>
 <div class="code">
@@ -1120,11 +1120,11 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab999"></a><h2 class="section">Various weak equivalences between spaces of weak equivalences</h2>
+<a id="lab746"></a><h2 class="section">Various weak equivalences between spaces of weak equivalences</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1000"></a><h3 class="section">Composition with a weak quivalence is a weak equivalence on weak equivalences</h3>
+<a id="lab747"></a><h3 class="section">Composition with a weak quivalence is a weak equivalence on weak equivalences</h3>
 
 </div>
 <div class="code">
@@ -1181,7 +1181,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1001"></a><h3 class="section">Invertion on weak equivalences as a weak equivalence</h3>
+<a id="lab748"></a><h3 class="section">Invertion on weak equivalences as a weak equivalence</h3>
 
 <div class="paragraph"> </div>
 
@@ -1204,11 +1204,11 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1002"></a><h2 class="section">h-levels of spaces of weak equivalences</h2>
+<a id="lab749"></a><h2 class="section">h-levels of spaces of weak equivalences</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab1003"></a><h3 class="section">Weak equivalences to and from types of h-level (S n)</h3>
+<a id="lab750"></a><h3 class="section">Weak equivalences to and from types of h-level (S n)</h3>
 
 </div>
 <div class="code">
@@ -1236,7 +1236,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1004"></a><h3 class="section">Weak equivalences to and from contractible types</h3>
+<a id="lab751"></a><h3 class="section">Weak equivalences to and from contractible types</h3>
 
 </div>
 <div class="code">
@@ -1257,7 +1257,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1005"></a><h3 class="section">Weak equivalences to and from propositions</h3>
+<a id="lab752"></a><h3 class="section">Weak equivalences to and from propositions</h3>
 
 </div>
 <div class="code">
@@ -1278,7 +1278,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1006"></a><h3 class="section">Weak equivalences to and from sets</h3>
+<a id="lab753"></a><h3 class="section">Weak equivalences to and from sets</h3>
 
 </div>
 <div class="code">
@@ -1299,7 +1299,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1007"></a><h3 class="section">Weak equivalences to an empty type</h3>
+<a id="lab754"></a><h3 class="section">Weak equivalences to an empty type</h3>
 
 </div>
 <div class="code">
@@ -1320,7 +1320,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1008"></a><h3 class="section">Weak equivalences from an empty type</h3>
+<a id="lab755"></a><h3 class="section">Weak equivalences from an empty type</h3>
 
 </div>
 <div class="code">
@@ -1341,7 +1341,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1009"></a><h3 class="section">Weak equivalences to and from <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a></span> <span class="inlinecode"></span></h3>
+<a id="lab756"></a><h3 class="section">Weak equivalences to and from <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#unit"><span class="id" title="inductive">unit</span></a></span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">
@@ -1362,7 +1362,7 @@ associativity of weqcomp
 </div>
 
 <div class="doc">
-<a id="lab1010"></a><h2 class="section">Weak auto-equivalences of a type with an isolated point</h2>
+<a id="lab757"></a><h2 class="section">Weak auto-equivalences of a type with an isolated point</h2>
 
 </div>
 <div class="code">

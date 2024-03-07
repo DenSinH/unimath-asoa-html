@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab328"></a><h1 class="section">Slices of <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
+<a id="lab136"></a><h1 class="section">Slices of <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab329"></a><h2 class="section">Contents</h2>
+<a id="lab137"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -56,7 +56,7 @@
 </ul>
 
 </li>
-<li> The forgetful functor <span class="inlinecode"><span class="id" title="var">HSET</span>/<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><span class="id" title="var">HSET</span></span> is a left adjoint
+<li> The forgetful functor <span class="inlinecode"><span class="id" title="var">HSET</span>/<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><span class="id" title="var">HSET</span></span> is a left adjoint
   (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.slicecat.html#is_left_adjoint_slicecat_to_cat"><span class="id" title="lemma">is_left_adjoint_slicecat_to_cat</span></a></span>)
 
 </li>
@@ -112,7 +112,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab330"></a><h2 class="section">Locally cartesian closed structure</h2>
+<a id="lab138"></a><h2 class="section">Locally cartesian closed structure</h2>
 
 </div>
 <div class="code">
@@ -127,7 +127,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab331"></a><h3 class="section">Terminal object (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#Terminal_HSET_slice"><span class="id" title="lemma">Terminal_HSET_slice</span></a></span>)</h3>
+<a id="lab139"></a><h3 class="section">Terminal object (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#Terminal_HSET_slice"><span class="id" title="lemma">Terminal_HSET_slice</span></a></span>)</h3>
 
 </div>
 <div class="code">
@@ -142,7 +142,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab332"></a><h3 class="section">Binary products (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#BinProducts_HSET_slice"><span class="id" title="lemma">BinProducts_HSET_slice</span></a></span>)</h3>
+<a id="lab140"></a><h3 class="section">Binary products (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#BinProducts_HSET_slice"><span class="id" title="lemma">BinProducts_HSET_slice</span></a></span>)</h3>
 
 </div>
 <div class="code">
@@ -157,7 +157,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab333"></a><h3 class="section">General indexed products (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#Products_HSET_slice"><span class="id" title="lemma">Products_HSET_slice</span></a></span>)</h3>
+<a id="lab141"></a><h3 class="section">General indexed products (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#Products_HSET_slice"><span class="id" title="lemma">Products_HSET_slice</span></a></span>)</h3>
 
 </div>
 <div class="code">
@@ -217,7 +217,7 @@ Products in Set/X
 </div>
 
 <div class="doc">
-<a id="lab334"></a><h3 class="section">Exponentials (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#Exponentials_HSET_slice"><span class="id" title="lemma">Exponentials_HSET_slice</span></a></span>)</h3>
+<a id="lab142"></a><h3 class="section">Exponentials (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#Exponentials_HSET_slice"><span class="id" title="lemma">Exponentials_HSET_slice</span></a></span>)</h3>
 
 <div class="paragraph"> </div>
 
@@ -334,11 +334,11 @@ Products in Set/X
 </div>
 
 <div class="doc">
-<a id="lab335"></a><h2 class="section">Colimits</h2>
+<a id="lab143"></a><h2 class="section">Colimits</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab336"></a><h3 class="section">Binary coproducts (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#BinCoproducts_HSET_slice"><span class="id" title="lemma">BinCoproducts_HSET_slice</span></a></span>)</h3>
+<a id="lab144"></a><h3 class="section">Binary coproducts (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Slice.html#BinCoproducts_HSET_slice"><span class="id" title="lemma">BinCoproducts_HSET_slice</span></a></span>)</h3>
 
 </div>
 <div class="code">
@@ -353,7 +353,7 @@ Products in Set/X
 </div>
 
 <div class="doc">
-<a id="lab337"></a><h2 class="section">The forgetful functor <span class="inlinecode"><span class="id" title="var">HSET</span>/<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><span class="id" title="var">HSET</span></span> is a left adjoint</h2>
+<a id="lab145"></a><h2 class="section">The forgetful functor <span class="inlinecode"><span class="id" title="var">HSET</span>/<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">--&gt;</span> <span class="inlinecode"><span class="id" title="var">HSET</span></span> is a left adjoint</h2>
 
 </div>
 <div class="code">

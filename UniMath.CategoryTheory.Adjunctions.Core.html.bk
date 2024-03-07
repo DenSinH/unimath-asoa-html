@@ -90,7 +90,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab284"></a><h1 class="section">Adjunctions</h1>
+<a id="lab92"></a><h1 class="section">Adjunctions</h1>
 
 </div>
 <div class="code">
@@ -445,7 +445,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab285"></a><h1 class="section">Identity functor is a left adjoint</h1>
+<a id="lab93"></a><h1 class="section">Identity functor is a left adjoint</h1>
 
 </div>
 <div class="code">
@@ -464,7 +464,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab286"></a><h1 class="section">Construction of an adjunction from some partial data (Theorem 2 (iv) of Chapter IV.1 of</h1>
+<a id="lab94"></a><h1 class="section">Construction of an adjunction from some partial data (Theorem 2 (iv) of Chapter IV.1 of</h1>
 
       MacLane) 
 </div>
@@ -591,7 +591,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab287"></a><h1 class="section">Construction of an adjunction from some partial data</h1>
+<a id="lab95"></a><h1 class="section">Construction of an adjunction from some partial data</h1>
 
 
 <div class="paragraph"> </div>
@@ -719,7 +719,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab288"></a><h1 class="section">Post-composition with a left adjoint is a left adjoint</h1>
+<a id="lab96"></a><h1 class="section">Post-composition with a left adjoint is a left adjoint</h1>
 
 </div>
 <div class="code">
@@ -774,7 +774,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab289"></a><h1 class="section">Post-composition with a right adjoint is a right adjoint</h1>
+<a id="lab97"></a><h1 class="section">Post-composition with a right adjoint is a right adjoint</h1>
 
 </div>
 <div class="code">
@@ -842,7 +842,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab290"></a><h1 class="section">Definition of the maps on hom-types</h1>
+<a id="lab98"></a><h1 class="section">Definition of the maps on hom-types</h1>
 
 </div>
 <div class="code">
@@ -859,7 +859,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab291"></a><h1 class="section">Proof that those maps are inverse to each other</h1>
+<a id="lab99"></a><h1 class="section">Proof that those maps are inverse to each other</h1>
 
 </div>
 <div class="code">
@@ -924,7 +924,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab292"></a><h1 class="section">Proof of the equations (naturality squares) of the adjunction</h1>
+<a id="lab100"></a><h1 class="section">Proof of the equations (naturality squares) of the adjunction</h1>
 
 </div>
 <div class="code">
@@ -1001,7 +1001,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab293"></a><h1 class="section">Adjunction defined from a natural isomorphism on homsets (F A --&gt; B) ≃ (A --&gt; G B)</h1>
+<a id="lab101"></a><h1 class="section">Adjunction defined from a natural isomorphism on homsets (F A --&gt; B) ≃ (A --&gt; G B)</h1>
 
 </div>
 <div class="code">
@@ -1107,7 +1107,7 @@ Contents :
 </div>
 
 <div class="doc">
-<a id="lab294"></a><h1 class="section">Weak equivalence between adjunctions F -| G and natural weqs of homsets (F A --&gt; B) ≃ (A --&gt; G B)</h1>
+<a id="lab102"></a><h1 class="section">Weak equivalence between adjunctions F -| G and natural weqs of homsets (F A --&gt; B) ≃ (A --&gt; G B)</h1>
 
 </div>
 <div class="code">
@@ -1220,7 +1220,7 @@ the notion is a proper generalization of one of the criteria for being an adjunc
 </div>
 
 <div class="doc">
-<a id="lab295"></a><h2 class="section">Lemmas about adjunctions</h2>
+<a id="lab103"></a><h2 class="section">Lemmas about adjunctions</h2>
 
 </div>
 <div class="code">

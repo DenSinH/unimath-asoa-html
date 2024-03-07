@@ -26,7 +26,7 @@
  “Displayed equivalences” of displayed categories. 
 <div class="paragraph"> </div>
 
-<a id="lab434"></a><h2 class="section">Contents:</h2>
+<a id="lab242"></a><h2 class="section">Contents:</h2>
 
 
 <div class="paragraph"> </div>
@@ -113,7 +113,7 @@
 </div>
 
 <div class="doc">
-<a id="lab435"></a><h1 class="section">General definition of displayed adjunctions and equivalences</h1>
+<a id="lab243"></a><h1 class="section">General definition of displayed adjunctions and equivalences</h1>
 
 </div>
 <div class="code">
@@ -200,7 +200,7 @@
 </div>
 
 <div class="doc">
-The terminology is difficult to choose here: the proposition “F is a left adjoint” is the same as the type of “right adjoints to F”, so should this type be called something more like <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#left_adjoint"><span class="id" title="definition">left_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.W.Core.html#F"><span class="id" title="abbreviation">F</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#right_adjoint"><span class="id" title="definition">right_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.W.Core.html#F"><span class="id" title="abbreviation">F</span></a></span>?
+The terminology is difficult to choose here: the proposition “F is a left adjoint” is the same as the type of “right adjoints to F”, so should this type be called something more like <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#left_adjoint"><span class="id" title="definition">left_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.F"><span class="id" title="variable">F</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#right_adjoint"><span class="id" title="definition">right_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.F"><span class="id" title="variable">F</span></a></span>?
 
 <div class="paragraph"> </div>
 
@@ -353,7 +353,7 @@ The terminology is difficult to choose here: the proposition “F is a left adjo
 </div>
 
 <div class="doc">
-<a id="lab436"></a><h2 class="section">Lemmas on the triangle identities</h2>
+<a id="lab244"></a><h2 class="section">Lemmas on the triangle identities</h2>
 
 </div>
 <div class="code">
@@ -470,11 +470,11 @@ The terminology is difficult to choose here: the proposition “F is a left adjo
 </div>
 
 <div class="doc">
-<a id="lab437"></a><h1 class="section">Constructions on and of displayed equivalences</h1>
+<a id="lab245"></a><h1 class="section">Constructions on and of displayed equivalences</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab438"></a><h2 class="section">Full + faithful + ess split =&gt; equivalence</h2>
+<a id="lab246"></a><h2 class="section">Full + faithful + ess split =&gt; equivalence</h2>
 
 </div>
 <div class="code">
@@ -494,7 +494,7 @@ The terminology is difficult to choose here: the proposition “F is a left adjo
 </div>
 
 <div class="doc">
-<a id="lab439"></a><h3 class="section">Utility lemmas from fullness+faithfulness</h3>
+<a id="lab247"></a><h3 class="section">Utility lemmas from fullness+faithfulness</h3>
 
 </div>
 <div class="code">
@@ -589,11 +589,11 @@ The terminology is difficult to choose here: the proposition “F is a left adjo
 </div>
 
 <div class="doc">
-<a id="lab440"></a><h1 class="section">Displayed equivalences and adjunctions over identity</h1>
+<a id="lab248"></a><h1 class="section">Displayed equivalences and adjunctions over identity</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab441"></a><h2 class="section">Adjunctions</h2>
+<a id="lab249"></a><h2 class="section">Adjunctions</h2>
 
 </div>
 <div class="code">
@@ -716,7 +716,7 @@ This roughly follows the pattern of <span class="inlinecode"><a class="idref" hr
 The “left-handed” version: right adjoints to a given functor 
 <div class="paragraph"> </div>
 
- The terminology is difficult to choose here: the proposition “F is a left adjoint” is the same as the type of “right adjoints to F”, so should this type be called something more like <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#left_adjoint"><span class="id" title="definition">left_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.W.Core.html#F"><span class="id" title="abbreviation">F</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#right_adjoint"><span class="id" title="definition">right_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.W.Core.html#F"><span class="id" title="abbreviation">F</span></a></span>?
+ The terminology is difficult to choose here: the proposition “F is a left adjoint” is the same as the type of “right adjoints to F”, so should this type be called something more like <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#left_adjoint"><span class="id" title="definition">left_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.F"><span class="id" title="variable">F</span></a></span> or <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Adjunctions.Core.html#right_adjoint"><span class="id" title="definition">right_adjoint</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.F"><span class="id" title="variable">F</span></a></span>?
 
 <div class="paragraph"> </div>
 
@@ -810,7 +810,7 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab442"></a><h2 class="section">Displayed equivalences over id (adjoint and quasi)</h2>
+<a id="lab250"></a><h2 class="section">Displayed equivalences over id (adjoint and quasi)</h2>
 
 </div>
 <div class="code">
@@ -891,7 +891,7 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab443"></a><h2 class="section">Lemmas on the triangle identities</h2>
+<a id="lab251"></a><h2 class="section">Lemmas on the triangle identities</h2>
 
 </div>
 <div class="code">
@@ -1068,11 +1068,11 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab444"></a><h1 class="section">Constructions on and of displayed equivalences over identity</h1>
+<a id="lab252"></a><h1 class="section">Constructions on and of displayed equivalences over identity</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab445"></a><h2 class="section">Full + faithful + ess split =&gt; equivalence</h2>
+<a id="lab253"></a><h2 class="section">Full + faithful + ess split =&gt; equivalence</h2>
 
 </div>
 <div class="code">
@@ -1088,7 +1088,7 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab446"></a><h3 class="section">Utility lemmas from fullness+faithfulness</h3>
+<a id="lab254"></a><h3 class="section">Utility lemmas from fullness+faithfulness</h3>
 
 </div>
 <div class="code">
@@ -1131,7 +1131,7 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab447"></a><h3 class="section">Converse functor</h3>
+<a id="lab255"></a><h3 class="section">Converse functor</h3>
 
 </div>
 <div class="code">
@@ -1343,7 +1343,7 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab448"></a><h2 class="section">Inverses and composition of adjunctions/equivalences</h2>
+<a id="lab256"></a><h2 class="section">Inverses and composition of adjunctions/equivalences</h2>
 
 </div>
 <div class="code">
@@ -1618,7 +1618,7 @@ Our choice here does <i>not</i> agree with that of the base UniMath category the
 </div>
 
 <div class="doc">
-<a id="lab449"></a><h2 class="section">Induced adjunctions/equivalences of fiber precats</h2>
+<a id="lab257"></a><h2 class="section">Induced adjunctions/equivalences of fiber precats</h2>
 
 </div>
 <div class="code">

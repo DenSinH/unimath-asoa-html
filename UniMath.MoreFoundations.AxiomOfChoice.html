@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1096"></a><h1 class="section">Axiom of choice</h1>
+<a id="lab833"></a><h1 class="section">Axiom of choice</h1>
 
 </div>
 <div class="code">
@@ -34,7 +34,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1097"></a><h2 class="section">Preliminaries</h2>
+<a id="lab834"></a><h2 class="section">Preliminaries</h2>
 
 </div>
 <div class="code">
@@ -52,7 +52,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1098"></a><h2 class="section">Characterize equivalence relations on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#bool"><span class="id" title="inductive">bool</span></a></span></h2>
+<a id="lab835"></a><h2 class="section">Characterize equivalence relations on <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#bool"><span class="id" title="inductive">bool</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -92,7 +92,7 @@
 </div>
 
 <div class="doc">
-<a id="lab1099"></a><h2 class="section">Statements of Axiom of Choice</h2>
+<a id="lab836"></a><h2 class="section">Statements of Axiom of Choice</h2>
 
 </div>
 <div class="code">
@@ -123,7 +123,7 @@ Notice that the equation above is a proposition only because X is a set, which i
     <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#paths"><span class="id" title="inductive">paths</span></a></span>.  
 <div class="paragraph"> </div>
 
-<a id="lab1100"></a><h2 class="section">Implications between forms of the Axiom of Choice</h2>
+<a id="lab837"></a><h2 class="section">Implications between forms of the Axiom of Choice</h2>
 
 </div>
 <div class="code">
@@ -149,7 +149,7 @@ Notice that the equation above is a proposition only because X is a set, which i
 </div>
 
 <div class="doc">
-<a id="lab1101"></a><h2 class="section">The Axiom of Choice implies a type receives a surjective map from a set</h2>
+<a id="lab838"></a><h2 class="section">The Axiom of Choice implies a type receives a surjective map from a set</h2>
 
 </div>
 <div class="code">
@@ -161,7 +161,7 @@ Notice that the equation above is a proposition only because X is a set, which i
 
 <div class="doc">
 We use the axiom of choice to find a splitting f of the projection map g from X
-     onto its set <span class="inlinecode"><a class="idref" href="UniMath.MoreFoundations.Sets.html#pi0"><span class="id" title="definition">pi0</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> of connected components.  Since the image of f contains one
+     onto its set <span class="inlinecode"><a class="idref" href="UniMath.MoreFoundations.Sets.html#pi0"><span class="id" title="definition">pi0</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> of connected components.  Since the image of f contains one
      point in every component of X, f is surjective.
    
 </div>
@@ -193,7 +193,7 @@ We use the axiom of choice to find a splitting f of the projection map g from X
 </div>
 
 <div class="doc">
-<a id="lab1102"></a><h2 class="section">The Axiom of Choice implies the Law of the Excluded Middle</h2>
+<a id="lab839"></a><h2 class="section">The Axiom of Choice implies the Law of the Excluded Middle</h2>
 
 <div class="paragraph"> </div>
 
@@ -205,10 +205,10 @@ We use the axiom of choice to find a splitting f of the projection map g from X
 
 <div class="paragraph"> </div>
 
-    The idea is to define an equivalence relation E on bool by setting <span class="inlinecode"><a class="idref" href="UniMath.MoreFoundations.Nat.html#Discern.E"><span class="id" title="definition">E</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#false"><span class="id" title="constructor">false</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span>, to use
+    The idea is to define an equivalence relation E on bool by setting <span class="inlinecode"><a class="idref" href="UniMath.MoreFoundations.Nat.html#Discern.E"><span class="id" title="definition">E</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#false"><span class="id" title="constructor">false</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span>, to use
     AC to split the surjection f from bool to its quotient Y by E with a function g, and to observe
     bool has decidable equality, and thus so does Y, because then Y is a retract of bool, to use
-    that to decide whether <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#false"><span class="id" title="constructor">false</span></a></span>, and thus to decide P. 
+    that to decide whether <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#true"><span class="id" title="constructor">true</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#false"><span class="id" title="constructor">false</span></a></span>, and thus to decide P. 
 </div>
 <div class="code">
 

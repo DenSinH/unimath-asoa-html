@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab792"></a><h1 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a>(<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a>)</span> is of hlevel n+1</h1>
+<a id="lab539"></a><h1 class="section"><span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a>(<span class="id" title="var">n</span>)</span> is of hlevel n+1</h1>
 
 <div class="paragraph"> </div>
 
@@ -51,7 +51,7 @@
 </div>
 
 <div class="doc">
-<a id="lab793"></a><h2 class="section">Weak equivalence between identity types in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.slicecat.html#slicecat_colimits.U"><span class="id" title="variable">U</span></a></span></h2>
+<a id="lab540"></a><h2 class="section">Weak equivalence between identity types in <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.slicecat.html#slicecat_colimits.U"><span class="id" title="variable">U</span></a></span></h2>
 
 <div class="paragraph"> </div>
 
@@ -65,8 +65,8 @@
 
 <div class="paragraph"> </div>
 
-    More generally, we prove this for any predicate <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
-    which we later instantiate with <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isofhlevel"><span class="id" title="definition">isofhlevel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span>.
+    More generally, we prove this for any predicate <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a></span>
+    which we later instantiate with <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> <span class="inlinecode">:=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isofhlevel"><span class="id" title="definition">isofhlevel</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span>.
 
 <div class="paragraph"> </div>
 
@@ -94,7 +94,7 @@
 <div class="doc">
 This helper lemma is needed to show that our fibration
     is indeed a predicate, so that we can instantiate
-    the hProposition <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_weqtotal2overcoprod.P"><span class="id" title="variable">P</span></a></span> with this fibration.
+    the hProposition <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Pullbacks.html#IsoOfPullbacks.P"><span class="id" title="variable">P</span></a></span> with this fibration.
 
 </div>
 <div class="code">
@@ -157,20 +157,20 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
 </div>
 
 <div class="doc">
-<a id="lab794"></a><h2 class="section">Hlevel of path spaces</h2>
+<a id="lab541"></a><h2 class="section">Hlevel of path spaces</h2>
 
 <div class="paragraph"> </div>
 
-  We show that if <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> and <span class="inlinecode"><span class="id" title="var">X'</span></span> are of hlevel <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span>, then so is their
-      identity type <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><span class="id" title="var">X'</span></span>.
- The proof works differently for <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode">0</span> and <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><span class="id" title="var">n'</span></span>,
+  We show that if <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> and <span class="inlinecode"><span class="id" title="var">X'</span></span> are of hlevel <span class="inlinecode"><span class="id" title="var">n</span></span>, then so is their
+      identity type <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><span class="id" title="var">X'</span></span>.
+ The proof works differently for <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">=</span> <span class="inlinecode">0</span> and <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><span class="id" title="var">n'</span></span>,
     so we treat these two cases in separate lemmas
     <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#isofhlevel0pathspace"><span class="id" title="lemma">isofhlevel0pathspace</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#isofhlevelSnpathspace"><span class="id" title="lemma">isofhlevelSnpathspace</span></a></span> and put them
     together in the lemma <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#isofhlevelpathspace"><span class="id" title="lemma">isofhlevelpathspace</span></a></span>.
 
 <div class="paragraph"> </div>
 
-<a id="lab795"></a><h3 class="section">The case <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode">0</span></h3>
+<a id="lab542"></a><h3 class="section">The case <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">=</span> <span class="inlinecode">0</span></h3>
 
 </div>
 <div class="code">
@@ -202,7 +202,7 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
 </div>
 
 <div class="doc">
-<a id="lab796"></a><h3 class="section">The case <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><span class="id" title="var">n'</span></span></h3>
+<a id="lab543"></a><h3 class="section">The case <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><span class="id" title="var">n'</span></span></h3>
 
 </div>
 <div class="code">
@@ -222,7 +222,7 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
 </div>
 
 <div class="doc">
-<a id="lab797"></a><h2 class="section">The lemma itself</h2>
+<a id="lab544"></a><h2 class="section">The lemma itself</h2>
 
 </div>
 <div class="code">
@@ -245,11 +245,11 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
 </div>
 
 <div class="doc">
-<a id="lab798"></a><h2 class="section">HLevel</h2>
+<a id="lab545"></a><h2 class="section">HLevel</h2>
 
 <div class="paragraph"> </div>
 
- We define the type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> of types of hlevel n. 
+ We define the type <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span> of types of hlevel n. 
 </div>
 <div class="code">
 
@@ -260,7 +260,7 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
 </div>
 
 <div class="doc">
-<a id="lab799"></a><h1 class="section">Main theorem: <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> is of hlevel <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span></h1>
+<a id="lab546"></a><h1 class="section">Main theorem: <span class="inlinecode"><a class="idref" href="UniMath.Foundations.HLevels.html#HLevel"><span class="id" title="definition">HLevel</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span> is of hlevel <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#S"><span class="id" title="constructor">S</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span></h1>
 
 </div>
 <div class="code">
@@ -284,7 +284,7 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
 </div>
 
 <div class="doc">
-<a id="lab800"></a><h2 class="section">Aside: Univalence for predicates and hlevels</h2>
+<a id="lab547"></a><h2 class="section">Aside: Univalence for predicates and hlevels</h2>
 
 <div class="paragraph"> </div>
 
@@ -292,7 +292,7 @@ We construct the equivalence <span class="inlinecode"><a class="idref" href="Uni
     we obtain a version of the Univalence Axiom for
     predicates on the universe <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.slicecat.html#slicecat_colimits.U"><span class="id" title="variable">U</span></a></span>.
     In particular, we can instantiate this predicate with
-    <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isofhlevel"><span class="id" title="definition">isofhlevel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span>.
+    <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isofhlevel"><span class="id" title="definition">isofhlevel</span></a></span> <span class="inlinecode"><span class="id" title="var">n</span></span>.
 
 </div>
 <div class="code">

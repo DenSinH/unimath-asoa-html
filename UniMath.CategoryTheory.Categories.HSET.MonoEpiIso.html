@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab322"></a><h1 class="section">Characterizations of monos, epis, and isos in <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
+<a id="lab130"></a><h1 class="section">Characterizations of monos, epis, and isos in <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab323"></a><h2 class="section">Contents</h2>
+<a id="lab131"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -74,7 +74,7 @@
 </div>
 
 <div class="doc">
-<a id="lab324"></a><h2 class="section">Points as global elements</h2>
+<a id="lab132"></a><h2 class="section">Points as global elements</h2>
 
 <div class="paragraph"> </div>
 
@@ -90,7 +90,7 @@
 </div>
 
 <div class="doc">
-TODO: I think there is a name in UniMath for the constant function at <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#a"><span class="id" title="abbreviation">a</span></a></span>,
+TODO: I think there is a name in UniMath for the constant function at <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.a"><span class="id" title="variable">a</span></a></span>,
     what is it? 
 </div>
 <div class="code">
@@ -121,7 +121,7 @@ TODO: I think there is a name in UniMath for the constant function at <span clas
 </div>
 
 <div class="doc">
-<a id="lab325"></a><h2 class="section">Monomorphisms are exactly injective functions <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.MonoEpiIso.html#MonosAreInjective_HSET"><span class="id" title="lemma">MonosAreInjective_HSET</span></a></span></h2>
+<a id="lab133"></a><h2 class="section">Monomorphisms are exactly injective functions <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.MonoEpiIso.html#MonosAreInjective_HSET"><span class="id" title="lemma">MonosAreInjective_HSET</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -154,7 +154,7 @@ TODO: I think there is a name in UniMath for the constant function at <span clas
 </div>
 
 <div class="doc">
-<a id="lab326"></a><h2 class="section">Epimorphisms are exactly surjective functions <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.MonoEpiIso.html#EpisAreSurjective_HSET"><span class="id" title="lemma">EpisAreSurjective_HSET</span></a></span></h2>
+<a id="lab134"></a><h2 class="section">Epimorphisms are exactly surjective functions <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.MonoEpiIso.html#EpisAreSurjective_HSET"><span class="id" title="lemma">EpisAreSurjective_HSET</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -178,7 +178,7 @@ TODO: I think there is a name in UniMath for the constant function at <span clas
 </div>
 
 <div class="doc">
-Get the point <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_fin.Test_isfinite_isdeceq.x'"><span class="id" title="variable">x'</span></a></span> in the fiber above <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> 
+Get the point <span class="inlinecode"><span class="id" title="var">x'</span></span> in the fiber above <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> 
 </div>
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">specialize</span> (<span class="id" title="var">is_surj_f</span> <span class="id" title="var">x</span>).<br/>
@@ -189,7 +189,7 @@ Get the point <span class="inlinecode"><a class="idref" href="UniMath.Combinator
 </div>
 
 <div class="doc">
-Replace <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> with <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_fin.Test_isfinite_isdeceq.x'"><span class="id" title="variable">x'</span></a></span> 
+Replace <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> with <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><span class="id" title="var">x'</span></span> 
 </div>
 <div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">refine</span> (<a class="idref" href="UniMath.Foundations.PartA.html#9cb4fb5091f5f2b43def279042cc56ef"><span class="id" title="notation">!</span></a><a class="idref" href="UniMath.Foundations.PartA.html#maponpaths"><span class="id" title="definition">maponpaths</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.Foundations.PartA.html#hfiberpr2"><span class="id" title="definition">hfiberpr2</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">x'</span>) <a class="idref" href="UniMath.Foundations.PartA.html#8b57b11be4275b47948f6caec264b70f"><span class="id" title="notation">@</span></a> <span class="id" title="var">_</span>).<br/>
@@ -207,7 +207,7 @@ Replace <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Te
 </div>
 
 <div class="doc">
-<a id="lab327"></a><h2 class="section">Equivalence between isomorphisms and weak equivalences of two <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>s.</h2>
+<a id="lab135"></a><h2 class="section">Equivalence between isomorphisms and weak equivalences of two <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a></span>s.</h2>
 
 <div class="paragraph"> </div>
 

@@ -40,6 +40,12 @@
 <span class="id" title="keyword">Context</span> {<a id="C:1" class="idref" href="#C:1"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>}.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+in a category, we know that homs are sets, so equality must be a prop  Lean: lp @ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950ccf49524f1220d1/src/category_theory/model/wfs.leanL14  Normal ∑-type is not a proposition, we need it to be to use it to create morphism classes 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="filler" class="idref" href="#filler"><span class="id" title="definition">filler</span></a> {<a id="x:2" class="idref" href="#x:2"><span class="id" title="binder">x</span></a> <a id="y:3" class="idref" href="#y:3"><span class="id" title="binder">y</span></a> <a id="a:4" class="idref" href="#a:4"><span class="id" title="binder">a</span></a> <a id="b:5" class="idref" href="#b:5"><span class="id" title="binder">b</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting.C"><span class="id" title="variable">C</span></a>} {<a id="f:6" class="idref" href="#f:6"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#x:2"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#y:3"><span class="id" title="variable">y</span></a>} {<a id="g:7" class="idref" href="#g:7"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#a:4"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#b:5"><span class="id" title="variable">b</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="h:8" class="idref" href="#h:8"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#x:2"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#a:4"><span class="id" title="variable">a</span></a>} {<a id="k:9" class="idref" href="#k:9"><span class="id" title="binder">k</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#y:3"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#b:5"><span class="id" title="variable">b</span></a>} (<a id="H:10" class="idref" href="#H:10"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#h:8"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#g:7"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#f:6"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#k:9"><span class="id" title="variable">k</span></a>) :=<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">∑</span></a> <a id="l:11" class="idref" href="#l:11"><span class="id" title="binder">l</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#y:3"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#a:4"><span class="id" title="variable">a</span></a><a class="idref" href="UniMath.Foundations.Preamble.html#cd4bc1b07c8b3bdc9f3bbc7941b56107"><span class="id" title="notation">,</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Lifting.html#f:6"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#l:11"><span class="id" title="variable">l</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#h:8"><span class="id" title="variable">h</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">×</span></a> <a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Lifting.html#l:11"><span class="id" title="variable">l</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#g:7"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#k:9"><span class="id" title="variable">k</span></a><a class="idref" href="UniMath.Foundations.PartA.html#57f4926fe686c2f5c985fad93ee01cfb"><span class="id" title="notation">)</span></a>.<br/>
@@ -55,10 +61,32 @@
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Propositions.html#e15f3fa8414cf45e36c73a91b3f5f2c2"><span class="id" title="notation">∀</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#e15f3fa8414cf45e36c73a91b3f5f2c2"><span class="id" title="notation">(</span></a><a id="h:38" class="idref" href="#h:38"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#x:32"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#a:34"><span class="id" title="variable">a</span></a>) (<a id="k:39" class="idref" href="#k:39"><span class="id" title="binder">k</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#y:33"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#b:35"><span class="id" title="variable">b</span></a>) (<a id="H:40" class="idref" href="#H:40"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#h:38"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#g:37"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#f:36"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#k:39"><span class="id" title="variable">k</span></a><a class="idref" href="UniMath.Foundations.Propositions.html#e15f3fa8414cf45e36c73a91b3f5f2c2"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#9874e57674027e3ad2fc2edf7fb1b219"><span class="id" title="notation">∥</span></a><a class="idref" href="UniMath.ModelCategories.Lifting.html#filler"><span class="id" title="definition">filler</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#H:40"><span class="id" title="variable">H</span></a><a class="idref" href="UniMath.Foundations.Propositions.html#9874e57674027e3ad2fc2edf7fb1b219"><span class="id" title="notation">∥</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+"existential" lifting property 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="elp" class="idref" href="#elp"><span class="id" title="definition">elp</span></a> {<a id="x:41" class="idref" href="#x:41"><span class="id" title="binder">x</span></a> <a id="y:42" class="idref" href="#y:42"><span class="id" title="binder">y</span></a> <a id="a:43" class="idref" href="#a:43"><span class="id" title="binder">a</span></a> <a id="b:44" class="idref" href="#b:44"><span class="id" title="binder">b</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting.C"><span class="id" title="variable">C</span></a>} (<a id="f:45" class="idref" href="#f:45"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#x:41"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#y:42"><span class="id" title="variable">y</span></a>) (<a id="g:46" class="idref" href="#g:46"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#a:43"><span class="id" title="variable">a</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#b:44"><span class="id" title="variable">b</span></a>) : <a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a> :=<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">∏</span></a> <a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">(</span></a><a id="h:47" class="idref" href="#h:47"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#x:41"><span class="id" title="variable">x</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#a:43"><span class="id" title="variable">a</span></a>) (<a id="k:48" class="idref" href="#k:48"><span class="id" title="binder">k</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#y:42"><span class="id" title="variable">y</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#b:44"><span class="id" title="variable">b</span></a>) (<a id="H:49" class="idref" href="#H:49"><span class="id" title="binder">H</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#h:47"><span class="id" title="variable">h</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#g:46"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#f:45"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#6367fc346cda33b52695f0c54f391763"><span class="id" title="notation">·</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#k:48"><span class="id" title="variable">k</span></a><a class="idref" href="UniMath.Foundations.Init.html#dff69deb40f49011cdae37d20690a136"><span class="id" title="notation">),</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#filler"><span class="id" title="definition">filler</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#H:49"><span class="id" title="variable">H</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+Lean: llp @ https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950ccf49524f1220d1/src/category_theory/model/wfs.leanL18 
+<div class="paragraph"> </div>
+
+       g
+    A ---&gt; E
+    |     /|
+  i |  λ/  | p
+    v /    v
+    X ---&gt; B
+       f
+
+</div>
+<div class="code">
 <span class="id" title="keyword">Section</span> <a id="Lifting.Lp" class="idref" href="#Lifting.Lp"><span class="id" title="section">Lp</span></a>.<br/>
 <span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">logic</span>.<br/>
 <span class="id" title="keyword">Definition</span> <a id="llp" class="idref" href="#llp"><span class="id" title="definition">llp</span></a> (<a id="R:50" class="idref" href="#R:50"><span class="id" title="binder">R</span></a> : <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class"><span class="id" title="definition">morphism_class</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting.C"><span class="id" title="variable">C</span></a>) : (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class"><span class="id" title="definition">morphism_class</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting.C"><span class="id" title="variable">C</span></a>) :=<br/>
@@ -68,13 +96,37 @@
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting.Lp"><span class="id" title="section">Lp</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+https://github.com/rwbarton/lean-model-categories/blob/e366fccd9aac01154da9dd950ccf49524f1220d1/src/category_theory/model/wfs.leanL24  More Concise Algebraic Topology (May) (MCAT): Lemma 14.1.9 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="llp_anti" class="idref" href="#llp_anti"><span class="id" title="lemma">llp_anti</span></a> {<a id="R:64" class="idref" href="#R:64"><span class="id" title="binder">R</span></a> <a id="R':65" class="idref" href="#R':65"><span class="id" title="binder">R'</span></a> : <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class"><span class="id" title="definition">morphism_class</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting.C"><span class="id" title="variable">C</span></a>} (<a id="h:66" class="idref" href="#h:66"><span class="id" title="binder">h</span></a> : <a class="idref" href="UniMath.ModelCategories.Lifting.html#R:64"><span class="id" title="variable">R</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">⊆</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#R':65"><span class="id" title="variable">R'</span></a>) : <a class="idref" href="UniMath.ModelCategories.Lifting.html#llp"><span class="id" title="definition">llp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#R':65"><span class="id" title="variable">R'</span></a> <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#baef9e69b31ef8e58ebc8e71b09f7e62"><span class="id" title="notation">⊆</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#llp"><span class="id" title="definition">llp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#R:64"><span class="id" title="variable">R</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">unfold</span> "⊆" <span class="id" title="tactic">in</span> *.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? <span class="id" title="var">f</span> <span class="id" title="var">H</span>.<br/>
 &nbsp;&nbsp;<span class="id" title="tactic">intros</span> ? ? <span class="id" title="var">g</span> <span class="id" title="var">K</span>.<br/>
+</div>
+
+<div class="doc">
+LLP for i in R' 
+</div>
+<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<span class="id" title="var">H</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span>).<br/>
+</div>
+
+<div class="doc">
+R ⊆ R' 
+</div>
+<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">apply</span> (<span class="id" title="var">h</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">g</span>).<br/>
+</div>
+
+<div class="doc">
+i in R 
+</div>
+<div class="code">
 &nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">K</span>.<br/>
 <span class="id" title="keyword">Qed</span>.<br/>
 
@@ -82,6 +134,12 @@
 <span class="id" title="keyword">End</span> <a class="idref" href="UniMath.ModelCategories.Lifting.html#Lifting"><span class="id" title="section">Lifting</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+not in Lean file 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="opp_rlp_is_llp_opp" class="idref" href="#opp_rlp_is_llp_opp"><span class="id" title="lemma">opp_rlp_is_llp_opp</span></a> {<a id="C:67" class="idref" href="#C:67"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} (<a id="L:68" class="idref" href="#L:68"><span class="id" title="binder">L</span></a> : <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class"><span class="id" title="definition">morphism_class</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#C:67"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_opp"><span class="id" title="definition">morphism_class_opp</span></a> (<a class="idref" href="UniMath.ModelCategories.Lifting.html#rlp"><span class="id" title="definition">rlp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#L:68"><span class="id" title="variable">L</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Lifting.html#llp"><span class="id" title="definition">llp</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_opp"><span class="id" title="definition">morphism_class_opp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#L:68"><span class="id" title="variable">L</span></a>)<a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">)</span></a>.<br/>
 <span class="id" title="keyword">Proof</span>.<br/>
@@ -89,18 +147,47 @@
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">rlpf</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">a</span> <span class="id" title="var">b</span> <span class="id" title="var">g</span> <span class="id" title="var">hg</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">top</span> <span class="id" title="var">bottom</span> <span class="id" title="var">H</span>.<br/>
+</div>
+
+<div class="doc">
+extract lift fro rlp of f with respect to the opposite morphism of g 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">use</span> (<span class="id" title="var">rlpf</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#rm_opp_mor"><span class="id" title="definition">rm_opp_mor</span></a> <span class="id" title="var">g</span>)).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> <span class="id" title="var">hg</span>.<br/>
+</div>
+
+<div class="doc">
+flip diagram 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#rm_opp_mor"><span class="id" title="definition">rm_opp_mor</span></a> <span class="id" title="var">bottom</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">exact</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#rm_opp_mor"><span class="id" title="definition">rm_opp_mor</span></a> <span class="id" title="var">top</span>).<br/>
+</div>
+
+<div class="doc">
+commutativity 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="tactic">symmetry</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exact</span> <span class="id" title="var">H</span>.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;* </div>
+
+<div class="doc">
+extract lift 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">intros</span> <span class="id" title="var">hl</span>.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">hl</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">l</span> [<span class="id" title="var">hlg</span> <span class="id" title="var">hlf</span>]].<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <a class="idref" href="UniMath.Foundations.Propositions.html#hinhpr"><span class="id" title="definition">hinhpr</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+the opposite morphism of the lift is the lift of the opposite diagram 
+</div>
+<div class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">exists</span> (<a class="idref" href="UniMath.CategoryTheory.opp_precat.html#opp_mor"><span class="id" title="definition">opp_mor</span></a> <span class="id" title="var">l</span>).<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">split</span>; <span class="id" title="tactic">assumption</span>.<br/>
 &nbsp;&nbsp;- <span class="id" title="tactic">intro</span> <span class="id" title="var">rlpf</span>.<br/>
@@ -122,6 +209,12 @@
 <span class="id" title="keyword">Qed</span>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+dual statement 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="opp_llp_is_rlp_opp" class="idref" href="#opp_llp_is_rlp_opp"><span class="id" title="lemma">opp_llp_is_rlp_opp</span></a> {<a id="C:69" class="idref" href="#C:69"><span class="id" title="binder">C</span></a> : <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#category"><span class="id" title="definition">category</span></a>} (<a id="L:70" class="idref" href="#L:70"><span class="id" title="binder">L</span></a> : <a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class"><span class="id" title="definition">morphism_class</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#C:69"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_opp"><span class="id" title="definition">morphism_class_opp</span></a> (<a class="idref" href="UniMath.ModelCategories.Lifting.html#llp"><span class="id" title="definition">llp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#L:70"><span class="id" title="variable">L</span></a>) <a class="idref" href="UniMath.Foundations.Preamble.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#rlp"><span class="id" title="definition">rlp</span></a> (<a class="idref" href="UniMath.ModelCategories.MorphismClass.html#morphism_class_opp"><span class="id" title="definition">morphism_class_opp</span></a> <a class="idref" href="UniMath.ModelCategories.Lifting.html#L:70"><span class="id" title="variable">L</span></a>).<br/>
 <span class="id" title="keyword">Proof</span>.<br/>

@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab146"></a><h1 class="section">Algebra I. Part B.  Monoids, abelian monoids. Vladimir Voevodsky. Aug. 2011 - .</h1>
+<a id="lab65"></a><h1 class="section">Algebra I. Part B.  Monoids, abelian monoids. Vladimir Voevodsky. Aug. 2011 - .</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab147"></a><h2 class="section">Contents</h2>
+<a id="lab66"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -104,7 +104,7 @@
  For some examples, see <span class="inlinecode"><span class="id" title="var">UniMath.NumberSystems.NaturalNumbersAlgebra</span></span> 
 <div class="paragraph"> </div>
 
-<a id="lab148"></a><h2 class="section">Preamble</h2>
+<a id="lab67"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -137,15 +137,15 @@ Imports
 </div>
 
 <div class="doc">
-<a id="lab149"></a><h2 class="section">Standard Algebraic Structures</h2>
+<a id="lab68"></a><h2 class="section">Standard Algebraic Structures</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab150"></a><h3 class="section">Monoids</h3>
+<a id="lab69"></a><h3 class="section">Monoids</h3>
 
 <div class="paragraph"> </div>
 
-<a id="lab151"></a><h4 class="section">Basic definitions</h4>
+<a id="lab70"></a><h4 class="section">Basic definitions</h4>
 
 </div>
 <div class="code">
@@ -202,7 +202,7 @@ Imports
 </div>
 
 <div class="doc">
-<a id="lab152"></a><h4 class="section">Construction of the trivial monoid consisting of one element given by unit.</h4>
+<a id="lab71"></a><h4 class="section">Construction of the trivial monoid consisting of one element given by unit.</h4>
 
 </div>
 <div class="code">
@@ -228,7 +228,7 @@ Imports
 </div>
 
 <div class="doc">
-<a id="lab153"></a><h4 class="section">Functions between monoids compatible with structure (homomorphisms) and their properties</h4>
+<a id="lab72"></a><h4 class="section">Functions between monoids compatible with structure (homomorphisms) and their properties</h4>
 
 </div>
 <div class="code">
@@ -454,7 +454,7 @@ Imports
 </div>
 
 <div class="doc">
-<a id="lab154"></a><h4 class="section">(X = Y) ≃ (monoidiso X Y)</h4>
+<a id="lab73"></a><h4 class="section">(X = Y) ≃ (monoidiso X Y)</h4>
 
    The idea here is to use the following composition
 
@@ -532,7 +532,7 @@ Imports
 </div>
 
 <div class="doc">
-<a id="lab155"></a><h4 class="section">Subobjects</h4>
+<a id="lab74"></a><h4 class="section">Subobjects</h4>
 
 </div>
 <div class="code">
@@ -702,13 +702,13 @@ This submonoid is closed under inversion
 </div>
 
 <div class="doc">
-<a id="lab156"></a><h4 class="section">Kernels</h4>
+<a id="lab75"></a><h4 class="section">Kernels</h4>
 
 <div class="paragraph"> </div>
 
  Kernels
     Let f : X → Y be a morphism of monoids. The kernel of f is
-    the submonoid of X consisting of elements x such that <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#unel"><span class="id" title="definition">unel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span>.
+    the submonoid of X consisting of elements x such that <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#unel"><span class="id" title="definition">unel</span></a></span> <span class="inlinecode"><span class="id" title="var">Y</span></span>.
  
 </div>
 <div class="code">
@@ -751,7 +751,7 @@ Kernel as a monoid
 </div>
 
 <div class="doc">
-<a id="lab157"></a><h4 class="section">Quotient objects</h4>
+<a id="lab76"></a><h4 class="section">Quotient objects</h4>
 
 </div>
 <div class="code">
@@ -824,8 +824,8 @@ Kernel as a monoid
 
 <div class="doc">
 The universal property of the quotient monoid. If X, Y are monoids, R is a congruence on X, and
-    <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">→</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> is a homomorphism which respects R, then there exists a unique homomorphism
-    <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqfromprodofstn.f'"><span class="id" title="variable">f'</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a>/<a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode">→</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span> making the following diagram commute:
+    <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">→</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> is a homomorphism which respects R, then there exists a unique homomorphism
+    <span class="inlinecode"><span class="id" title="var">f'</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a>/<a class="idref" href="UniMath.CategoryTheory.Limits.Preservation.html#AdjunctionPreservation.R"><span class="id" title="variable">R</span></a></span> <span class="inlinecode">→</span> <span class="inlinecode"><span class="id" title="var">Y</span></span> making the following diagram commute:
 <pre>
     X -π-&gt; X/R
      \      |
@@ -893,7 +893,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab158"></a><h4 class="section">Cosets</h4>
+<a id="lab77"></a><h4 class="section">Cosets</h4>
 
 </div>
 <div class="code">
@@ -915,7 +915,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab159"></a><h4 class="section">Direct products</h4>
+<a id="lab78"></a><h4 class="section">Direct products</h4>
 
 </div>
 <div class="code">
@@ -956,11 +956,11 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab160"></a><h3 class="section">Abelian (commutative) monoids</h3>
+<a id="lab79"></a><h3 class="section">Abelian (commutative) monoids</h3>
 
 <div class="paragraph"> </div>
 
-<a id="lab161"></a><h4 class="section">Basic definitions</h4>
+<a id="lab80"></a><h4 class="section">Basic definitions</h4>
 
 </div>
 <div class="code">
@@ -994,7 +994,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab162"></a><h4 class="section">Construction of the trivial abmonoid consisting of one element given by unit.</h4>
+<a id="lab81"></a><h4 class="section">Construction of the trivial abmonoid consisting of one element given by unit.</h4>
 
 </div>
 <div class="code">
@@ -1050,7 +1050,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab163"></a><h4 class="section">Abelian monoid structure on homsets</h4>
+<a id="lab82"></a><h4 class="section">Abelian monoid structure on homsets</h4>
 
     If f g : X -&gt; Y are morphisms of abelian monoids, then we define f + g to be the morphism
     (f + g)(x) = f(x) + g(x).
@@ -1146,7 +1146,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab164"></a><h4 class="section">(X = Y) ≃ (monoidiso X Y)</h4>
+<a id="lab83"></a><h4 class="section">(X = Y) ≃ (monoidiso X Y)</h4>
 
     We use the following composition
 
@@ -1226,7 +1226,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab165"></a><h4 class="section">Subobjects</h4>
+<a id="lab84"></a><h4 class="section">Subobjects</h4>
 
 </div>
 <div class="code">
@@ -1263,7 +1263,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab166"></a><h4 class="section">Quotient objects</h4>
+<a id="lab85"></a><h4 class="section">Quotient objects</h4>
 
 </div>
 <div class="code">
@@ -1292,7 +1292,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab167"></a><h4 class="section">Direct products</h4>
+<a id="lab86"></a><h4 class="section">Direct products</h4>
 
 </div>
 <div class="code">
@@ -1320,7 +1320,7 @@ Prove that it's a congruence for right multiplication
 </div>
 
 <div class="doc">
-<a id="lab168"></a><h4 class="section">Monoid of fractions of an abelian monoid</h4>
+<a id="lab87"></a><h4 class="section">Monoid of fractions of an abelian monoid</h4>
 
 
 <div class="paragraph"> </div>
@@ -1502,7 +1502,7 @@ of the <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.h
 </div>
 
 <div class="doc">
-<a id="lab169"></a><h4 class="section">Canonical homomorphism to the monoid of fractions</h4>
+<a id="lab88"></a><h4 class="section">Canonical homomorphism to the monoid of fractions</h4>
 
 </div>
 <div class="code">
@@ -1537,7 +1537,7 @@ of the <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.h
 </div>
 
 <div class="doc">
-<a id="lab170"></a><h4 class="section">Abelian monoid of fractions in the case when elements of the localziation submonoid are cancelable</h4>
+<a id="lab89"></a><h4 class="section">Abelian monoid of fractions in the case when elements of the localziation submonoid are cancelable</h4>
 
 </div>
 <div class="code">
@@ -1600,7 +1600,7 @@ of the <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.h
 </div>
 
 <div class="doc">
-<a id="lab171"></a><h4 class="section">Relations on the abelian monoid of fractions</h4>
+<a id="lab90"></a><h4 class="section">Relations on the abelian monoid of fractions</h4>
 
 </div>
 <div class="code">
@@ -2217,7 +2217,7 @@ of the <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.h
 </div>
 
 <div class="doc">
-<a id="lab172"></a><h4 class="section">Relations and the canonical homomorphism to <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoidfrac"><span class="id" title="definition">abmonoidfrac</span></a></span></h4>
+<a id="lab91"></a><h4 class="section">Relations and the canonical homomorphism to <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#abmonoidfrac"><span class="id" title="definition">abmonoidfrac</span></a></span></h4>
 
 </div>
 <div class="code">

@@ -33,11 +33,11 @@ Contents:
 <li> Definition of monads (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.Monads.html#Monad"><span class="id" title="definition">Monad</span></a></span>)
 
 </li>
-<li> category of monads <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.Monads.html#category_Monad"><span class="id" title="definition">category_Monad</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span>
+<li> category of monads <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.Monads.html#category_Monad"><span class="id" title="definition">category_Monad</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> on <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span>
 
 </li>
 <li> Forgetful functor <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.Monads.html#forgetfunctor_Monad"><span class="id" title="definition">forgetfunctor_Monad</span></a></span> from monads
-             to endofunctors on <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span>
+             to endofunctors on <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span>
 
 </li>
 <li> Haskell style bind operation (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.Monads.html#bind"><span class="id" title="definition">bind</span></a></span>)
@@ -49,7 +49,7 @@ Contents:
 <li> A helper lemma for proving equality of Monads (<span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Monads.Monads.html#Monad_eq_raw_data"><span class="id" title="lemma">Monad_eq_raw_data</span></a></span>)
 
 </li>
-<li> Proof that <span class="inlinecode"><span class="id" title="var">precategory_Monad</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> is univalent if <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> is
+<li> Proof that <span class="inlinecode"><span class="id" title="var">precategory_Monad</span></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> is univalent if <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> is
 
 </li>
 </ul>
@@ -426,7 +426,7 @@ the last variant of the laws is convertible with the one before
 </div>
 
 <div class="doc">
-<a id="lab642"></a><h1 class="section">Definition and lemmas for bind</h1>
+<a id="lab450"></a><h1 class="section">Definition and lemmas for bind</h1>
 
 </div>
 <div class="code">
@@ -482,7 +482,7 @@ Definition of bind
 </div>
 
 <div class="doc">
-<a id="lab643"></a><h1 class="section">Operations for monads based on binary coproducts</h1>
+<a id="lab451"></a><h1 class="section">Operations for monads based on binary coproducts</h1>
 
 </div>
 <div class="code">
@@ -522,7 +522,7 @@ operation of exchange in a monad
 </div>
 
 <div class="doc">
-<a id="lab644"></a><h1 class="section">Substitution operation for monads</h1>
+<a id="lab452"></a><h1 class="section">Substitution operation for monads</h1>
 
 </div>
 <div class="code">
@@ -628,7 +628,7 @@ operation of exchange in a monad
 </div>
 
 <div class="doc">
-<a id="lab645"></a><h1 class="section">Helper lemma for showing two monads are equal</h1>
+<a id="lab453"></a><h1 class="section">Helper lemma for showing two monads are equal</h1>
 
 </div>
 <div class="code">
@@ -636,7 +636,7 @@ operation of exchange in a monad
 </div>
 
 <div class="doc">
-<a id="lab646"></a><h1 class="section">Alternate (equivalent) definition of Monad</h1>
+<a id="lab454"></a><h1 class="section">Alternate (equivalent) definition of Monad</h1>
 
 </div>
 <div class="code">
@@ -675,7 +675,7 @@ operation of exchange in a monad
 </div>
 
 <div class="doc">
-<a id="lab647"></a><h1 class="section">Equivalence of Monad and Monad'</h1>
+<a id="lab455"></a><h1 class="section">Equivalence of Monad and Monad'</h1>
 
 </div>
 <div class="code">

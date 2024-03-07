@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab372"></a><h1 class="section">Categories</h1>
+<a id="lab180"></a><h1 class="section">Categories</h1>
 
 
 <div class="paragraph"> </div>
@@ -31,7 +31,7 @@
  
 <div class="paragraph"> </div>
 
-<a id="lab373"></a><h2 class="section">Contents :</h2>
+<a id="lab181"></a><h2 class="section">Contents :</h2>
 
 
 <div class="paragraph"> </div>
@@ -60,7 +60,7 @@
 </div>
 
 <div class="doc">
-<a id="lab374"></a><h1 class="section">Definition of a precategory</h1>
+<a id="lab182"></a><h1 class="section">Definition of a precategory</h1>
 
 </div>
 <div class="code">
@@ -105,7 +105,7 @@ We introduce notation for morphisms  in order for this notation not to pollute s
 </div>
 
 <div class="doc">
-<a id="lab375"></a><h2 class="section"><span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_data"><span class="id" title="definition">precategory_data</span></a></span></h2>
+<a id="lab183"></a><h2 class="section"><span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#precategory_data"><span class="id" title="definition">precategory_data</span></a></span></h2>
  data of a precategory :
 <ul class="doclist">
 <li> objects
@@ -173,7 +173,7 @@ We introduce notation for morphisms  in order for this notation not to pollute s
 </div>
 
 <div class="doc">
-<a id="lab376"></a><h2 class="section">Axioms of a precategory</h2>
+<a id="lab184"></a><h2 class="section">Axioms of a precategory</h2>
 
 <div class="paragraph"> </div>
 

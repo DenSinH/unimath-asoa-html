@@ -579,7 +579,7 @@ Same result for the other morphism.
 </div>
 
 <div class="doc">
-<a id="lab625"></a><h1 class="section">Criteria for existence of pullbacks.</h1>
+<a id="lab433"></a><h1 class="section">Criteria for existence of pullbacks.</h1>
 
 </div>
 <div class="code">
@@ -862,7 +862,7 @@ Diagonal morphisms are equivalent to sections
 </div>
 
 <div class="doc">
-<a id="lab626"></a><h1 class="section">A square isomorphic to a pullback is a pullback (case 1)</h1>
+<a id="lab434"></a><h1 class="section">A square isomorphic to a pullback is a pullback (case 1)</h1>
 
 </div>
 <div class="code">
@@ -1036,7 +1036,7 @@ In this section we prove that the pullback of a z_iso is a
 </div>
 
 <div class="doc">
-<a id="lab627"></a><h1 class="section">A fully faithful functor reflects limits</h1>
+<a id="lab435"></a><h1 class="section">A fully faithful functor reflects limits</h1>
 
 </div>
 <div class="code">
@@ -1135,7 +1135,7 @@ In this section we prove that the pullback of a z_iso is a
 </div>
 
 <div class="doc">
-<a id="lab628"></a><h1 class="section">A fully faithful and essentially surjective functor preserves pullbacks</h1>
+<a id="lab436"></a><h1 class="section">A fully faithful and essentially surjective functor preserves pullbacks</h1>
 
 </div>
 <div class="code">
@@ -1247,7 +1247,7 @@ In this section we prove that the pullback of a z_iso is a
 </div>
 
 <div class="doc">
-<a id="lab629"></a><h1 class="section">Pullbacks in functor categories</h1>
+<a id="lab437"></a><h1 class="section">Pullbacks in functor categories</h1>
 
 </div>
 <div class="code">
@@ -1338,7 +1338,7 @@ Diagram for this section:
 </div>
 
 <div class="doc">
-<a id="lab630"></a><h1 class="section">Construction of binary products from pullbacks</h1>
+<a id="lab438"></a><h1 class="section">Construction of binary products from pullbacks</h1>
 
 </div>
 <div class="code">
@@ -1394,9 +1394,9 @@ Diagram for this section:
 </div>
 
 <div class="doc">
-<a id="lab631"></a><h1 class="section">Pullbacks in functor_precategory</h1>
+<a id="lab439"></a><h1 class="section">Pullbacks in functor_precategory</h1>
 
-    We construct pullbacks in the functor category <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorAlgebras_legacy.html#Lambeks_lemma.C"><span class="id" title="variable">C</span></a></span> from pullbacks of C. 
+    We construct pullbacks in the functor category <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.D"><span class="id" title="variable">D</span></a>,</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.PrecategoryBinProduct.html#nat_trans_fix_snd_arg.C"><span class="id" title="variable">C</span></a></span> from pullbacks of C. 
 </div>
 <div class="code">
 <span class="id" title="keyword">Section</span> <a id="pullbacks_functor_category" class="idref" href="#pullbacks_functor_category"><span class="id" title="section">pullbacks_functor_category</span></a>.<br/>

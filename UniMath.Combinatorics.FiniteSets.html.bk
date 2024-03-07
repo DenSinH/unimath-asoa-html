@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab715"></a><h1 class="section">Finite sets. Vladimir Voevodsky . Apr. - Sep. 2011.</h1>
+<a id="lab510"></a><h1 class="section">Finite sets. Vladimir Voevodsky . Apr. - Sep. 2011.</h1>
 
 
 <div class="paragraph"> </div>
@@ -33,7 +33,7 @@
  
 <div class="paragraph"> </div>
 
-<a id="lab716"></a><h2 class="section">Preamble</h2>
+<a id="lab511"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -57,7 +57,7 @@
 </div>
 
 <div class="doc">
-<a id="lab717"></a><h2 class="section">Sets with a given number of elements.</h2>
+<a id="lab512"></a><h2 class="section">Sets with a given number of elements.</h2>
 
 </div>
 <div class="code">
@@ -67,7 +67,7 @@
 </div>
 
 <div class="doc">
-<a id="lab718"></a><h3 class="section">Structure of a set with <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> elements on <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> defined as a term in <span class="inlinecode">⟦</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">⟧</span> <span class="inlinecode">≃</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span>.</h3>
+<a id="lab513"></a><h3 class="section">Structure of a set with <span class="inlinecode"><span class="id" title="var">n</span></span> elements on <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> defined as a term in <span class="inlinecode">⟦</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">⟧</span> <span class="inlinecode">≃</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span>.</h3>
 
 </div>
 <div class="code">
@@ -200,7 +200,7 @@ For a generalization of <span class="inlinecode"></span> <span class="inlinecode
 </div>
 
 <div class="doc">
-<a id="lab719"></a><h3 class="section">The property of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span> to have <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode"></span> elements</h3>
+<a id="lab514"></a><h3 class="section">The property of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span> to have <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode"></span> elements</h3>
 
 </div>
 <div class="code">
@@ -310,7 +310,7 @@ For a result corresponding to <span class="inlinecode"></span> <span class="inli
 </div>
 
 <div class="doc">
-<a id="lab720"></a><h2 class="section">General finite sets.</h2>
+<a id="lab515"></a><h2 class="section">General finite sets.</h2>
 
 </div>
 <div class="code">
@@ -320,13 +320,13 @@ For a result corresponding to <span class="inlinecode"></span> <span class="inli
 </div>
 
 <div class="doc">
-<a id="lab721"></a><h3 class="section">Finite structure.</h3>
+<a id="lab516"></a><h3 class="section">Finite structure.</h3>
 
 
 <div class="paragraph"> </div>
 
-      A finite structure on a type <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> is defined as a pair <span class="inlinecode">(</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">,</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_isweq_iso.w"><span class="id" title="variable">w</span></a></span> <span class="inlinecode">)</span>
-      where <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> and <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Tests.html#Test_isweq_iso.w"><span class="id" title="variable">w</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode">⟦</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">⟧</span> <span class="inlinecode">≃</span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span>. 
+      A finite structure on a type <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> is defined as a pair <span class="inlinecode">(</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">,</span> <span class="inlinecode"><span class="id" title="var">w</span></span> <span class="inlinecode">)</span>
+      where <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> and <span class="inlinecode"><span class="id" title="var">w</span></span> <span class="inlinecode">:</span> <span class="inlinecode">⟦</span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">⟧</span> <span class="inlinecode">≃</span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span>. 
 </div>
 <div class="code">
 
@@ -465,12 +465,12 @@ It is not difficult to show that a direct summand of a finite set is a finite se
 </div>
 
 <div class="doc">
-<a id="lab722"></a><h3 class="section">Finite types.</h3>
+<a id="lab517"></a><h3 class="section">Finite types.</h3>
 
 
 <div class="paragraph"> </div>
 
-      A type <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> is finite if it is merely equipped with some finite
+      A type <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> is finite if it is merely equipped with some finite
       structure.
    
 </div>

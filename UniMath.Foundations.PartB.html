@@ -21,7 +21,7 @@
 </div>
 
 <div class="doc">
-<a id="lab921"></a><h1 class="section">Univalent Foundations. Vladimir Voevodsky. Feb. 2010 - Sep. 2011.</h1>
+<a id="lab668"></a><h1 class="section">Univalent Foundations. Vladimir Voevodsky. Feb. 2010 - Sep. 2011.</h1>
 
   Port to coq trunk (8.4-8.5) in March 2014. The second part of the original
   uu0 file, created on Dec. 3, 2014.
@@ -36,7 +36,7 @@ universe <span class="inlinecode"></span> <span class="inlinecode"><a class="idr
 In the current approach to dependent eliminators for inductive types, in this case for <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode"></span>,
 the type family appears as an argument of the eliminator in the form of a function. Therefore,
 if one wants to use the eliminator <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat_rect"><span class="id" title="definition">nat_rect</span></a></span> <span class="inlinecode"></span> to define a function <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> <span class="inlinecode"></span> one must use,
-as an argument, the function <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">=&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> <span class="inlinecode"></span> whose type is <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="keyword">forall</span></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_stn.Test_weqdnicompl.n"><span class="id" title="variable">n</span></a></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a>,</span> <span class="inlinecode"><span class="id" title="var">UU'</span></span> <span class="inlinecode"></span> where <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">UU'</span></span> <span class="inlinecode"></span>
+as an argument, the function <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a></span> <span class="inlinecode">=&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> <span class="inlinecode"></span> whose type is <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="keyword">forall</span></span> <span class="inlinecode"><span class="id" title="var">n</span></span> <span class="inlinecode">:</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#nat"><span class="id" title="inductive">nat</span></a>,</span> <span class="inlinecode"><span class="id" title="var">UU'</span></span> <span class="inlinecode"></span> where <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">UU'</span></span> <span class="inlinecode"></span>
 is the type of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#UU"><span class="id" title="definition">UU</span></a></span> <span class="inlinecode"></span>. Therefore, the eliminator must be defined on arguments whose type contains
 <span class="inlinecode"></span> <span class="inlinecode"><span class="id" title="var">UU'</span></span> <span class="inlinecode"></span> and we should acknowledge it as an instance of using a second universe.
 
@@ -45,7 +45,7 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
  
 <div class="paragraph"> </div>
 
-<a id="lab922"></a><h2 class="section">Contents</h2>
+<a id="lab669"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> Basics about h-levels
@@ -83,7 +83,7 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
 
 <div class="paragraph"> </div>
 
-<a id="lab923"></a><h2 class="section">Preamble</h2>
+<a id="lab670"></a><h2 class="section">Preamble</h2>
 
 <div class="paragraph"> </div>
 
@@ -98,11 +98,11 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
 </div>
 
 <div class="doc">
-<a id="lab924"></a><h2 class="section">Basics about h-levels</h2>
+<a id="lab671"></a><h2 class="section">Basics about h-levels</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab925"></a><h3 class="section">h-levels of types</h3>
+<a id="lab672"></a><h3 class="section">h-levels of types</h3>
 
 </div>
 <div class="code">
@@ -172,7 +172,7 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
 </div>
 
 <div class="doc">
-<a id="lab926"></a><h3 class="section">h-levels of functions</h3>
+<a id="lab673"></a><h3 class="section">h-levels of functions</h3>
 
 </div>
 <div class="code">
@@ -473,11 +473,11 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
 </div>
 
 <div class="doc">
-<a id="lab927"></a><h2 class="section">h -levels of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span>, fiber inclusions, fibers, total spaces and bases of fibrations</h2>
+<a id="lab674"></a><h2 class="section">h -levels of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span>, fiber inclusions, fibers, total spaces and bases of fibrations</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab928"></a><h3 class="section">h-levelf of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span></h3>
+<a id="lab675"></a><h3 class="section">h-levelf of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#pr1"><span class="id" title="projection">pr1</span></a></span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">
@@ -507,7 +507,7 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
 </div>
 
 <div class="doc">
-<a id="lab929"></a><h3 class="section">h-level of the total space <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span></h3>
+<a id="lab676"></a><h3 class="section">h-level of the total space <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#total2"><span class="id" title="record">total2</span></a></span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">
@@ -533,11 +533,11 @@ is the type of <span class="inlinecode"></span> <span class="inlinecode"><a clas
 </div>
 
 <div class="doc">
-<a id="lab930"></a><h2 class="section">Propositions, inclusions  and sets</h2>
+<a id="lab677"></a><h2 class="section">Propositions, inclusions  and sets</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab931"></a><h3 class="section">Basics about types of h-level 1 - "propositions"</h3>
+<a id="lab678"></a><h3 class="section">Basics about types of h-level 1 - "propositions"</h3>
 
 </div>
 <div class="code">
@@ -780,7 +780,7 @@ A proposition that is inhabited is contractible.
 </div>
 
 <div class="doc">
-<a id="lab932"></a><h3 class="section">Inclusions - functions of h-level 1</h3>
+<a id="lab679"></a><h3 class="section">Inclusions - functions of h-level 1</h3>
 
 </div>
 <div class="code">
@@ -978,7 +978,7 @@ A proposition that is inhabited is contractible.
 </div>
 
 <div class="doc">
-<a id="lab933"></a><h3 class="section">Basics about types of h-level 2 - "sets"</h3>
+<a id="lab680"></a><h3 class="section">Basics about types of h-level 2 - "sets"</h3>
 
 </div>
 <div class="code">
@@ -1217,7 +1217,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab934"></a><h3 class="section">Decidable propositions <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdecprop"><span class="id" title="definition">isdecprop</span></a></span> <span class="inlinecode"></span></h3>
+<a id="lab681"></a><h3 class="section">Decidable propositions <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.PartB.html#isdecprop"><span class="id" title="definition">isdecprop</span></a></span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">
@@ -1307,7 +1307,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab935"></a><h3 class="section">Types with decidable equality</h3>
+<a id="lab682"></a><h3 class="section">Types with decidable equality</h3>
 
 </div>
 <div class="code">
@@ -1402,7 +1402,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab936"></a><h3 class="section">Isolated points</h3>
+<a id="lab683"></a><h3 class="section">Isolated points</h3>
 
 </div>
 <div class="code">
@@ -1476,7 +1476,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab937"></a><h3 class="section">Decidable types are sets</h3>
+<a id="lab684"></a><h3 class="section">Decidable types are sets</h3>
 
 </div>
 <div class="code">
@@ -1491,7 +1491,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab938"></a><h3 class="section">Decidable equality on a sigma type</h3>
+<a id="lab685"></a><h3 class="section">Decidable equality on a sigma type</h3>
 
 </div>
 <div class="code">
@@ -1515,7 +1515,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab939"></a><h3 class="section">Construction of functions with specified values at a few isolated points</h3>
+<a id="lab686"></a><h3 class="section">Construction of functions with specified values at a few isolated points</h3>
 
 </div>
 <div class="code">
@@ -1576,7 +1576,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab940"></a><h4 class="section"><span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#bool"><span class="id" title="inductive">bool</span></a></span> <span class="inlinecode"></span> is a set</h4>
+<a id="lab687"></a><h4 class="section"><span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#bool"><span class="id" title="inductive">bool</span></a></span> <span class="inlinecode"></span> is a set</h4>
 
 </div>
 <div class="code">
@@ -1591,7 +1591,7 @@ Complementary types
 </div>
 
 <div class="doc">
-<a id="lab941"></a><h2 class="section">Splitting of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span> into a coproduct defined by a function <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#bool"><span class="id" title="inductive">bool</span></a></span> <span class="inlinecode"></span></h2>
+<a id="lab688"></a><h2 class="section">Splitting of <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode"></span> into a coproduct defined by a function <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.SliceFamEquiv.html#set_slice_fam_equiv.X"><span class="id" title="variable">X</span></a></span> <span class="inlinecode">-&gt;</span> <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Preamble.html#bool"><span class="id" title="inductive">bool</span></a></span> <span class="inlinecode"></span></h2>
 
 </div>
 <div class="code">

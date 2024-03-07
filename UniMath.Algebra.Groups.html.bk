@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab81"></a><h1 class="section">Algebra I. Part C. Groups, abelian groups. Vladimir Voevodsky. Aug. 2011 - .</h1>
+<a id="lab33"></a><h1 class="section">Algebra I. Part C. Groups, abelian groups. Vladimir Voevodsky. Aug. 2011 - .</h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab82"></a><h2 class="section">Contents</h2>
+<a id="lab34"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -127,11 +127,11 @@
 </div>
 
 <div class="doc">
-<a id="lab83"></a><h2 class="section">Groups</h2>
+<a id="lab35"></a><h2 class="section">Groups</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab84"></a><h3 class="section">Basic definitions</h3>
+<a id="lab36"></a><h3 class="section">Basic definitions</h3>
 
 </div>
 <div class="code">
@@ -186,7 +186,7 @@
 </div>
 
 <div class="doc">
-<a id="lab85"></a><h3 class="section">Construction of the trivial abmonoid consisting of one element given by unit.</h3>
+<a id="lab37"></a><h3 class="section">Construction of the trivial abmonoid consisting of one element given by unit.</h3>
 
 </div>
 <div class="code">
@@ -245,7 +245,7 @@
 </div>
 
 <div class="doc">
-<a id="lab86"></a><h3 class="section">(X = Y) ≃ (monoidiso X Y)</h3>
+<a id="lab38"></a><h3 class="section">(X = Y) ≃ (monoidiso X Y)</h3>
 
    The idea is to use the composition
 
@@ -329,7 +329,7 @@
 </div>
 
 <div class="doc">
-<a id="lab87"></a><h3 class="section">Computation lemmas for groups</h3>
+<a id="lab39"></a><h3 class="section">Computation lemmas for groups</h3>
 
 </div>
 <div class="code">
@@ -400,7 +400,7 @@
 </div>
 
 <div class="doc">
-<a id="lab88"></a><h3 class="section">Relations on groups</h3>
+<a id="lab40"></a><h3 class="section">Relations on groups</h3>
 
 </div>
 <div class="code">
@@ -489,7 +489,7 @@
 </div>
 
 <div class="doc">
-<a id="lab89"></a><h3 class="section">Subobjects</h3>
+<a id="lab41"></a><h3 class="section">Subobjects</h3>
 
 </div>
 <div class="code">
@@ -592,7 +592,7 @@
 </div>
 
 <div class="doc">
-<a id="lab90"></a><h3 class="section">Quotient objects</h3>
+<a id="lab42"></a><h3 class="section">Quotient objects</h3>
 
 </div>
 <div class="code">
@@ -648,7 +648,7 @@
 </div>
 
 <div class="doc">
-<a id="lab91"></a><h3 class="section">Cosets</h3>
+<a id="lab43"></a><h3 class="section">Cosets</h3>
 
 </div>
 <div class="code">
@@ -829,7 +829,7 @@ x₁ and x₂ are in the same Y-coset if and only if x₁⁻¹ * x₂ is in Y.
 </div>
 
 <div class="doc">
-<a id="lab92"></a><h3 class="section">Normal Subgroups</h3>
+<a id="lab44"></a><h3 class="section">Normal Subgroups</h3>
 
 </div>
 <div class="code">
@@ -994,7 +994,7 @@ x₁ and x₂ are in the same Y-coset if and only if x₁⁻¹ * x₂ is in Y.
 </div>
 
 <div class="doc">
-<a id="lab93"></a><h3 class="section">Direct products</h3>
+<a id="lab45"></a><h3 class="section">Direct products</h3>
 
 </div>
 <div class="code">
@@ -1021,7 +1021,7 @@ x₁ and x₂ are in the same Y-coset if and only if x₁⁻¹ * x₂ is in Y.
 </div>
 
 <div class="doc">
-<a id="lab94"></a><h3 class="section">Group of invertible elements in a monoid</h3>
+<a id="lab46"></a><h3 class="section">Group of invertible elements in a monoid</h3>
 
 </div>
 <div class="code">
@@ -1080,11 +1080,11 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab95"></a><h2 class="section">Abelian groups</h2>
+<a id="lab47"></a><h2 class="section">Abelian groups</h2>
 
 <div class="paragraph"> </div>
 
-<a id="lab96"></a><h3 class="section">Basic definitions</h3>
+<a id="lab48"></a><h3 class="section">Basic definitions</h3>
 
 </div>
 <div class="code">
@@ -1123,7 +1123,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab97"></a><h3 class="section">Construction of the trivial abgr consisting of one element given by unit.</h3>
+<a id="lab49"></a><h3 class="section">Construction of the trivial abgr consisting of one element given by unit.</h3>
 
 </div>
 <div class="code">
@@ -1179,7 +1179,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab98"></a><h3 class="section">Abelian group structure on morphism between abelian groups</h3>
+<a id="lab50"></a><h3 class="section">Abelian group structure on morphism between abelian groups</h3>
 
 </div>
 <div class="code">
@@ -1240,7 +1240,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab99"></a><h3 class="section">(X = Y) ≃ (monoidiso X Y)</h3>
+<a id="lab51"></a><h3 class="section">(X = Y) ≃ (monoidiso X Y)</h3>
 
    The idea is to use the following composition
 
@@ -1321,7 +1321,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab100"></a><h3 class="section">Subobjects</h3>
+<a id="lab52"></a><h3 class="section">Subobjects</h3>
 
 </div>
 <div class="code">
@@ -1358,14 +1358,14 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab101"></a><h1 class="section">Kernels</h1>
+<a id="lab53"></a><h1 class="section">Kernels</h1>
 
     Let f : X -&gt; Y be a morphism of abelian groups. A kernel of f is given by the subgroup of X
-    consisting of elements x such that <span class="inlinecode"><a class="idref" href="UniMath.Induction.FunctorCoalgebras_legacy.html#f"><span class="id" title="definition">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex2.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#unel"><span class="id" title="definition">unel</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.Combinatorics.Tests.html#Test_ord.TestLex.Y"><span class="id" title="variable">Y</span></a></span>.
+    consisting of elements x such that <span class="inlinecode"><a class="idref" href="UniMath.Foundations.Sets.html#LiftSurjection.f"><span class="id" title="variable">f</span></a></span> <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Pushouts.html#def_po.pushout_lemma.x"><span class="id" title="variable">x</span></a></span> <span class="inlinecode">=</span> <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Monoids.html#unel"><span class="id" title="definition">unel</span></a></span> <span class="inlinecode"><span class="id" title="var">Y</span></span>.
  
 <div class="paragraph"> </div>
 
-<a id="lab102"></a><h2 class="section">Kernel as abelian group</h2>
+<a id="lab54"></a><h2 class="section">Kernel as abelian group</h2>
 
 </div>
 <div class="code">
@@ -1394,7 +1394,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab103"></a><h2 class="section">The inclusion Kernel f --&gt; X is a morphism of abelian groups</h2>
+<a id="lab55"></a><h2 class="section">The inclusion Kernel f --&gt; X is a morphism of abelian groups</h2>
 
 </div>
 <div class="code">
@@ -1414,7 +1414,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab104"></a><h2 class="section">Image of f is a subgroup</h2>
+<a id="lab56"></a><h2 class="section">Image of f is a subgroup</h2>
 
 </div>
 <div class="code">
@@ -1454,7 +1454,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab105"></a><h3 class="section">Quotient objects</h3>
+<a id="lab57"></a><h3 class="section">Quotient objects</h3>
 
 </div>
 <div class="code">
@@ -1474,7 +1474,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab106"></a><h3 class="section">Direct products</h3>
+<a id="lab58"></a><h3 class="section">Direct products</h3>
 
 </div>
 <div class="code">
@@ -1497,7 +1497,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab107"></a><h3 class="section">Abelian group of fractions of an abelian unitary monoid</h3>
+<a id="lab59"></a><h3 class="section">Abelian group of fractions of an abelian unitary monoid</h3>
 
 </div>
 <div class="code">
@@ -1630,7 +1630,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab108"></a><h3 class="section">Abelian group of fractions and abelian monoid of fractions</h3>
+<a id="lab60"></a><h3 class="section">Abelian group of fractions and abelian monoid of fractions</h3>
 
 </div>
 <div class="code">
@@ -1657,7 +1657,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab109"></a><h3 class="section">Canonical homomorphism to the abelian group of fractions</h3>
+<a id="lab61"></a><h3 class="section">Canonical homomorphism to the abelian group of fractions</h3>
 
 </div>
 <div class="code">
@@ -1689,7 +1689,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab110"></a><h3 class="section">Abelian group of fractions in the case when all elements are cancelable</h3>
+<a id="lab62"></a><h3 class="section">Abelian group of fractions in the case when all elements are cancelable</h3>
 
 </div>
 <div class="code">
@@ -1722,7 +1722,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab111"></a><h3 class="section">Relations on the abelian group of fractions</h3>
+<a id="lab63"></a><h3 class="section">Relations on the abelian group of fractions</h3>
 
 </div>
 <div class="code">
@@ -2055,7 +2055,7 @@ We can use other hProps when proving an hProp (assume it has an inverse)
 </div>
 
 <div class="doc">
-<a id="lab112"></a><h3 class="section">Relations and the canonical homomorphism to <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Groups.html#abgrdiff"><span class="id" title="definition">abgrdiff</span></a></span> <span class="inlinecode"></span></h3>
+<a id="lab64"></a><h3 class="section">Relations and the canonical homomorphism to <span class="inlinecode"></span> <span class="inlinecode"><a class="idref" href="UniMath.Algebra.Groups.html#abgrdiff"><span class="id" title="definition">abgrdiff</span></a></span> <span class="inlinecode"></span></h3>
 
 </div>
 <div class="code">

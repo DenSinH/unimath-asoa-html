@@ -21,11 +21,11 @@
 </div>
 
 <div class="doc">
-<a id="lab296"></a><h1 class="section">Colimits in <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
+<a id="lab104"></a><h1 class="section">Colimits in <span class="inlinecode"><span class="id" title="var">HSET</span></span></h1>
 
 <div class="paragraph"> </div>
 
-<a id="lab297"></a><h2 class="section">Contents</h2>
+<a id="lab105"></a><h2 class="section">Contents</h2>
 
 
 <div class="paragraph"> </div>
@@ -113,7 +113,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab298"></a><h2 class="section">General colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#ColimsHSET"><span class="id" title="lemma">ColimsHSET</span></a></span></h2>
+<a id="lab106"></a><h2 class="section">General colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#ColimsHSET"><span class="id" title="lemma">ColimsHSET</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -282,7 +282,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab299"></a><h2 class="section">Binary coproducs <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#BinCoproductsHSET"><span class="id" title="lemma">BinCoproductsHSET</span></a></span></h2>
+<a id="lab107"></a><h2 class="section">Binary coproducs <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#BinCoproductsHSET"><span class="id" title="lemma">BinCoproductsHSET</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -341,7 +341,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab300"></a><h2 class="section">General indexed coproducs <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#CoproductsHSET"><span class="id" title="lemma">CoproductsHSET</span></a></span></h2>
+<a id="lab108"></a><h2 class="section">General indexed coproducs <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#CoproductsHSET"><span class="id" title="lemma">CoproductsHSET</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -375,7 +375,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab301"></a><h3 class="section">Binary coproducts from colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#BinCoproductsHSET_from_Colims"><span class="id" title="lemma">BinCoproductsHSET_from_Colims</span></a></span></h3>
+<a id="lab109"></a><h3 class="section">Binary coproducts from colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#BinCoproductsHSET_from_Colims"><span class="id" title="lemma">BinCoproductsHSET_from_Colims</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -393,7 +393,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab302"></a><h3 class="section">Pushouts from colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#PushoutsHSET_from_Colims"><span class="id" title="lemma">PushoutsHSET_from_Colims</span></a></span></h3>
+<a id="lab110"></a><h3 class="section">Pushouts from colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#PushoutsHSET_from_Colims"><span class="id" title="lemma">PushoutsHSET_from_Colims</span></a></span></h3>
 
 </div>
 <div class="code">
@@ -408,7 +408,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab303"></a><h2 class="section">Initial object <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#InitialHSET"><span class="id" title="lemma">InitialHSET</span></a></span></h2>
+<a id="lab111"></a><h2 class="section">Initial object <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#InitialHSET"><span class="id" title="lemma">InitialHSET</span></a></span></h2>
 
 </div>
 <div class="code">
@@ -427,7 +427,7 @@ October 2015 - January 2016
 </div>
 
 <div class="doc">
-<a id="lab304"></a><h3 class="section">Initial object from colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#InitialHSET_from_Colims"><span class="id" title="lemma">InitialHSET_from_Colims</span></a></span></h3>
+<a id="lab112"></a><h3 class="section">Initial object from colimits <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#InitialHSET_from_Colims"><span class="id" title="lemma">InitialHSET_from_Colims</span></a></span></h3>
 
 </div>
 <div class="code">

@@ -41,7 +41,7 @@
 </div>
 
 <div class="doc">
-<a id="lab545"></a><h1 class="section">Definition of indexed coproducts of objects in a precategory</h1>
+<a id="lab353"></a><h1 class="section">Definition of indexed coproducts of objects in a precategory</h1>
 
 </div>
 <div class="code">
@@ -247,7 +247,7 @@
 </div>
 
 <div class="doc">
-<a id="lab546"></a><h1 class="section">The coproduct functor: C^I -&gt; C</h1>
+<a id="lab354"></a><h1 class="section">The coproduct functor: C^I -&gt; C</h1>
 
 </div>
 <div class="code">
@@ -286,7 +286,7 @@ The coproduct of a family of functors
 </div>
 
 <div class="doc">
-<a id="lab547"></a><h1 class="section">Coproducts lift to functor categories</h1>
+<a id="lab355"></a><h1 class="section">Coproducts lift to functor categories</h1>
 
 </div>
 <div class="code">
@@ -441,7 +441,7 @@ The coproduct of a family of functors
 </div>
 
 <div class="doc">
-<a id="lab548"></a><h1 class="section">Coproducts from colimits</h1>
+<a id="lab356"></a><h1 class="section">Coproducts from colimits</h1>
 
 </div>
 <div class="code">

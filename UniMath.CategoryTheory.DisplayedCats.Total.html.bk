@@ -23,7 +23,7 @@
 </div>
 
 <div class="doc">
-<a id="lab483"></a><h1 class="section">Total Categories and Total Functors</h1>
+<a id="lab291"></a><h1 class="section">Total Categories and Total Functors</h1>
 
 </div>
 <div class="code">
@@ -56,7 +56,7 @@
 </div>
 
 <div class="doc">
-<a id="lab484"></a><h2 class="section">Definition and forgetful functor</h2>
+<a id="lab292"></a><h2 class="section">Definition and forgetful functor</h2>
 
 </div>
 <div class="code">
@@ -201,7 +201,7 @@
 </div>
 
 <div class="doc">
-<a id="lab485"></a><h2 class="section">Isomorphisms and saturation</h2>
+<a id="lab293"></a><h2 class="section">Isomorphisms and saturation</h2>
 
 </div>
 <div class="code">
@@ -414,7 +414,7 @@
 </div>
 
 <div class="doc">
-<a id="lab486"></a><h2 class="section">Total functors of displayed functors</h2>
+<a id="lab294"></a><h2 class="section">Total functors of displayed functors</h2>
 
 </div>
 <div class="code">

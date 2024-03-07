@@ -21,8 +21,8 @@
 </div>
 
 <div class="doc">
-<a id="lab488"></a><h1 class="section">Epis</h1>
-<a id="lab489"></a><h2 class="section">Contents</h2>
+<a id="lab296"></a><h1 class="section">Epis</h1>
+<a id="lab297"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> Definition of Epis
@@ -63,7 +63,7 @@ More proofs/definitions about epi can be found in EpiFacts
 </div>
 
 <div class="doc">
-<a id="lab490"></a><h1 class="section">Definition of Epis</h1>
+<a id="lab298"></a><h1 class="section">Definition of Epis</h1>
 
 </div>
 <div class="code">
@@ -239,7 +239,7 @@ Transport of isEpi
 </div>
 
 <div class="doc">
-<a id="lab491"></a><h1 class="section">Construction of the subcategory consisting of all epis.</h1>
+<a id="lab299"></a><h1 class="section">Construction of the subcategory consisting of all epis.</h1>
 
 </div>
 <div class="code">
@@ -285,7 +285,7 @@ Transport of isEpi
 </div>
 
 <div class="doc">
-<a id="lab492"></a><h1 class="section">In functor categories epis can be constructed from pointwise epis</h1>
+<a id="lab300"></a><h1 class="section">In functor categories epis can be constructed from pointwise epis</h1>
 
 </div>
 <div class="code">

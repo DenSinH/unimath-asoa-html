@@ -124,6 +124,12 @@
 <span class="id" title="keyword">Context</span> (<a id="d:16" class="idref" href="#d:16"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.g"><span class="id" title="variable">g</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_mon"><span class="id" title="definition">Ff_mon</span></a>).<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+define morphism into colimit pointwise on the middle objects 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="Ff_right_tensor_preserves_colimit_mor11" class="idref" href="#Ff_right_tensor_preserves_colimit_mor11"><span class="id" title="lemma">Ff_right_tensor_preserves_colimit_mor11</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:17" class="idref" href="#f:17"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.C"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Three.html#three_ob1"><span class="id" title="definition">three_ob1</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_functor"><span class="id" title="definition">fact_functor</span></a> (<a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#monoidal_right_tensor"><span class="id" title="definition">monoidal_right_tensor</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.A"><span class="id" title="variable">A</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colim"><span class="id" title="definition">colim</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.FfCC"><span class="id" title="variable">FfCC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.Helpers.d"><span class="id" title="variable">d</span></a>))) <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#f:17"><span class="id" title="variable">f</span></a>) <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a><br/>
@@ -240,6 +246,12 @@
 <span class="id" title="keyword">Opaque</span> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSCocomplete.html#ColimFfCocone"><span class="id" title="lemma">ColimFfCocone</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+Ff_right_closed: 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="Ff_right_tensor_preserves_colimit_mor_iso" class="idref" href="#Ff_right_tensor_preserves_colimit_mor_iso"><span class="id" title="lemma">Ff_right_tensor_preserves_colimit_mor_iso</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Core.Isos.html#z_iso"><span class="id" title="definition">z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;((<a class="idref" href="UniMath.CategoryTheory.Monoidal.Categories.html#monoidal_right_tensor"><span class="id" title="definition">monoidal_right_tensor</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.A"><span class="id" title="variable">A</span></a>) (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colim"><span class="id" title="definition">colim</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.FfCC"><span class="id" title="variable">FfCC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.Helpers.d"><span class="id" title="variable">d</span></a>)))<br/>
@@ -251,6 +263,17 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+the following lemma can be used to get a ColimCocone of
+   mapdiagram (monoidal_right_tensor A) d
+   to monoidal_right_tensor A (colim (FfCC d)),
+   so that we can lift the isomorphism to one in LNWFS,
+   given that we know the colimit in LNWFS lies over
+   that in Ff C  
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="Ff_right_tensor_cocone_isColimCocone" class="idref" href="#Ff_right_tensor_cocone_isColimCocone"><span class="id" title="lemma">Ff_right_tensor_cocone_isColimCocone</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#isColimCocone"><span class="id" title="definition">isColimCocone</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#monoidal_right_tensor_cocone"><span class="id" title="lemma">monoidal_right_tensor_cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_mon"><span class="id" title="definition">Ff_mon</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.A"><span class="id" title="variable">A</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.Helpers.d"><span class="id" title="variable">d</span></a> (<a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.FfCC"><span class="id" title="variable">FfCC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.LNWFSClosed.html#Ff_closed.Helpers.d"><span class="id" title="variable">d</span></a>)).<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">

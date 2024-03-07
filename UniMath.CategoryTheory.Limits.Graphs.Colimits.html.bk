@@ -154,7 +154,7 @@ Definition of graphs and diagrams
 </div>
 
 <div class="doc">
-<a id="lab562"></a><h1 class="section">Definition of colimits</h1>
+<a id="lab370"></a><h1 class="section">Definition of colimits</h1>
 
 </div>
 <div class="code">
@@ -603,7 +603,7 @@ If C is a univalent_category then Colims is a prop
 </div>
 
 <div class="doc">
-<a id="lab563"></a><h1 class="section">Defines colimits in functor categories when the target has colimits</h1>
+<a id="lab371"></a><h1 class="section">Defines colimits in functor categories when the target has colimits</h1>
 
 </div>
 <div class="code">
@@ -811,7 +811,7 @@ If C is a univalent_category then Colims is a prop
 </div>
 
 <div class="doc">
-<a id="lab564"></a><h2 class="section">Left adjoints preserve colimits</h2>
+<a id="lab372"></a><h2 class="section">Left adjoints preserve colimits</h2>
 
 </div>
 <div class="code">

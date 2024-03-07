@@ -81,6 +81,13 @@
 <span class="id" title="keyword">Local Definition</span> <a id="K" class="idref" href="#K"><span class="id" title="definition">K</span></a> := <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonad.html#morcls_coprod_functor"><span class="id" title="definition">morcls_coprod_functor</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.CC"><span class="id" title="variable">CC</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+lifting problem to base colimit from other colimCocone by
+   composing colimArrow 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="morcls_lp_colim_lp_to_morcls_base_colim_lp" class="idref" href="#morcls_lp_colim_lp_to_morcls_base_colim_lp"><span class="id" title="definition">morcls_lp_colim_lp_to_morcls_base_colim_lp</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:9" class="idref" href="#d:9"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:10" class="idref" href="#cl:10"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -96,6 +103,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+diagram of homsets 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="homSet_diagram" class="idref" href="#homSet_diagram"><span class="id" title="definition">homSet_diagram</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:14" class="idref" href="#f:14"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:15" class="idref" href="#d:15"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>) :=<br/>
@@ -116,12 +129,28 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+set of lifting problems f --&gt; colim (K d) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="arrow_colimK_lp_hSet" class="idref" href="#arrow_colimK_lp_hSet"><span class="id" title="definition">arrow_colimK_lp_hSet</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="f:20" class="idref" href="#f:20"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:21" class="idref" href="#d:21"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>) : <a class="idref" href="UniMath.Foundations.Sets.html#hSet"><span class="id" title="definition">hSet</span></a> :=<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#homSet"><span class="id" title="definition">homSet</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:20"><span class="id" title="variable">f</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colim"><span class="id" title="definition">colim</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_colims"><span class="id" title="definition">arrow_colims</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.CC"><span class="id" title="variable">CC</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#mapdiagram"><span class="id" title="definition">mapdiagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#K"><span class="id" title="definition">K</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:21"><span class="id" title="variable">d</span></a>))).<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+induced isomorphism on
+    lifting problems f --&gt; cl
+       ===&gt;
+    colim (homSet_diagram_colim)
+
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="presentable_lp_homSet_colim_z_iso" class="idref" href="#presentable_lp_homSet_colim_z_iso"><span class="id" title="definition">presentable_lp_homSet_colim_z_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:22" class="idref" href="#d:22"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:23" class="idref" href="#cl:23"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -140,6 +169,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+lifting problem J --&gt; cl as element in colim (homSet_diagram (pr1 S) d) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="presentable_lp_homSet_colim_arrow" class="idref" href="#presentable_lp_homSet_colim_arrow"><span class="id" title="definition">presentable_lp_homSet_colim_arrow</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:28" class="idref" href="#d:28"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:29" class="idref" href="#cl:29"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -156,6 +191,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+inclusion of arrow into CoproductArrow in the arrow category 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="morcls_lp_coprod_in" class="idref" href="#morcls_lp_coprod_in"><span class="id" title="definition">morcls_lp_coprod_in</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:34" class="idref" href="#f:34"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="S:35" class="idref" href="#S:35"><span class="id" title="binder">S</span></a> : <a class="idref" href="UniMath.ModelCategories.Generated.LiftingWithClass.html#morcls_lp"><span class="id" title="definition">morcls_lp</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.J"><span class="id" title="variable">J</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:34"><span class="id" title="variable">f</span></a>) :<br/>
@@ -170,10 +211,24 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+HSET colimit base, i.e. pairs of (v : vertex nat_graph, S : f --&gt; dob d v) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Definition</span> <a id="HSETcobase" class="idref" href="#HSETcobase"><span class="id" title="definition">HSETcobase</span></a> (<a id="f:36" class="idref" href="#f:36"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>) (<a id="d:37" class="idref" href="#d:37"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>) :=<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Categories.HSET.Colimits.html#cobase"><span class="id" title="definition">Colimits.cobase</span></a> <span class="id" title="var">_</span> (<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#homSet_diagram"><span class="id" title="definition">homSet_diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:36"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:37"><span class="id" title="variable">d</span></a>).<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+given a lp (f, S) : morcls_lp J cl,
+   a map from HSET colimit base (i.e. pairs of (v, f --&gt; dob d v))
+   to lifting problems f --&gt; (colim (K d))  we will use this to define a map from the colimit 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="presentable_lp_homSet_colim_colimK_fun" class="idref" href="#presentable_lp_homSet_colim_colimK_fun"><span class="id" title="definition">presentable_lp_homSet_colim_colimK_fun</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:38" class="idref" href="#d:38"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:39" class="idref" href="#cl:39"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -189,6 +244,13 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+helper relation on the function to show that it preserves
+   the colimit equivalence relation on HSETcobase 
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Definition</span> <a id="presentable_lp_homSet_colim_colimK_fun_rel" class="idref" href="#presentable_lp_homSet_colim_colimK_fun_rel"><span class="id" title="definition">presentable_lp_homSet_colim_colimK_fun_rel</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:41" class="idref" href="#d:41"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:42" class="idref" href="#cl:42"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -204,6 +266,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+we show it is an equivalence relation 
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Definition</span> <a id="presentable_lp_homSet_colim_colimK_fun_eqrel" class="idref" href="#presentable_lp_homSet_colim_colimK_fun_eqrel"><span class="id" title="definition">presentable_lp_homSet_colim_colimK_fun_eqrel</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:44" class="idref" href="#d:44"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:45" class="idref" href="#cl:45"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -223,6 +291,20 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+we show that our equivalence relation holds, whenever two
+   pairs (u,, f --&gt; dob d u) and (v,, f --&gt; dob d v)
+   are related through the relation on HSETcobase,
+   i.e. there is a morphism dob d u --&gt; dob d v
+   such that the composite with dob d u is equal to dob d v.
+   This is the exact relation that we want to find back in
+   our proofs later "if it holds for all (u,, f --&gt; dob d u),
+   then our proof holds"
+
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="presentable_lp_homSet_colim_colimK_fun_rel0_impl" class="idref" href="#presentable_lp_homSet_colim_colimK_fun_rel0_impl"><span class="id" title="lemma">presentable_lp_homSet_colim_colimK_fun_rel0_impl</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:47" class="idref" href="#d:47"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:48" class="idref" href="#cl:48"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -272,6 +354,14 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+This implies that our equivalence relation
+   holds whenever two pairs are related by the closure
+   of the relations on HSETcobase 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="presentable_lp_homSet_colim_colimK_fun_rel_impl" class="idref" href="#presentable_lp_homSet_colim_colimK_fun_rel_impl"><span class="id" title="lemma">presentable_lp_homSet_colim_colimK_fun_rel_impl</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:53" class="idref" href="#d:53"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:54" class="idref" href="#cl:54"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -290,6 +380,13 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+This in turn implies that our function is compatible
+   with the equivalence relation on ColimHSET of HSETcobase 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="presentable_lp_homSet_colim_colimK_fun_iscomprel" class="idref" href="#presentable_lp_homSet_colim_colimK_fun_iscomprel"><span class="id" title="definition">presentable_lp_homSet_colim_colimK_fun_iscomprel</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:59" class="idref" href="#d:59"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:60" class="idref" href="#cl:60"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -304,6 +401,14 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+This allows us to use the function to define an arrow
+   f --&gt; colim (K d)
+  given any lifting problem f --&gt; cl for cl a colimit on d 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="presentable_lp_colimK_mor" class="idref" href="#presentable_lp_colimK_mor"><span class="id" title="definition">presentable_lp_colimK_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:63" class="idref" href="#d:63"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:64" class="idref" href="#cl:64"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -320,6 +425,15 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+ABSOLUTELY disgusting  we want to show that the arrow f --&gt; colim (K d) we get
+   for any lifting problem of the form Sv · coconeIn cc v
+   is the same as the canonical projection of (v,, Sv)
+   down to the set quotient. 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="presentable_lp_homSet_colim_arrow_of_factored_arrow" class="idref" href="#presentable_lp_homSet_colim_arrow_of_factored_arrow"><span class="id" title="lemma">presentable_lp_homSet_colim_arrow_of_factored_arrow</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:69" class="idref" href="#d:69"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:70" class="idref" href="#cl:70"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -374,6 +488,13 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+we can use this to show that the following relation holds
+   for any such arrow 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="presentable_lp_colimK_mor_coconeInCommutes" class="idref" href="#presentable_lp_colimK_mor_coconeInCommutes"><span class="id" title="lemma">presentable_lp_colimK_mor_coconeInCommutes</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:77" class="idref" href="#d:77"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:78" class="idref" href="#cl:78"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -404,6 +525,13 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+predicate type to show relations on f --&gt; cl given
+   that it holds for any (v,, Sv · colimIn cc v) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Definition</span> <a id="predicate_type" class="idref" href="#predicate_type"><span class="id" title="definition">predicate_type</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="d:84" class="idref" href="#d:84"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;(<a id="cl:85" class="idref" href="#cl:85"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)<br/>
@@ -411,6 +539,14 @@
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:86"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#cl:85"><span class="id" title="variable">cl</span></a><a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">)</span></a> <a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.Foundations.Propositions.html#hProp"><span class="id" title="definition">hProp</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+disgusting, but very useful  we show that a predicate on a lifting problem f --&gt; cl
+   holds whenever it holds for any (Sv · colimIn cc v) for
+   a pair (v,, Sv : f --&gt; dob d v) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="presentable_lp_colimK_mor_univ" class="idref" href="#presentable_lp_colimK_mor_univ"><span class="id" title="definition">presentable_lp_colimK_mor_univ</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:87" class="idref" href="#d:87"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:88" class="idref" href="#cl:88"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -474,6 +610,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+we use thsi to show the following relation 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="presentable_lp_colimK_mor_colimArrowCommutes" class="idref" href="#presentable_lp_colimK_mor_colimArrowCommutes"><span class="id" title="lemma">presentable_lp_colimK_mor_colimArrowCommutes</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="d:97" class="idref" href="#d:97"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">chain</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">(</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">arrow</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">C</span></a><a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#:::'chain'"><span class="id" title="notation">)</span></a>}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="cl:98" class="idref" href="#cl:98"><span class="id" title="binder">cl</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>}<br/>
@@ -523,6 +665,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+The main proof of interest! 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="K_small_if_J_small" class="idref" href="#K_small_if_J_small"><span class="id" title="lemma">K_small_if_J_small</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#class_presentable"><span class="id" title="definition">class_presentable</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.J"><span class="id" title="variable">J</span></a><br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#preserves_colimits_of_shape"><span class="id" title="definition">preserves_colimits_of_shape</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#K"><span class="id" title="definition">K</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#nat_graph"><span class="id" title="definition">nat_graph</span></a>.<br/>
@@ -609,6 +757,13 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+no need for information about f here,
+   this morphism is just the pushout square 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="K_L1_colim_mor" class="idref" href="#K_L1_colim_mor"><span class="id" title="definition">K_L1_colim_mor</span></a> (<a id="f:103" class="idref" href="#f:103"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#K"><span class="id" title="definition">K</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:103"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#F1"><span class="id" title="definition">F1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:103"><span class="id" title="variable">f</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
@@ -622,6 +777,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+this is just the pushout square again 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="colim_K_L1_mor_pointwise" class="idref" href="#colim_K_L1_mor_pointwise"><span class="id" title="definition">colim_K_L1_mor_pointwise</span></a><br/>
 &nbsp;&nbsp;{<a id="g:104" class="idref" href="#g:104"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>}<br/>
 &nbsp;&nbsp;(<a id="d:105" class="idref" href="#d:105"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:104"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>))<br/>
@@ -631,6 +792,12 @@
 &nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#K_L1_colim_mor"><span class="id" title="definition">K_L1_colim_mor</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#dob"><span class="id" title="definition">dob</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:105"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#v:106"><span class="id" title="variable">v</span></a>).<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+pushouts and coproducts commute 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="colim_K_L1_mor_commutes" class="idref" href="#colim_K_L1_mor_commutes"><span class="id" title="lemma">colim_K_L1_mor_commutes</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:107" class="idref" href="#g:107"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} (<a id="d:108" class="idref" href="#d:108"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:107"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="u:109" class="idref" href="#u:109"><span class="id" title="binder">u</span></a> <a id="v:110" class="idref" href="#v:110"><span class="id" title="binder">v</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#vertex"><span class="id" title="definition">vertex</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:107"><span class="id" title="variable">g</span></a>} (<a id="e:111" class="idref" href="#e:111"><span class="id" title="binder">e</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#edge"><span class="id" title="definition">edge</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#u:109"><span class="id" title="variable">u</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#v:110"><span class="id" title="variable">v</span></a>) :<br/>
@@ -663,6 +830,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+colim (K fi) --&gt; colim (L1 fi) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="colim_K_L1_mor" class="idref" href="#colim_K_L1_mor"><span class="id" title="definition">colim_K_L1_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:112" class="idref" href="#g:112"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} (<a id="d:113" class="idref" href="#d:113"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:112"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)) :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#colim"><span class="id" title="definition">colim</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow_colims"><span class="id" title="definition">arrow_colims</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:112"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#mapdiagram"><span class="id" title="definition">mapdiagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#K"><span class="id" title="definition">K</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:113"><span class="id" title="variable">d</span></a>))<br/>
@@ -677,6 +850,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+colim (K fi) --&gt; K (colim fi) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="can_K_mor" class="idref" href="#can_K_mor"><span class="id" title="definition">can_K_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:114" class="idref" href="#g:114"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} (<a id="d:115" class="idref" href="#d:115"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:114"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:116" class="idref" href="#f:116"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:117" class="idref" href="#ccf:117"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:115"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:116"><span class="id" title="variable">f</span></a>}<br/>
@@ -692,6 +871,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+L1 (colim fi) --&gt; colim fi 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="L_colim_id_mor" class="idref" href="#L_colim_id_mor"><span class="id" title="definition">L_colim_id_mor</span></a> (<a id="f:120" class="idref" href="#f:120"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>) :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#F1"><span class="id" title="definition">F1</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:120"><span class="id" title="variable">f</span></a> <a class="idref" href="UniMath.CategoryTheory.Core.Categories.html#::cat:x_'--&gt;'_x"><span class="id" title="notation">--&gt;</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:120"><span class="id" title="variable">f</span></a>.<br/>
 <a class="proof" href="#">Show proof.</a><br/><div class="proof">
@@ -699,6 +884,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+colim (L1 fi) --&gt; colim fi 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="colim_L_id_mor" class="idref" href="#colim_L_id_mor"><span class="id" title="definition">colim_L_id_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:121" class="idref" href="#g:121"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} (<a id="d:122" class="idref" href="#d:122"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:121"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>))<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:123" class="idref" href="#f:123"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:124" class="idref" href="#ccf:124"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:122"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:123"><span class="id" title="variable">f</span></a>}<br/>
@@ -736,6 +927,14 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+we need to know that arrow_dom f is
+   a colimit for (L1 d)00, after all, all morphisms
+   are identity. We need an isomorphism 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="dom_colim_dom_L1_cocone" class="idref" href="#dom_colim_dom_L1_cocone"><span class="id" title="definition">dom_colim_dom_L1_cocone</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:126" class="idref" href="#g:126"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:127" class="idref" href="#d:127"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:126"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:128" class="idref" href="#f:128"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} (<a id="ccf:129" class="idref" href="#ccf:129"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:127"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:128"><span class="id" title="variable">f</span></a>):<br/>
@@ -772,6 +971,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+the isomorphism dom f --&gt; colim (L1 d)00 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="colim_dom_L1_dom_iso" class="idref" href="#colim_dom_L1_dom_iso"><span class="id" title="definition">colim_dom_L1_dom_iso</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:135" class="idref" href="#g:135"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:136" class="idref" href="#d:136"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:135"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:137" class="idref" href="#f:137"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:138" class="idref" href="#ccf:138"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:136"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:137"><span class="id" title="variable">f</span></a>}<br/>
@@ -787,6 +992,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+arrow_dom (L1 colim fi) --&gt; arrow_dom (colim (L1 fi)) 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="L1_colim_L1_map00" class="idref" href="#L1_colim_L1_map00"><span class="id" title="definition">L1_colim_L1_map00</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:140" class="idref" href="#g:140"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:141" class="idref" href="#d:141"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:140"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:142" class="idref" href="#f:142"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:143" class="idref" href="#ccf:143"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:141"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:142"><span class="id" title="variable">f</span></a>}<br/>
@@ -799,6 +1010,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+K (colim fi) --&gt; colim (L1 fi)  arrow_mor11 is the bottom pushout map 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="Kcolim_colimL1_mor" class="idref" href="#Kcolim_colimL1_mor"><span class="id" title="definition">Kcolim_colimL1_mor</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:145" class="idref" href="#g:145"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:146" class="idref" href="#d:146"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:145"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:147" class="idref" href="#f:147"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:148" class="idref" href="#ccf:148"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:146"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:147"><span class="id" title="variable">f</span></a>}<br/>
@@ -812,6 +1029,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+top pushout map 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="L1_colim_L1_map_pushoutOut2" class="idref" href="#L1_colim_L1_map_pushoutOut2"><span class="id" title="definition">L1_colim_L1_map_pushoutOut2</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:151" class="idref" href="#g:151"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:152" class="idref" href="#d:152"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:151"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:153" class="idref" href="#f:153"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:154" class="idref" href="#ccf:154"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:152"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:153"><span class="id" title="variable">f</span></a>}<br/>
@@ -824,6 +1047,14 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+we show that arrow_dom (K f) is a colimCocone,
+   given that (K f) is a colim for the mapped diagram,
+   i.e. we project the ColimCocone to the 0 ob/arr 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="L1_colim_L1_map_dom_Kf_is_colimCocone" class="idref" href="#L1_colim_L1_map_dom_Kf_is_colimCocone"><span class="id" title="definition">L1_colim_L1_map_dom_Kf_is_colimCocone</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:156" class="idref" href="#g:156"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:157" class="idref" href="#d:157"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:156"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:158" class="idref" href="#f:158"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:159" class="idref" href="#ccf:159"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:157"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:158"><span class="id" title="variable">f</span></a>}<br/>
@@ -836,6 +1067,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#project_colimcocone00"><span class="id" title="definition">project_colimcocone00</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#isHKCC:162"><span class="id" title="variable">isHKCC</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+we show that arrow_cod (K f) is a colimCocone,
+   given that (K f) is a colim for the mapped diagram,
+   i.e. we project the ColimCocone to the 1 ob/arr 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="L1_colim_L1_map_cod_Kf_is_colimCocone" class="idref" href="#L1_colim_L1_map_cod_Kf_is_colimCocone"><span class="id" title="definition">L1_colim_L1_map_cod_Kf_is_colimCocone</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:165" class="idref" href="#g:165"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:166" class="idref" href="#d:166"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:165"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:167" class="idref" href="#f:167"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:168" class="idref" href="#ccf:168"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:166"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:167"><span class="id" title="variable">f</span></a>}<br/>
@@ -848,6 +1087,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#project_colimcocone11"><span class="id" title="definition">project_colimcocone11</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.CC"><span class="id" title="variable">CC</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#isHKCC:171"><span class="id" title="variable">isHKCC</span></a>.<br/>
 
 <br/>
+</div>
+
+<div class="doc">
+we show that the canonical iso from
+   K (colim fi) --&gt; colim (K fi)
+   projects to the one on the domains 
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Lemma</span> <a id="colim_iso_inv_projects" class="idref" href="#colim_iso_inv_projects"><span class="id" title="lemma">colim_iso_inv_projects</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:174" class="idref" href="#g:174"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:175" class="idref" href="#d:175"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:174"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:176" class="idref" href="#f:176"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:177" class="idref" href="#ccf:177"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:175"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:176"><span class="id" title="variable">f</span></a>}<br/>
@@ -972,6 +1219,13 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+the map L1 (colim fi) --&gt; colim (L1 fi)
+   that we need, defined with the pushout 
+</div>
+<div class="code">
 <span class="id" title="keyword">Definition</span> <a id="L1_colim_L1_map" class="idref" href="#L1_colim_L1_map"><span class="id" title="definition">L1_colim_L1_map</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:202" class="idref" href="#g:202"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:203" class="idref" href="#d:203"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:202"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:204" class="idref" href="#f:204"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:205" class="idref" href="#ccf:205"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:203"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:204"><span class="id" title="variable">f</span></a>}<br/>
@@ -994,6 +1248,14 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+the canonical arrow from f --&gt; (colim CC d)
+   (where the colimit is not necessarily f)
+   projects down to the colimArrow on the domains  
+</div>
+<div class="code">
 <span class="id" title="keyword">Local Lemma</span> <a id="colimArrow_projects" class="idref" href="#colimArrow_projects"><span class="id" title="lemma">colimArrow_projects</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:208" class="idref" href="#g:208"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:209" class="idref" href="#d:209"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:208"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:210" class="idref" href="#f:210"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} {<a id="ccf:211" class="idref" href="#ccf:211"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:209"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:210"><span class="id" title="variable">f</span></a>}<br/>
@@ -1157,6 +1419,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+Main result 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="L1_preserves_colim_if_K_preserves_colim" class="idref" href="#L1_preserves_colim_if_K_preserves_colim"><span class="id" title="lemma">L1_preserves_colim_if_K_preserves_colim</span></a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="g:237" class="idref" href="#g:237"><span class="id" title="binder">g</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#graph"><span class="id" title="definition">graph</span></a>} {<a id="d:238" class="idref" href="#d:238"><span class="id" title="binder">d</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#diagram"><span class="id" title="definition">diagram</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#g:237"><span class="id" title="variable">g</span></a> (<a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>)}<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;{<a id="f:239" class="idref" href="#f:239"><span class="id" title="binder">f</span></a> : <a class="idref" href="UniMath.CategoryTheory.DisplayedCats.Examples.Arrow.html#arrow"><span class="id" title="definition">arrow</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#OSCSmall.C"><span class="id" title="variable">C</span></a>} (<a id="ccf:240" class="idref" href="#ccf:240"><span class="id" title="binder">ccf</span></a> : <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#cocone"><span class="id" title="definition">cocone</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#d:238"><span class="id" title="variable">d</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#f:239"><span class="id" title="variable">f</span></a>) :<br/>
@@ -1176,6 +1444,12 @@
 </div>
 
 <br/>
+</div>
+
+<div class="doc">
+applying the main result 
+</div>
+<div class="code">
 <span class="id" title="keyword">Lemma</span> <a id="L1_small_if_K_small" class="idref" href="#L1_small_if_K_small"><span class="id" title="lemma">L1_small_if_K_small</span></a> :<br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#preserves_colimits_of_shape"><span class="id" title="definition">preserves_colimits_of_shape</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#K"><span class="id" title="definition">K</span></a> <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#nat_graph"><span class="id" title="definition">nat_graph</span></a><br/>
 &nbsp;&nbsp;<a class="idref" href="UniMath.Foundations.Init.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">-&gt;</span></a> <a class="idref" href="UniMath.CategoryTheory.Limits.Graphs.Colimits.html#preserves_colimits_of_shape"><span class="id" title="definition">preserves_colimits_of_shape</span></a> (<a class="idref" href="UniMath.ModelCategories.NWFS.html#fact_L"><span class="id" title="definition">fact_L</span></a> <a class="idref" href="UniMath.ModelCategories.Generated.OneStepMonadSmall.html#F1"><span class="id" title="definition">F1</span></a>) <a class="idref" href="UniMath.CategoryTheory.Chains.Chains.html#nat_graph"><span class="id" title="definition">nat_graph</span></a>.<br/>

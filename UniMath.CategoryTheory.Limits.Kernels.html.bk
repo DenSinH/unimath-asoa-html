@@ -21,8 +21,8 @@
 </div>
 
 <div class="doc">
-<a id="lab592"></a><h1 class="section">Direct implementation of kernels</h1>
-<a id="lab593"></a><h2 class="section">Contents</h2>
+<a id="lab400"></a><h1 class="section">Direct implementation of kernels</h1>
+<a id="lab401"></a><h2 class="section">Contents</h2>
 
 <ul class="doclist">
 <li> Definition of <span class="inlinecode"><a class="idref" href="UniMath.CategoryTheory.Limits.Kernels.html#Kernel"><span class="id" title="definition">Kernel</span></a></span>
@@ -365,7 +365,7 @@ It follows that KernelArrow is monic.
 </div>
 
 <div class="doc">
-<a id="lab594"></a><h1 class="section">Correspondence of kernels and equalizers</h1>
+<a id="lab402"></a><h1 class="section">Correspondence of kernels and equalizers</h1>
 
 </div>
 <div class="code">
@@ -380,7 +380,7 @@ It follows that KernelArrow is monic.
 </div>
 
 <div class="doc">
-<a id="lab595"></a><h2 class="section">Equalizer from Kernel</h2>
+<a id="lab403"></a><h2 class="section">Equalizer from Kernel</h2>
 
 </div>
 <div class="code">
@@ -420,7 +420,7 @@ It follows that KernelArrow is monic.
 </div>
 
 <div class="doc">
-<a id="lab596"></a><h2 class="section">Kernel from Equalizer</h2>
+<a id="lab404"></a><h2 class="section">Kernel from Equalizer</h2>
 
 </div>
 <div class="code">
@@ -464,7 +464,7 @@ It follows that KernelArrow is monic.
 </div>
 
 <div class="doc">
-<a id="lab597"></a><h1 class="section">Kernel up to isomorphism</h1>
+<a id="lab405"></a><h1 class="section">Kernel up to isomorphism</h1>
 
 </div>
 <div class="code">
@@ -558,8 +558,8 @@ It follows that KernelArrow is monic.
 </div>
 
 <div class="doc">
-<a id="lab598"></a><h1 class="section">Kernel of morphism · monic</h1>
-<a id="lab599"></a><h2 class="section">Introduction</h2>
+<a id="lab406"></a><h1 class="section">Kernel of morphism · monic</h1>
+<a id="lab407"></a><h2 class="section">Introduction</h2>
 
    Suppose f : x --&gt; y is a morphism and M : y --&gt; z is a Monic. Then kernel of f · M is
    isomorphic to kernel of f.
@@ -679,7 +679,7 @@ It follows that KernelArrow is monic.
 </div>
 
 <div class="doc">
-<a id="lab600"></a><h1 class="section">KernelIn of equal, not necessarily definitionally equal, morphisms is iso</h1>
+<a id="lab408"></a><h1 class="section">KernelIn of equal, not necessarily definitionally equal, morphisms is iso</h1>
 
 </div>
 <div class="code">
@@ -744,7 +744,7 @@ Constructs a cokernel of f' from a cokernel of f in a natural way
 </div>
 
 <div class="doc">
-<a id="lab601"></a><h1 class="section">Transports of kernels</h1>
+<a id="lab409"></a><h1 class="section">Transports of kernels</h1>
 
 </div>
 <div class="code">
